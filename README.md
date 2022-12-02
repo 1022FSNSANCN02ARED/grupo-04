@@ -18,10 +18,5 @@ Http://faada.org
 http://Www.redsolidariaanimal.org.ar
 Http://aprani.org
 
-=======
-#Hola mundo
->>>>>>> b7f47c2624d721d12db75d4fd2cadcec1fcba98d
-=======
-#Hola mundo
-#Hola - Esta es la pruba incial de Jose
->>>>>>> 3e0aa258be49ce67129acc80ee2c7eaaeaf4678c
+
+Durante la semana agregaremos el logo
