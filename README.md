@@ -1,6 +1,7 @@
 # grupo-04
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Luego de reunirnos decidimos que nuestro sitio será una fusión entre servicio y venta de producto, dado a los requisitos que se mencionan en el Sprint.
 
 Crearemos un sitio para una ONG de animales, con el objetivo de incentivar a la comunidad, a la adopción responsable de animales en situación de calle u abandono, así como también la colaboración mensual u opcional en cada uno de los casos que se le puedan presentar a la ONG.
@@ -20,3 +21,7 @@ Http://aprani.org
 =======
 #Hola mundo
 >>>>>>> b7f47c2624d721d12db75d4fd2cadcec1fcba98d
+=======
+#Hola mundo
+#Hola - Esta es la pruba incial de Jose
+>>>>>>> 3e0aa258be49ce67129acc80ee2c7eaaeaf4678c
