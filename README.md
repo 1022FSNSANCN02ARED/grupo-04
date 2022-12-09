@@ -11,6 +11,7 @@ Constara con un formulario de adopción donde cada uno podrá registrarse y llen
 
 Integrantes:
 >Romero Fernando (BE): Tengo 26 años, soy técnico en Electrónica y uno de mis hobbies es la programación, la cual espero en un futuro cercano que sea mi profesión.
+>José Carlos Courby (ADM): Tengo 56 años, trabajo em áreas de administración de dos empresas, una activa en Polo Tecnológico y otra, una mutual, que otorga micro créditos para el consumo personal. Tuve mi propia empresa, administradora de fondos de seguro de retiro; ya no existe.
 
 
 Referencias de sitios Web:
