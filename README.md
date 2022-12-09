@@ -16,10 +16,10 @@ Integrantes:
 
 Referencias de sitios Web:
 
-http://Www.addaong.org
-Http://faada.org
-http://Www.redsolidariaanimal.org.ar
-Http://aprani.org
+- http://Www.addaong.org
+- Http://faada.org
+- http://Www.redsolidariaanimal.org.ar
+- Http://aprani.org
 
 
 Durante la semana agregaremos el logo
