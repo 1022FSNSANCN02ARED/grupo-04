@@ -10,8 +10,8 @@ Nuestra audiencia estará enfocada a atraer a personas con responsabilidad socia
 Constara con un formulario de adopción donde cada uno podrá registrarse y llenarlo, luego de ese proceso, serán las integrantes de la ONG quienes decidan según los requisitos pedidos.
 
 Integrantes:
->Romero Fernando (BE): Tengo 26 años, soy técnico en Electrónica y uno de mis hobbies es la programación, la cual espero en un futuro cercano que sea mi profesión.
->José Carlos Courby (ADM): Tengo 56 años, trabajo em áreas de administración de dos empresas, una activa en Polo Tecnológico y otra, una mutual, que otorga micro créditos para el consumo personal. Tuve mi propia empresa, administradora de fondos de seguro de retiro; ya no existe.
+- Fernando Romero (BE): Tengo 26 años, soy técnico en Electrónica y uno de mis hobbies es la programación, la cual espero en un futuro cercano que sea mi profesión.
+- José Carlos Courby (ADM): Tengo 56 años, trabajo em áreas de administración de dos empresas, una activa en Polo Tecnológico y otra, una mutual, que otorga micro créditos para el consumo personal. Tuve mi propia empresa, administradora de fondos de seguro de retiro; ya no existe. Por este motivo me movilizó llevar a cabo esta nueva expereincia para procurarme un mejor porvenir.
 
 
 Referencias de sitios Web:
