@@ -12,6 +12,7 @@ Constara con un formulario de adopción donde cada uno podrá registrarse y llen
 Integrantes:
 - Fernando Romero (BE): Tengo 26 años, soy técnico en Electrónica y uno de mis hobbies es la programación, la cual espero en un futuro cercano que sea mi profesión.
 - José Carlos Courby (ADM): Tengo 56 años, trabajo em áreas de administración de dos empresas, una activa en Polo Tecnológico y otra, una mutual, que otorga micro créditos para el consumo personal. Tuve mi propia empresa, administradora de fondos de seguro de retiro; ya no existe. Por este motivo me movilizó llevar a cabo esta nueva expereincia para procurarme un mejor porvenir.
+- Javier Olivera: Tengo 33 años, Soy técnico electromecánico, técnico superior en Recursos Humanos y cursando la última materia de Licenciado en administración de empresas. Me gusta programar y anhelo trabajar de la programación y perfeccionarme día a día.
 
 
 Referencias de sitios Web:
