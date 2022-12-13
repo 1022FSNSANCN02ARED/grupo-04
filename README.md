@@ -14,6 +14,7 @@ Integrantes:
 - José Carlos Courby (ADM): Tengo 56 años, trabajo em áreas de administración de dos empresas, una activa en Polo Tecnológico y otra, una mutual, que otorga micro créditos para el consumo personal. Tuve mi propia empresa, administradora de fondos de seguro de retiro; ya no existe. Por este motivo me movilizó llevar a cabo esta nueva expereincia para procurarme un mejor porvenir.
 - Javier Olivera: Tengo 33 años, Soy técnico electromecánico, técnico superior en Recursos Humanos y cursando la última materia de Licenciado en administración de empresas. Me gusta programar y anhelo trabajar de la programación y perfeccionarme día a día.
 
+- Gnavi, Brenda (PA) Tengo 27 años, soy profesora de Educacion Fisica, comence a investigar sobre el mundo de la programacion, me intereso mucho y es por esto que decidi dar un giro a mi actividad laboral.  Busco ampliar mis conocimientos  y creo que esta es una gran oportunidad para hacerlo.
 
 Referencias de sitios Web:
 
