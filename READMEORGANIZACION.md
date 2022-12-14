@@ -1,0 +1,1 @@
+aqui se va a organizar los metodos de trabajo y con que herramientas vamos a trabajar (trello, git, et....)
