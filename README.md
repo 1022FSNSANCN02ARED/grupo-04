@@ -4,16 +4,16 @@ Luego de reunirnos decidimos que nuestro sitio será una fusión entre servicio 
 
 Crearemos un sitio para una ONG de animales, con el objetivo de incentivar a la comunidad, a la adopción responsable de animales en situación de calle u abandono, así como también la colaboración mensual u opcional en cada uno de los casos que se le puedan presentar a la ONG.
 
-Además crearemos una sección de “Productos solidarios” donde se ofrecerá al cliente distintos artículos, que serán recaudados y destinados para el pago de las veterinarias, compra de insumos para curar/alimentar a los animales que se rescaten, costear los traslados de los mismos y demás.
+Además crearemos una sección de “Productos solidarios” donde se ofrecerá al cliente distintos artículos, cuya recaudacion será destinada para el pago de las veterinarias, compra de insumos para curar/alimentar a los animales que se rescaten, costear los traslados de los mismos y demás.
 Nuestra audiencia estará enfocada a atraer a personas con responsabilidad social hacia los animales que están en situación de calle, y que quieran adoptar/ colaborar de manera desinteresada con la organización. Así como también otro eje muy importante que se tendrá en cuenta en nuestro sitio, será la constante información útil y campañas de concientización de los derechos de los animales.
 
-Constara con un formulario de adopción donde cada uno podrá registrarse y llenarlo, luego de ese proceso, serán las integrantes de la ONG quienes decidan según los requisitos pedidos.
+Constara con un formulario para la postulación a la adopción conciente, donde el público interesado podrá registrarse y completarlo; luego de ese proceso, serán las integrantes de la ONG quienes decidan la viabilidad según los requisitos pedidos.
 
 Integrantes:
 - Fernando Romero (BE): Tengo 26 años, soy técnico en Electrónica y uno de mis hobbies es la programación, la cual espero en un futuro cercano que sea mi profesión.
 - José Carlos Courby (ADM): Tengo 56 años, trabajo em áreas de administración de dos empresas, una activa en Polo Tecnológico y otra, una mutual, que otorga micro créditos para el consumo personal. Tuve mi propia empresa, administradora de fondos de seguro de retiro; ya no existe. Por este motivo me movilizó llevar a cabo esta nueva expereincia para procurarme un mejor porvenir.
 - Javier Olivera: Tengo 33 años, Soy técnico electromecánico, técnico superior en Recursos Humanos y cursando la última materia de Licenciado en administración de empresas. Me gusta programar y anhelo trabajar de la programación y perfeccionarme día a día.
-
+-Torres Marisa (BDD): Tengo 38 años, una hija de 12 y un gran anhelo por trabajar de esto. Soy Tecnica Analista de Sistemas, aunque nunca pude ejercerlo. Me considero persistente y dedicada.
 
 Referencias de sitios Web:
 
