@@ -24,4 +24,6 @@ Referencias de sitios Web:
 - Http://aprani.org
 
 
-Durante la semana agregaremos el logo
+Link acceso a Trello:
+
+https://trello.com/invite/b/raDXoKRJ/ATTI9c2b26dc2e584cac85c2483a81345647052246FC/tematica-y-fundamentacion-del-sitio
