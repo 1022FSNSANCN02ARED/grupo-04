@@ -1,0 +1,116 @@
+body{
+    background-color: white;
+}
+
+.carrito{
+    font-size: 35px;
+    padding: 5px;
+    margin: auto;
+}
+.img-logo{
+    width: 48px;
+    height: 48px;
+}
+
+.logo-tienda-responsive{
+    display: flex;
+    position: relative;
+}
+
+.logo-tienda-responsive i {
+    margin-left: 60vw;
+}
+
+
+
+
+
+.respmenu-link {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+    border-bottom: 2px solid #456789;
+    max-width: 100vw;
+    font-variant: small-caps;
+    background-color: white; /*fondo del menu*/
+    text-shadow: 1px 1px black;
+  }
+  .respmenu input[type="checkbox"], .respmenu .fa-bars, .respmenu .fa-times {
+    position: absolute;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    right: 0;
+    top: 0;
+    width: 48px;
+    height: 48px;
+  }
+  
+  .respmenu .fa-bars, .respmenu .fa-times {
+    font-size: 48px;
+    pointer-events: none;
+  }
+  
+  .respmenu input[type="checkbox"] {
+    opacity: 0;
+  }
+  
+  .respmenu {
+    color:#123456;
+    position: relative;
+    background: white;
+    min-height: 48px;
+  }
+  
+  .respmenu nav {
+    display: none;
+  }
+  
+  .respmenu input:checked ~ nav {
+    display: block;
+  }
+  
+  .respmenu input:checked ~ .fa-bars {
+    display: none;
+  }
+  
+  .respmenu input:not(:checked) ~ .fa-times {
+    display: none;
+  }
+
+  .nav-nonresponsive{
+    display: none;
+   }
+
+  @media(min-width:481px){
+    /*tablet*/
+    .menuresponsive{
+        display: none;
+    }
+   .nav-nonresponsive{
+    display: contents;
+   }
+}
+
+@media(min-width:769px){
+    /*laptop*/
+    .menuresponsive{
+        display: none;
+    }
+    .nav-nonresponsive{
+        display: contents;
+       }
+    
+   
+}
+@media(min-width:1281px){
+   /*escritorio*/
+   .menuresponsive{
+    display: none;
+}
+.nav-nonresponsive{
+    display: contents;
+   }
+  
+}
