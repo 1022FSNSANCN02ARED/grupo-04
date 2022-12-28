@@ -1,0 +1,22 @@
+.box-logo{
+    display: flex;
+
+}
+.h1{
+    font-size: 60px;
+    padding-top: 30px;
+    padding-left: 50px;
+}
+.header{
+    background-color: lightskyblue;
+}
+.main{
+    padding-bottom: 50px;
+}
+.footer-art{
+    display: flex;
+}
+.p-footer{
+    padding-bottom: 20px;
+    
+}
