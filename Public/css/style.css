@@ -22,10 +22,9 @@ body{
     position: relative;
 }
 
-
-
-
-
+.nav-nonresponsive{
+  display: none;
+ }
 
 .respmenu-link {
     color: inherit;
@@ -81,9 +80,7 @@ body{
     display: none;
   }
 
-  .nav-nonresponsive{
-    display: none;
-   }
+  
 
    /*Footer*/
 
