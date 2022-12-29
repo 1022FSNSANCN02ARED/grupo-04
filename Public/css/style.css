@@ -1,7 +1,8 @@
+
 body{
     background-color: white;
 }
-
+/*Manu responsive y no responsive*/
 .carrito{
     font-size: 35px;
     padding: 5px;
@@ -22,10 +23,9 @@ body{
     position: relative;
 }
 
-
-
-
-
+.nav-nonresponsive{
+  display: none;
+ }
 
 .respmenu-link {
     color: inherit;
@@ -59,9 +59,9 @@ body{
   }
   
   .respmenu {
-    color:#123456;
+    color:beige;
     position: relative;
-    background: white;
+    background: #4a8db7;
     min-height: 48px;
   }
   
@@ -81,9 +81,7 @@ body{
     display: none;
   }
 
-  .nav-nonresponsive{
-    display: none;
-   }
+  
 
    /*Footer*/
 
@@ -202,32 +200,145 @@ body{
 
   @media(min-width:481px){
     /*tablet*/
+    .logo-noresponsive{
+      width: 40px;
+      height: 40px;
+      
+    }
     .menuresponsive{
         display: none;
     }
-   .nav-nonresponsive{
-    display: contents;
+  
+   .menu1{
+    width: 50vw;
    }
+   .menu2{
+    width: 50vw;
+   }
+    
+   .nav-nonresponsive{
+    width: 100%;
+    display: flex;
+    padding:10px;
+    background: #4a8db7;
+    font-size: 18px;
+    color: beige;
+
+   }
+   .nav-menu1{
+    display: flex;
+    list-style: none;
+  }
+
+  .nav-menu1 li{
+    margin-right: 5px;
+    margin-left:5px;
+    
+  }
+  .nav-menu2{
+    display: flex;
+    list-style: none;
+    justify-content: end;
+  }
+  .nav-menu2 li{
+    margin-right: 5px;
+    margin-left:5px;
+  }
 }
 
 @media(min-width:769px){
     /*laptop*/
+    .logo-noresponsive{
+      width: 40px;
+      height: 40px;
+      
+    }
+
     .menuresponsive{
         display: none;
     }
+    .menu1{
+      width: 50vw;
+    }
+     .menu2{
+      width: 50vw;
+     }
+
     .nav-nonresponsive{
-        display: contents;
+       width: 100%;
+        display: flex;
+        background: #4a8db7;
+        font-size: 18px;
+        color: beige;
+        padding:10px;
        }
+    .nav-menu1{
+      display: flex;
+      list-style: none;
+    }
+    .nav-menu1 li{
+      margin-right:5px;
+      margin-left:5px;
+    }
+    .nav-menu2{
+      display: flex;
+      list-style: none;
+      justify-content: end;
+    }
+    .nav-menu2 li{
+      margin-right:5px;
+      margin-left:5px;
+    }
+
+  
     
    
 }
 @media(min-width:1281px){
    /*escritorio*/
+   .logo-noresponsive{
+    width: 40px;
+    height: 40px;
+    
+  }
+  
    .menuresponsive{
     display: none;
 }
-.nav-nonresponsive{
+
+   .menu1{
+  width: 50vw;
+  }
+   .menu2{
+  width: 50vw;
+  }
+
+  .nav-nonresponsive{
+    width: 100%;
     display: contents;
+    padding:10px;
+    background: #4a8db7;
+    font-size: 18px;
+    color: beige;
    }
+   .nav-menu1{
+    display: flex;
+    list-style: none;
+  }
+  .nav-menu1 li{
+    margin-right:5px;
+    margin-left:5px;
+  }
+ 
+  .nav-menu2{
+    display: flex;
+    list-style: none;
+    justify-content: end;
+    
+  }
+  .nav-menu2 li{
+    margin-right: 5px;
+    margin-left:5px;
+  }
   
 }
