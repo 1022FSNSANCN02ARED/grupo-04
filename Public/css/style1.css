@@ -3,7 +3,7 @@
 
 }
 .h1{
-    font-size: 60px;
+    font-size: 30px;
     padding-top: 30px;
     padding-left: 50px;
 }
@@ -13,10 +13,37 @@
 .main{
     padding-bottom: 50px;
 }
-.footer-art{
+.menu{
+  
+    background-color: black;
+
+}
+.menu a{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 5px orange;
+    font-size: 16px;
+    padding: 5px 5px;
+    margin-bottom: 15px;
+}
+.menu li{
+    padding: 10px;
     display: flex;
 }
-.p-footer{
-    padding-bottom: 20px;
-    
+.producto{
+    box-shadow: rgb(100, 100, 100) 0px 0px 10px;
+    width: 90%;
+}
+
+
+@media(min-width: 769px){
+    /*laptop*/
+    .menu a:hover{
+        text-shadow: 2px 2px 5px orange;
+        color: red;
+    }
+    .menu li{
+        display: inline-block;
+    }
 }
