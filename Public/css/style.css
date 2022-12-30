@@ -208,6 +208,18 @@ body{
    .nav-nonresponsive{
     display: contents;
    }
+   .footer-container{
+  flex-wrap: wrap;
+  
+   }
+  
+  .foot-column1,.foot-column2{
+   padding-left: 25px;
+  }
+   .foot-column3{
+    padding-left: 0px;
+   }
+   
 }
 
 @media(min-width:769px){
@@ -218,10 +230,9 @@ body{
     .nav-nonresponsive{
         display: contents;
        }
-    
-   
+     
 }
-@media(min-width:1281px){
+@media (min-width:1281px){
    /*escritorio*/
    .menuresponsive{
     display: none;
@@ -230,4 +241,4 @@ body{
     display: contents;
    }
   
-}
+  }
