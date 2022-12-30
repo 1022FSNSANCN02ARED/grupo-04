@@ -6,30 +6,80 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
 rel="stylesheet" />
-<link href="/css/normalize.css" rel="stylesheet">
+
 <link href="/css/style.css" rel="stylesheet">
+<link href="/css/styleLOGIN.css" rel="stylesheet">
     
         <title>Login</title>
 </head>
-<body>
-    <h1>Login</h1>
-
-    <div class="container">
-        <label for="Correo"><b>Correo electronico</b></label>
-        <input type="text" placeholder="Ingrese su usuario" name="usuario">
+<body class="body-login">
+    <header>
+     <!--Menu no Responsive Tablet/Laptop/Escritorio-->
+     <nav class="nav-nonresponsive">
+        <div >
+          <a href="/home"><img src="/images/logoong.png" alt="logo" class="logo-noresponsive" ></a>
+        </div>
+        
+        <div class="menu1">
+            <ul class="nav-menu1">
+               <li><a href="/">Mascotas |</a></li>   
+               <li><a href="/">Tienda |</a></li>   
+               <li><a href="/">Nosotros |</a></li>   
+            </ul>
+        </div>
+       
+        <div class="menu2">
+            <ul class="nav-menu2">
+                 <li><a href="/carrito"><i class="fa-solid fa-cart-shopping"></i></a></li>   
+                 <li><a href="/login">Ingresar |</a></li>
+                 <li><a href="/registro">Registrarse</a></li>  
+            </ul>
+        </div>
+   
+    </nav>
+         <!--Menu Responsive para celular-->
+           <div class="menuresponsive">
+                
+                <div class="respmenu">
+                    <div class="logo-tienda-responsive">
+                        <img src="/images/logoong.png" alt="logo" class="img-logo">
+                        <div class="logo-header"><a href="/carrito"><i class="fa-solid fa-cart-shopping carrito"></i></a></div>
+                    </div>
+                     <div>
+                           <input type="checkbox">
+                           <i class="fas fa-bars"></i>
+                           <i class="fas fa-times"></i>
+                            <nav>
+                               <ul>
+                                 <li><a href="/home" class="respmenu-link">Home</a></li>
+                                 <li><a href="#" class="respmenu-link">Mascotas</a></li>
+                                 <li><a href="#" class="respmenu-link">Tienda</a></li>
+                                 <li><a href="#" class="respmenu-link">Nosotros</a></li>
+                                 <li><a href="/login" class="respmenu-link">Ingresar</a></li>
+                                 <li><a href="/registro" class="respmenu-link">Registrarse</a></li>
+                                </ul>
+                            </nav>
+                        </div>  
+                    </div>
+            </div>  
+    </header>     
+<form class="form-login"> 
+    <div class="login-container1">
+        <p><h2 class="titulo">BIENVENIDOS</h2></p>
+     <p><label for="Correo"><b>Correo electronico</b></label></p>
+     <p><input type="text" placeholder="Ingrese su usuario" name="usuario"> </p>
     
-        <label for="Contraseña"><b> Contraseña</b></label>
-        <input type="clave" placeholder="Ingrese su contraseña" name="clave" required>
+      <p><label for="Contraseña"><b> Contraseña</b></label> </p>
+      <p> <input type="clave" placeholder="Ingrese su contraseña" name="clave" required> </p>
     
-        <button type="submit">Login</button>
+       <p><button type="submit">Login</button> </p>
         <label>
-          <input type="checkbox" checked="checked" name="remember"> Recuerdame
+         <p><input type="checkbox" checked="checked" name="remember"> Recuerdame </p>
         </label>
-      </div>
-    
-      <div class="container" style="background-color:#f1f1f1">
-        <button type="button" class="cancelbtn">Cancelar</button>
-        <span class="psw">¿Olvido su contraseña?<a href="#"> </a></span>
+         
+        <p><button type="button" class="cancelbtn">Cancelar</button> </p>
+       <p><span class="psw"> <a href="#"> ¿Olvido su contraseña? </a></span> </p>
+       
       </div>
     </form>
 
