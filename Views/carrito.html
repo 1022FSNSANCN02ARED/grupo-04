@@ -14,27 +14,56 @@
     <title>Mis Compras</title>
 </head>
 <body>
-    <header class="header">
-        <section >
-            <article class="box-logo">
-                <img src="/images/logoong.png" alt="logo" width="20%"> 
-                <h1 class="h1"> NOMBRE DE LA PAGINA </h1>
-                
-            </article>       
-        </section>
-        <section class="menu">
-            <nav>
-                <ul>
-                    
-                    <li> <a href="/home"> Home</a> </li>
-                    <li><a href="Productos"> Mascotas </a>  </li>
-                    <li><a href="Sobre nosotros">Nosotros</a> </li>
-                    <li><a href="Contacto">Contacto</a> </li>
+    <header>
+        <!--Menu no Responsive Tablet/Laptop/Escritorio-->
+        <nav class="nav-nonresponsive">
+            <div >
+              <a href="/home"><img src="/images/logoong.png" alt="logo" class="logo-noresponsive" ></a>
+            </div>
+            
+            <div class="menu1">
+                <ul class="nav-menu1">
+                   <li><a href="/">Mascotas |</a></li>   
+                   <li><a href="/">Tienda |</a></li>   
+                   <li><a href="/">Nosotros |</a></li>   
                 </ul>
-            <nav>
-        </section>
+            </div>
+           
+            <div class="menu2">
+                <ul class="nav-menu2">
+                     <li><a href="/carrito"><i class="fa-solid fa-cart-shopping"></i></a></li>   
+                     <li><a href="/login">Ingresar |</a></li>
+                     <li><a href="/registro">Registrarse</a></li>  
+                </ul>
+            </div>
+       
+        </nav>
+             <!--Menu Responsive para celular-->
+               <div class="menuresponsive">
+                    
+                    <div class="respmenu">
+                        <div class="logo-tienda-responsive">
+                            <img src="/images/logoong.png" alt="logo" class="img-logo">
+                            <div class="logo-header"><a href="/carrito"><i class="fa-solid fa-cart-shopping carrito"></i></a></div>
+                        </div>
+                         <div>
+                               <input type="checkbox">
+                               <i class="fas fa-bars"></i>
+                               <i class="fas fa-times"></i>
+                                <nav>
+                                   <ul>
+                                     <li><a href="/home" class="respmenu-link">Home</a></li>
+                                     <li><a href="#" class="respmenu-link">Mascotas</a></li>
+                                     <li><a href="#" class="respmenu-link">Tienda</a></li>
+                                     <li><a href="#" class="respmenu-link">Nosotros</a></li>
+                                     <li><a href="/login" class="respmenu-link">Ingresar</a></li>
+                                     <li><a href="/registro" class="respmenu-link">Registrarse</a></li>
+                                    </ul>
+                                </nav>
+                            </div>  
+                        </div>
+                </div>  
     </header>
-
 <main class="main">
     <section>
         <h2> Mis Compras</h2>
