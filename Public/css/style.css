@@ -229,6 +229,27 @@ body{
     color: beige;
 
    }
+   .nav-menu1{
+    display: flex;
+    list-style: none;
+  }
+   
+  .nav-menu1 li{
+    margin-right: 1px;
+    margin-left:1px;
+  }
+  .nav-menu2{
+    display: flex;
+    list-style: none;
+    justify-content: end;
+  }
+
+  .nav-menu2 li{
+    margin-right: 1px;
+    margin-left:1px;
+  }
+
+
    .footer-container{
     flex-wrap: wrap;
    }
@@ -258,14 +279,32 @@ body{
       margin:auto;
      }
 
-    .nav-nonresponsive{
-       width: 100%;
-        display: flex;
-        background: #4a8db7;
-        font-size: 18px;
-        color: beige;
-        padding:10px;
-       }
+     .nav-nonresponsive{
+      width: 100%;
+       display: flex;
+       background: #4a8db7;
+       font-size: 18px;
+       color: beige;
+       padding:10px;
+      }
+   .nav-menu1{
+     display: flex;
+     list-style: none;
+   }
+   .nav-menu1 li{
+     margin-right:5px;
+     margin-left:5px;
+   }
+   .nav-menu2{
+     display: flex;
+     list-style: none;
+     justify-content: end;
+   }
+   .nav-menu2 li{
+     margin-right:5px;
+     margin-left:5px;
+   }
+
     
    
 }
