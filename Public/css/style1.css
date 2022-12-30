@@ -1,0 +1,99 @@
+.box-logo{
+    display: flex;
+
+}
+.h1{
+    font-size: 30px;
+    padding-top: 30px;
+    padding-left: 50px;
+}
+.header{
+    background-color: lightskyblue;
+}
+.main{
+    padding-bottom: 50px;
+}
+.menu{
+  
+    background-color: black;
+
+}
+.menu a{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 5px orange;
+    font-size: 16px;
+    padding: 5px 5px;
+    margin-bottom: 15px;
+}
+.menu li{
+    padding: 10px;
+    display: flex;
+}
+.producto{
+   /* box-shadow: rgb(100, 100, 100) 0px 0px 10px;*/
+   border-bottom: 1px solid black;
+    width: 90%;
+    display: flex;
+    padding: 15px;
+}
+.nombre-producto{
+    padding-bottom: 10px;
+    text-decoration: underline;
+}
+.precio-tacho{
+    
+    flex-direction: column;
+    text-align: right;
+    
+}
+.precio-tacho i{
+   /* position: absolute;*/
+   
+    
+}
+.envio{
+    display: flex;
+    flex-wrap: wrap;
+}
+.subtotal{
+    text-align: center;
+    width: 100%;
+    
+}
+.w-30{
+    width: 30%;
+}
+.w-100{
+    width: 100%;
+}
+.total{
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+}
+.total button{
+    width: 50%;
+    padding: 5px;
+    align-items: center;
+    border-radius: 5px;
+    background-color: #74BDE0;
+    position: absolute;
+    top: 320px;
+    right: 100px;
+}
+.total a{
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+@media(min-width: 769px){
+    /*laptop*/
+    .total button{
+        right: 300px;
+        box-shadow: 2px 2px 5px white;
+    }
+    
+}

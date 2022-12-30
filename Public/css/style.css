@@ -1,31 +1,31 @@
+
 body{
     background-color: white;
 }
-
+/*Manu responsive y no responsive*/
 .carrito{
     font-size: 35px;
     padding: 5px;
     margin: auto;
 }
 .img-logo{
-    width: 48px;
-    height: 48px;
-}
+    width: 70px;
+    height: 60px;
+    }
 .logo-header{
   width: 40px;
   height: 40px;
   box-sizing: border-box;
-  margin-left:60vw;
+  margin-left:50vw;
 }
 .logo-tienda-responsive{
     display: flex;
     position: relative;
 }
 
-
-
-
-
+.nav-nonresponsive{
+  display: none;
+ }
 
 .respmenu-link {
     color: inherit;
@@ -59,9 +59,9 @@ body{
   }
   
   .respmenu {
-    color:#123456;
+    color:beige;
     position: relative;
-    background: white;
+    background: #4a8db7;
     min-height: 48px;
   }
   
@@ -81,9 +81,7 @@ body{
     display: none;
   }
 
-  .nav-nonresponsive{
-    display: none;
-   }
+  
 
    /*Footer*/
 
@@ -202,43 +200,122 @@ body{
 
   @media(min-width:481px){
     /*tablet*/
+    .logo-noresponsive{
+      width: 90px;
+      height: 70px;
+      margin-top: -18px;
+      margin-left: -20px;
+    }
     .menuresponsive{
         display: none;
     }
+  
+   .menu1{
+    width: 50vw;
+    margin: auto;
+   }
+   .menu2{
+    width: 50vw;
+    margin: auto;
+   }
+    
    .nav-nonresponsive{
-    display: contents;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    padding: 10px;
+    background: #4a8db7;
+    font-size: 16px;
+    color: beige;
+
    }
    .footer-container{
-  flex-wrap: wrap;
-  
+    flex-wrap: wrap;
    }
-  
-  .foot-column1,.foot-column2{
-   padding-left: 25px;
-  }
-   .foot-column3{
-    padding-left: 0px;
+   .foot-column1, .foot-column2{
+    padding-left: 22px;
+
    }
-   
 }
 
 @media(min-width:769px){
     /*laptop*/
+    .logo-noresponsive{
+      width: 110px;
+      height: 90px;
+      margin-top: -25px;
+    }
+
     .menuresponsive{
         display: none;
     }
+    .menu1{
+      width: 50vw;
+      margin: auto;
+    }
+     .menu2{
+      width: 50vw;
+      margin:auto;
+     }
+
     .nav-nonresponsive{
-        display: contents;
+       width: 100%;
+        display: flex;
+        background: #4a8db7;
+        font-size: 18px;
+        color: beige;
+        padding:10px;
        }
-     
+    
+   
 }
 @media (min-width:1281px){
    /*escritorio*/
+   .logo-noresponsive{
+      width: 110px;
+      height: 90px;
+      margin-top: -25px;
+  }
+  
    .menuresponsive{
     display: none;
 }
-.nav-nonresponsive{
-    display: contents;
-   }
-  
+
+   .menu1{
+  width: 50vw;
+  margin: auto;
   }
+   .menu2{
+  width: 50vw;
+  margin: auto;
+  }
+
+  .nav-nonresponsive{
+    width: 100%;
+    display: contents;
+    padding:10px;
+    background: #4a8db7;
+    font-size: 18px;
+    color: beige;
+   }
+   .nav-menu1{
+    display: flex;
+    list-style: none;
+  }
+  .nav-menu1 li{
+    margin-right:5px;
+    margin-left:5px;
+  }
+ 
+  .nav-menu2{
+    display: flex;
+    list-style: none;
+    justify-content: end;
+    
+  }
+  .nav-menu2 li{
+    margin-right: 5px;
+    margin-left:5px;
+  }
+  
+}

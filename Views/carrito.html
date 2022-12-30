@@ -5,43 +5,98 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-
+    <link href="/css/normalize.css" rel="stylesheet">
+    <link href="/css/style1.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
     <title>Mis Compras</title>
 </head>
 <body>
     <header>
-        <section >
-            <article >
-                <img  src="" alt="Logo">  
-                <nav><i class="fas fa-search"> </i>  <input type="text"> </nav>
-            </article>       
-        </section>
-        <nav>
-            <ul>
-                
-                <li> <a href="Inicio"> Ofertas</a> </li>
-                <li><a href="Productos"> Tiendas Oficiales </a>  </li>
-                <li><a href="Sobre nosotros">Vender</a> </li>
-                <li><a href="Contacto">Ayuda</a> </li>
-            </ul>
-        <nav>
+        <!--Menu no Responsive Tablet/Laptop/Escritorio-->
+        <nav class="nav-nonresponsive">
+            <div >
+              <a href="/home"><img src="/images/logoPATITAsinfondo.png" alt="logo" class="logo-noresponsive" ></a>
+            </div>
+            
+            <div class="menu1">
+                <ul class="nav-menu1">
+                   <li><a href="/">Mascotas |</a></li>   
+                   <li><a href="/">Tienda |</a></li>   
+                   <li><a href="/">Nosotros |</a></li>   
+                </ul>
+            </div>
+           
+            <div class="menu2">
+                <ul class="nav-menu2">
+                     <li><a href="/carrito"><i class="fa-solid fa-cart-shopping"></i></a></li>   
+                     <li><a href="/login">Ingresar |</a></li>
+                     <li><a href="/registro">Registrarse</a></li>  
+                </ul>
+            </div>
+       
+        </nav>
+             <!--Menu Responsive para celular-->
+               <div class="menuresponsive">
+                    
+                    <div class="respmenu">
+                        <div class="logo-tienda-responsive">
+                            <img src="/images/logoPATITAsinfondo.png" alt="logo" class="img-logo">
+                            <div class="logo-header"><a href="/carrito"><i class="fa-solid fa-cart-shopping carrito"></i></a></div>
+                        </div>
+                         <div>
+                               <input type="checkbox">
+                               <i class="fas fa-bars"></i>
+                               <i class="fas fa-times"></i>
+                                <nav>
+                                   <ul>
+                                     <li><a href="/home" class="respmenu-link">Home</a></li>
+                                     <li><a href="#" class="respmenu-link">Mascotas</a></li>
+                                     <li><a href="#" class="respmenu-link">Tienda</a></li>
+                                     <li><a href="#" class="respmenu-link">Nosotros</a></li>
+                                     <li><a href="/login" class="respmenu-link">Ingresar</a></li>
+                                     <li><a href="/registro" class="respmenu-link">Registrarse</a></li>
+                                    </ul>
+                                </nav>
+                            </div>  
+                        </div>
+                </div>  
     </header>
-<main>
+<main class="main">
     <section>
         <h2> Mis Compras</h2>
-        <article>
-            <img>
-            <i class="fas fa-truck"> </i>
-            <h3> Producto Elegido</h3>
-            <p> Precio</p>
-        </article>
-    </section>
+        <article class="producto">
 
+            <div class="imagen">
+                <img src="/images/logoong.png" alt="logo" width="50px" height="50px">
+            </div>
+            <div class="detalle">
+                <h3>Nombre del Producto</h3>
+                <button> Agregar +- </button>
+            </div>
+            <div class="precio-tacho">
+                <p> $1500</p>
+            </div>
+        </article>
+        <article class="envio">
+            <p class="subtotal">Subtotal</p>
+            <i class="fas fa-truck w-100" > </i> 
+             
+            <input type="number" placeholder="CODIGO POSTAL" class="w-30" >
+            <button class="button-calcular w-30">Calcular</button>
+                
+        </article>
+        <div class="total">
+            <h2>TOTAL $</h2>
+            <button >Iniciar Compra</button>
+            <a href="/home"> Ver mas Productos</a> 
+            
+        </div>
+    </section>
 </main>
 
-
-    
      <footer>
         <div class="footer-container">
 
@@ -122,6 +177,7 @@
         
         
    </footer>
+
 
 </body>
 </html>
