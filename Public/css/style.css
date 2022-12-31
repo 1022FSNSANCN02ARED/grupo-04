@@ -5,18 +5,19 @@ body{
 /*Manu responsive y no responsive*/
 .carrito{
     font-size: 35px;
-    padding: 5px;
+    padding-top: 5px;
     margin: auto;
 }
 .img-logo{
     width: 70px;
     height: 60px;
+    margin-top: -5px;
     }
 .logo-header{
   width: 40px;
   height: 40px;
   box-sizing: border-box;
-  margin-left:50vw;
+  margin-left:48vw;
 }
 .logo-tienda-responsive{
     display: flex;
@@ -80,7 +81,40 @@ body{
   .respmenu input:not(:checked) ~ .fa-times {
     display: none;
   }
+/*Home*/
 
+.boton-donar{
+  width: 100px;
+  height: 50px;
+  border-radius: 10px;
+  border: 1px solid white;
+  color:white;
+  background-color:#456789 ;
+  position: absolute;
+  bottom: 0;
+  top:40%;
+  right: 0;
+  left:60%;
+}
+.foto-header{
+  position: relative;
+  box-sizing: border-box;
+}
+
+.Fotohome-2{
+  width: 100vw;
+}
+
+.titulo-pag{
+  /*width: 35vw;*/
+  position: absolute;
+  color:white;
+  font-size: 18px;
+  bottom: 0;
+  top:10%;
+  right: 0;
+  left:40%;
+}
   
 
    /*Footer*/
