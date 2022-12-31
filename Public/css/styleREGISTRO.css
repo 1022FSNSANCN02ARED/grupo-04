@@ -1,0 +1,42 @@
+.body-registro{
+    text-align: center;
+    margin-top: 5%;
+    display: block;
+    background-color: #3b7197;
+    }
+
+p{
+    line-height: 30px;
+    font-size: 23px;
+    text-align: center;
+}
+.titulo{
+    line-height: 65px;
+    text-align: center;
+
+}
+div.login-container1{
+    text-align: center;
+    display: block;
+    height: 70%;
+    margin: 90px;
+}
+
+input.text{
+    display: block;
+font-size: 50%;
+}
+
+div.login-container1{
+    text-align: center;
+    display:block;
+    align-items:center;
+    justify-content:center;
+    margin: 75px;
+    padding: 0;
+    width: 50%;
+    height: 80%;
+    background-color: #63a3ca;
+    box-sizing: border-box;
+     
+}
