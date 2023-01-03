@@ -115,7 +115,25 @@ body{
   right: 0;
   left:40%;
 }
+  /*Formulario de Registro*/
+  .carac-main {
+    width: 100vw;
+    margin: auto;
+    background-color:  #4a8db7;
+  }
+  .centrado-h2 {
+    text-align: center;
+  }
   
+  .formulario-centrado {
+    width: 90vw;
+    margin: auto;
+    position: relative;
+    background-color:  #4a8db7;
+  }
+  .p-centrada {
+     text-align: center;
+  }
 
    /*Footer*/
 
