@@ -10,7 +10,7 @@
     <link href="/css/style.css" rel="stylesheet">
     <title>Registro de Usuarios</title>
 </head>
-<body>
+<body class="body-registro">
     <header>
         <!--Menu no Responsive Tablet/Laptop/Escritorio-->
         <nav class="nav-nonresponsive">
@@ -61,23 +61,20 @@
                         </div>
                 </div>  
     </header>
-
+<main class="carac-main">
+    <div class = "formulario-centrado">
+        <h2 class="centrado-h2">FORMULARIO DE REGISTRO</h2>
     <form action="">
-        <h2>Formulario de Registro</h2>
-        <div class="grupo-input">
-            <label for="">Nombre de usuario:</label>
-            <input type="text" placeholder="Ingrese su usuario" required>
-        </div>
-        <div class="grupo-input">
-             <label for="">Email:</label>
-             <input type="email" placeholder="Ingrese su mail" required>
-        </div>
-        <div class="grupo-input">
-            <label for="">Contraseña:</label>
-            <input type="password" placeholder="Ingrese caracteres alfanumericos" required>
-        </div>
-        <button type="submit">ENVIAR</button>
+            <P class="p-centrada"><label for="">Nombre de usuario:</label></P>
+            <p class="p-centrada" ><input type="text" placeholder="Ingrese su usuario" required></p>
+            <p class="p-centrada"><label for="">Email:</label></P>
+             <p class="p-centrada"><input type="email" placeholder="Ingrese su mail" required></p>
+             <p class="p-centrada"><label for="">Contraseña:</label></P>
+            <p class="p-centrada"><input type="password" placeholder="Caracteres alfanumericos" required></p>
+                <p class="p-centrada"><button type="submit">ENVIAR</button></p>
     </form>
+</div>
+</main>
     <footer>
 
         <div class="footer-container-all">

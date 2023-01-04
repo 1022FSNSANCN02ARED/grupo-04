@@ -1,41 +1,14 @@
-.box-logo{
-    display: flex;
 
-}
-.h1{
-    font-size: 30px;
-    padding-top: 30px;
-    padding-left: 50px;
-}
-.header{
-    background-color: lightskyblue;
-}
-.main{
-    padding-bottom: 50px;
-}
-.menu{
-  
-    background-color: black;
 
-}
-.menu a{
-    text-decoration: none;
-    font-weight: bold;
-    color: white;
-    text-shadow: 2px 2px 5px orange;
-    font-size: 16px;
-    padding: 5px 5px;
-    margin-bottom: 15px;
-}
-.menu li{
-    padding: 10px;
-    display: flex;
+.imagen{
+    border: 1px solid black;
 }
 .producto{
    /* box-shadow: rgb(100, 100, 100) 0px 0px 10px;*/
    border-bottom: 1px solid black;
     width: 90%;
     display: flex;
+    justify-content: space-between;
     padding: 15px;
 }
 .nombre-producto{
@@ -43,19 +16,30 @@
     text-decoration: underline;
 }
 .precio-tacho{
-    
+    display: flex;
     flex-direction: column;
+    justify-content: space-between;
     text-align: right;
-    
 }
 .precio-tacho i{
    /* position: absolute;*/
-   
+   color: blue;
     
 }
+.camion{
+    margin-bottom: 15px;
+    
+}
+
 .envio{
     display: flex;
     flex-wrap: wrap;
+    margin-left: 10px;
+}
+.detalle{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .subtotal{
     text-align: center;
@@ -72,6 +56,7 @@
     display: flex;
     flex-direction: column;
     padding-top: 30px;
+    margin-left: 10px;
 }
 .total button{
     width: 50%;
@@ -85,15 +70,21 @@
 }
 .total a{
     text-align: center;
-    margin-top: 50px;
+    margin-top: 80px;
+    padding-bottom: 10px;
 }
-
+.boton-calcular{
+    margin-left: 15px;
+}
 
 @media(min-width: 769px){
     /*laptop*/
     .total button{
         right: 300px;
         box-shadow: 2px 2px 5px white;
+    }
+    .producto{
+        justify-content: space-around;
     }
     
 }
