@@ -1,6 +1,7 @@
 
 body{
-    background-color: white;
+  background: linear-gradient(-23deg, rgb(161, 225, 250), rgb(59, 113, 151));
+
 }
 /*Manu responsive y no responsive*/
 .carrito{
@@ -36,7 +37,7 @@ body{
     border-bottom: 2px solid #456789;
     max-width: 100vw;
     font-variant: small-caps;
-    background-color: white; /*fondo del menu*/
+    background-color: green; /*fondo del menu*/
     text-shadow: 1px 1px black;
   }
   .respmenu input[type="checkbox"], .respmenu .fa-bars, .respmenu .fa-times {
@@ -83,10 +84,15 @@ body{
   }
 /*Home*/
 .articulo-caracteristica {
-  background-color: white;
-  margin-bottom: 10px;
-  border: solid 1px black;
+  background-image: linear-gradient(to top, #4481eb 0%, #04befe 100%);
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border: solid 1px rgb(100,100,100);
+  border-radius: 8px;
   box-sizing: border-box;
+}
+.article-shadow{
+  box-shadow: 0px 10px 10px rgb(100, 100, 100);
 }
 
 .boton-donar{
@@ -103,14 +109,20 @@ body{
   left:60%;
 }
 .foto-header{
+  width: 100vw;
+  height: 40vh;
   position: relative;
   box-sizing: border-box;
+  background-image:url(/images/Fotohome-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.Fotohome-2{
-  width: 100vw;
-}
 
+.img-art{
+  margin-top: 30px;
+  text-align: center;
+}
 .img-section {
   width: 50%;
   height: 50%;
@@ -122,7 +134,11 @@ body{
   margin:auto;
   width: 90vw;
 }
-
+.text-article {
+  margin-top: 50px;
+  color:white;
+  text-align: center;
+}
 .titulo-pag{
   /*width: 35vw;*/
   position: absolute;
@@ -132,6 +148,13 @@ body{
   top:10%;
   right: 0;
   left:40%;
+}
+.welcome-header{
+  font-family: 'Lobster', cursive;
+  font-family: 'Orbitron', sans-serif;
+  font-family: 'Pacifico', cursive;
+  text-align: center;
+  color:white;
 }
   /*Formulario de Registro*/
   .carac-main {
@@ -352,6 +375,7 @@ body{
 }
 
 
+<<<<<<< HEAD
 
  /*detalle de productos*/
  .detalle-producto-body{
@@ -581,6 +605,8 @@ font-size: 15px;
 
 
 
+=======
+>>>>>>> 3b1009125ac65ed3e67b11846417e1ecf4e4552e
   @media(min-width:481px){
     /*tablet*/
     .logo-noresponsive{
@@ -640,11 +666,38 @@ font-size: 15px;
     padding-left: 22px;
 
    }
+
+    /*Home Responsive*/
+  .articulo-caracteristica{
+    width: 25vw;
+    height: 50vh;
+    background-color: white;
+    margin-bottom: 10px;
+    border: solid 1px #ebebeb;
+    box-sizing: border-box;
+}
+.foto-header{
+  width: 100vw;
+  height: 400px;
+  position: relative;
+  box-sizing: border-box;
+  background-image:url(/images/Fotohome-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+  
+  .seccion-articulos {
+   display:flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+  }
+
    .cuadro{
     
    margin-left: 45px;
    }
   
+
 }
 
 @media(min-width:769px){
@@ -668,6 +721,7 @@ font-size: 15px;
      }
 
 
+<<<<<<< HEAD
     .nav-nonresponsive{
        width: 100%;
         display: flex;
@@ -676,6 +730,8 @@ font-size: 15px;
         color: beige;
         padding:10px;
        }
+=======
+>>>>>>> 3b1009125ac65ed3e67b11846417e1ecf4e4552e
     .cuadro{
       display: flex;
     }
@@ -705,9 +761,36 @@ font-size: 15px;
      margin-right:5px;
      margin-left:5px;
    }
+    /*Home Responsive*/
+  .articulo-caracteristica{
+    width: 25vw;
+    height: 50vh;
+    background-color: white;
+    margin-bottom: 10px;
+    border: solid 1px #ebebeb;
+    box-sizing: border-box;
+}
+.foto-header{
+  width: 100vw;
+  height: 80vh;
+  position: relative;
+  box-sizing: border-box;
+  background-image:url(/images/Fotohome-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+  .seccion-articulos {
+   display:flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+  }
 
+
+<<<<<<< HEAD
     
 
+=======
+>>>>>>> 3b1009125ac65ed3e67b11846417e1ecf4e4552e
    
 }
 @media (min-width:1281px){
@@ -755,5 +838,31 @@ font-size: 15px;
    margin-right:5px;
    margin-left:5px;
  }
+  /*Home Responsive*/
+  .articulo-caracteristica{
+    width: 25vw;
+    height: 50vh;
+    background-color: white;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: solid 1px #ebebeb;
+    box-sizing: border-box;
+}
+.foto-header{
+  width: 100vw;
+  max-height: 817px;
+  position: relative;
+  box-sizing: border-box;
+  background-image:url(/images/Fotohome-1.jpg);
+  background-repeat: repeat;
+  background-size: cover;
+
+}
+  
+  .seccion-articulos {
+   display:flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+  }
   
 }
