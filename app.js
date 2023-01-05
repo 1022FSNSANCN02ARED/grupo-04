@@ -50,3 +50,27 @@ app.get ('/tienda',(req,res)=>{
         res.sendFile(path.resolve(__dirname,'views/productoHombre.html'));
         
         });
+ app.get ('/productoMujer',(req,res)=>{
+
+        res.sendFile(path.resolve(__dirname,'views/productoMujer.html'));
+        
+        });
+app.get ('/unisex',(req,res)=>{
+
+        res.sendFile(path.resolve(__dirname,'views/unisex.html'));
+        
+        });
+    app.get ('/cuadro',(req,res)=>{
+
+        res.sendFile(path.resolve(__dirname,'views/cuadro.html'));
+        
+        });
+    app.get ('/cuadro1',(req,res)=>{
+
+        res.sendFile(path.resolve(__dirname,'views/cuadro1.html'));
+        
+        });
+
+
+
+
