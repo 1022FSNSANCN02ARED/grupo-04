@@ -87,4 +87,59 @@
         justify-content: space-around;
     }
     
+
+    /*carrito para modo escritorio*/
+
+.main{
+    margin: 0 auto;
+    width: 80%;
+    height: 80%;
+    display: flex;
+      flex-wrap: wrap;
+  }
+  .imagen{
+    width: 80%;
+  }
+  .section-box{
+    display: flex;
+    
+  }
+  .h2-responsive{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  .detalle{
+    justify-content: space-around;
+    margin-left: 20px;
+  }
+  .precio-tacho{
+    justify-content:space-around;
+    flex-direction: column-reverse;
+    margin-left: 20px;
+  }
+  .total{
+    display: flex;
+    flex-wrap: wrap;
+    
+  }
+  .total h2{
+    width: 100%;
+  }
+  .w-30{
+    width: 80%;
+    height: 30px;
+  }
+  .boton-calcular{
+    margin: 0;
+  }
+  .camion{
+    margin-left: 20px;
+  }
+  .envio{
+    justify-content: space-around;
+  }
+      
+  
+  
 }

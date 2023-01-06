@@ -374,8 +374,7 @@ body{
 }
 
 
-<<<<<<< HEAD
-}
+
  /*detalle de productos*/
  .detalle-producto-body{
 font-family: 'Ubuntu';
@@ -665,7 +664,7 @@ font-size: 15px;
     padding-left: 22px;
 
    }
-
+  
     /*Home Responsive*/
   .articulo-caracteristica{
     width: 25vw;
@@ -718,9 +717,9 @@ font-size: 15px;
       width: 50vw;
       margin:auto;
      }
+    }
 
 
-<<<<<<< HEAD
     .nav-nonresponsive{
        width: 100%;
         display: flex;
@@ -729,8 +728,7 @@ font-size: 15px;
         color: beige;
         padding:10px;
        }
-=======
->>>>>>> 3b1009125ac65ed3e67b11846417e1ecf4e4552e
+
     .cuadro{
       display: flex;
     }
@@ -786,7 +784,7 @@ font-size: 15px;
 
 
    
-}}
+
 @media (min-width:1281px){
    /*escritorio*/
    .logo-noresponsive{
