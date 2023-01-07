@@ -108,6 +108,9 @@ body{
   right: 0;
   left:56%;
 }
+.boton-donar:hover{
+  background-color: #DC630A;
+}
 .foto-header{
   width: 100vw;
   height: 40vh;
@@ -722,6 +725,9 @@ font-size: 15px;
   right: 0;
   left:60%;
 }
+.boton-donar:hover{
+  background-color: #DC630A;
+}
 .foto-header{
   width: 100vw;
   height: 400px;
@@ -827,6 +833,9 @@ font-size: 15px;
   right: 0;
   left:65%;
 }
+.boton-donar:hover{
+  background-color: #DC630A;
+}
 .foto-header{
   width: 100vw;
   height: 80vh;
@@ -912,6 +921,10 @@ font-size: 15px;
   top: 60%;
   right: 0;
   left:65%;
+}
+
+.boton-donar:hover{
+  background-color: #DC630A;
 }
 .foto-header{
   width: 100vw;
