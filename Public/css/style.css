@@ -375,15 +375,13 @@ body{
 }
 
 
-<<<<<<< HEAD
-
  /*detalle de productos*/
  .detalle-producto-body{
-font-family: 'Ubuntu';
+
+ font-family: 'Ubuntu';
  max-width: 1200px;
  margin: 0 auto;
  margin-top: 100px;
- 
  
  }
 
@@ -396,16 +394,18 @@ font-family: 'Ubuntu';
   display: flex;
   gap: 30px;
   margin-bottom: 80px;
-  
+ 
+
+   
 
  }
 
  .container-img{
-
-
+ 
+    
  }
  .container-info-product{
-  
+ 
   display: flex;
   flex-direction: column;
 
@@ -595,6 +595,7 @@ font-size: 15px;
 
 .card-list-products{
   display: flex;
+  justify-content: center;
 }
 
 
@@ -605,8 +606,7 @@ font-size: 15px;
 
 
 
-=======
->>>>>>> 3b1009125ac65ed3e67b11846417e1ecf4e4552e
+
   @media(min-width:481px){
     /*tablet*/
     .logo-noresponsive{
@@ -721,7 +721,7 @@ font-size: 15px;
      }
 
 
-<<<<<<< HEAD
+
     .nav-nonresponsive{
        width: 100%;
         display: flex;
@@ -730,8 +730,8 @@ font-size: 15px;
         color: beige;
         padding:10px;
        }
-=======
->>>>>>> 3b1009125ac65ed3e67b11846417e1ecf4e4552e
+
+
     .cuadro{
       display: flex;
     }
@@ -786,11 +786,7 @@ font-size: 15px;
   }
 
 
-<<<<<<< HEAD
-    
 
-=======
->>>>>>> 3b1009125ac65ed3e67b11846417e1ecf4e4552e
    
 }
 @media (min-width:1281px){
