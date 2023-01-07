@@ -26,7 +26,7 @@ body{
 }
 
 .nav-nonresponsive{
-  display: none;
+  display:none;
  }
 
 .respmenu-link {
@@ -164,7 +164,23 @@ body{
   }
   .centrado-h2 {
     text-align: center;
+    font-family: 'Lobster', cursive;
+    font-family: 'Orbitron', sans-serif;
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    color:white;
   }
+
+  .foto-registro {
+    width: 89vw;
+    height: 75vh;
+    position: relative;
+    box-sizing: border-box;
+    background-image:url(/images/Fotohome-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
   
   .formulario-centrado {
     width: 90vw;
@@ -174,6 +190,24 @@ body{
   }
   .p-centrada {
      text-align: center;
+  }
+  .div-form-login {
+    margin: 15px 0;
+    text-align: center;
+  }
+  .btn {
+    background-color: #1259c3;
+    color: white;
+    width: 15%;
+    padding: 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    border: none;
+    text-align: center;
+  }
+  .btn:hover {
+    background-color: #03264C;
   }
 
    /*Footer*/
@@ -284,9 +318,8 @@ body{
    justify-content: center;
    min-height: 100vh;
    background-color: #A1E1FA;
-   
-
    }
+   
    .card{
   position: relative;
   width: 300px;
@@ -375,6 +408,10 @@ body{
 }
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 2d73d5b6cdc6f612498ef0f0dd597c3e3abdc88e
  /*detalle de productos*/
  .detalle-producto-body{
 
@@ -666,7 +703,7 @@ font-size: 15px;
     padding-left: 22px;
 
    }
-
+  
     /*Home Responsive*/
   .articulo-caracteristica{
     width: 25vw;
@@ -719,9 +756,13 @@ font-size: 15px;
       width: 50vw;
       margin:auto;
      }
+    
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 2d73d5b6cdc6f612498ef0f0dd597c3e3abdc88e
     .nav-nonresponsive{
        width: 100%;
         display: flex;
@@ -731,7 +772,10 @@ font-size: 15px;
         padding:10px;
        }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 2d73d5b6cdc6f612498ef0f0dd597c3e3abdc88e
     .cuadro{
       display: flex;
     }
@@ -786,9 +830,13 @@ font-size: 15px;
   }
 
 
+<<<<<<< HEAD
 
    
+=======
+>>>>>>> 2d73d5b6cdc6f612498ef0f0dd597c3e3abdc88e
 }
+
 @media (min-width:1281px){
    /*escritorio*/
    .logo-noresponsive{
