@@ -644,8 +644,8 @@ font-size: 15px;
     /*tablet*/
     .logo-noresponsive{
       width: 90px;
-      height: 70px;
-      margin-top: -18px;
+      height: 50px;
+      margin-top: -10px;
       margin-left: -20px;
     }
     .menuresponsive{
@@ -749,8 +749,8 @@ font-size: 15px;
     /*laptop*/
     .logo-noresponsive{
       width: 110px;
-      height: 90px;
-      margin-top: -25px;
+      height: 70px;
+      margin-top: -15px;
     }
 
     .menuresponsive{
@@ -849,8 +849,8 @@ font-size: 15px;
    /*escritorio*/
    .logo-noresponsive{
     width: 110px;
-    height: 90px;
-    margin-top: -25px;
+    height: 70px;
+    margin-top: -15px;
   }
 
   .menuresponsive{
