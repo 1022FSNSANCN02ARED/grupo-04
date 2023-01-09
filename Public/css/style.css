@@ -85,7 +85,6 @@ body{
 /*Home*/
 .articulo-caracteristica {
   background-image: linear-gradient(to top, #4481eb 0%, #04befe 100%);
-  margin-top: 30px;
   margin-bottom: 30px;
   border: solid 1px rgb(100,100,100);
   border-radius: 8px;
@@ -97,31 +96,40 @@ body{
 
 .boton-donar{
   width: 100px;
-  height: 50px;
-  border-radius: 10px;
-  border: 1px solid white;
-  color:white;
-  background-color:#456789 ;
+  height: 35px;
+  border: none;
+  border-radius: 15%;
+  color:white; 
+  font-weight: bold;
+  background-color:orange ;
   position: absolute;
   bottom: 0;
-  top:40%;
+  top:38%;
   right: 0;
-  left:60%;
+  left:56%;
+}
+.boton-donar:hover{
+  background-color: #DC630A;
 }
 .foto-header{
   width: 100vw;
   height: 40vh;
   position: relative;
   box-sizing: border-box;
-  background-image:url(/images/Fotohome-1.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+
+}
+
+.header-img{
+  width: 100vw;
 }
 
 
 .img-art{
   margin-top: 30px;
   text-align: center;
+}
+.img-container{
+  width: 100vw;
 }
 .img-section {
   width: 50%;
@@ -176,9 +184,7 @@ body{
     height: 75vh;
     position: relative;
     box-sizing: border-box;
-    background-image:url(/images/Fotohome-1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    
   }
   
   
@@ -408,7 +414,10 @@ body{
 }
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> ecac41be4ae655c97ac81c2f766d3c3a845b3a64
  /*detalle de productos*/
  .detalle-producto-body{
 
@@ -434,10 +443,7 @@ body{
 
  }
 
- .container-img{
  
-    
- }
  .container-info-product{
  
   display: flex;
@@ -645,8 +651,8 @@ font-size: 15px;
     /*tablet*/
     .logo-noresponsive{
       width: 90px;
-      height: 70px;
-      margin-top: -18px;
+      height: 50px;
+      margin-top: -10px;
       margin-left: -20px;
     }
     .menuresponsive{
@@ -710,14 +716,28 @@ font-size: 15px;
     border: solid 1px #ebebeb;
     box-sizing: border-box;
 }
+.boton-donar{
+  width: 100px;
+  height: 40px;
+  border: none;
+  border-radius: 15%;
+  color:white; 
+  font-weight: bold;
+  background-color:orange ;
+  bottom: 0;
+  top:50%;
+  right: 0;
+  left:60%;
+}
+.boton-donar:hover{
+  background-color: #DC630A;
+}
 .foto-header{
   width: 100vw;
   height: 400px;
   position: relative;
   box-sizing: border-box;
-  background-image:url(/images/Fotohome-1.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+ 
 }
   
   .seccion-articulos {
@@ -731,6 +751,7 @@ font-size: 15px;
    margin-left: 45px;
    }
   
+  
 
 }
 
@@ -738,8 +759,8 @@ font-size: 15px;
     /*laptop*/
     .logo-noresponsive{
       width: 110px;
-      height: 90px;
-      margin-top: -25px;
+      height: 70px;
+      margin-top: -15px;
     }
 
     .menuresponsive{
@@ -803,14 +824,28 @@ font-size: 15px;
     border: solid 1px #ebebeb;
     box-sizing: border-box;
 }
+.boton-donar{
+  width: 100px;
+  height: 40px;
+  border: none;
+  border-radius: 15%;
+  color:white; 
+  font-weight: bold;
+  background-color:orange ;
+  bottom: 0;
+  top: 50%;
+  right: 0;
+  left:65%;
+}
+.boton-donar:hover{
+  background-color: #DC630A;
+}
 .foto-header{
   width: 100vw;
   height: 80vh;
   position: relative;
   box-sizing: border-box;
-  background-image:url(/images/Fotohome-1.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+
 }
   .seccion-articulos {
    display:flex;
@@ -820,14 +855,18 @@ font-size: 15px;
 
 
 
+<<<<<<< HEAD
+=======
+   
+>>>>>>> ecac41be4ae655c97ac81c2f766d3c3a845b3a64
 }
 
 @media (min-width:1281px){
    /*escritorio*/
    .logo-noresponsive{
     width: 110px;
-    height: 90px;
-    margin-top: -25px;
+    height: 70px;
+    margin-top: -15px;
   }
 
   .menuresponsive{
@@ -877,14 +916,29 @@ font-size: 15px;
     border: solid 1px #ebebeb;
     box-sizing: border-box;
 }
+.boton-donar{
+  width: 100px;
+  height: 40px;
+  border: none;
+  border-radius: 15%;
+  color:white; 
+  font-weight: bold;
+  background-color:orange ;
+  bottom: 0;
+  top: 60%;
+  right: 0;
+  left:65%;
+}
+
+.boton-donar:hover{
+  background-color: #DC630A;
+}
 .foto-header{
   width: 100vw;
   max-height: 817px;
   position: relative;
   box-sizing: border-box;
-  background-image:url(/images/Fotohome-1.jpg);
-  background-repeat: repeat;
-  background-size: cover;
+
 
 }
   
@@ -894,4 +948,11 @@ font-size: 15px;
    flex-wrap: wrap;
   }
   
+}
+
+@media (min-width:1550px){
+  .header-img{
+    width: 100vw;
+    height: 750px;
+  }
 }

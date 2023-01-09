@@ -65,7 +65,7 @@
     border-radius: 5px;
     background-color: #74BDE0;
     position: absolute;
-    top: 320px;
+    top: 450px;
     right: 100px;
 }
 .total a{
@@ -95,13 +95,15 @@
     width: 80%;
     height: 80%;
     display: flex;
-      flex-wrap: wrap;
+    flex-wrap: wrap;
+      
   }
   .imagen{
     width: 80%;
   }
   .section-box{
     display: flex;
+    margin-bottom: 150px;
     
   }
   .h2-responsive{
@@ -139,6 +141,17 @@
   .envio{
     justify-content: space-around;
   }
+  .boton-tacho{
+    
+    border: none;
+   
+  }
+  .boton-tacho i{
+    font-size: 1.5em;
+    
+   
+  }
+ 
       
   
   
