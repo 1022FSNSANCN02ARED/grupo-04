@@ -180,9 +180,9 @@ body{
   }
 
   .foto-registro {
-    width: 89vw;
-    height: 75vh;
-    position: relative;
+    width: 15vw;
+    height: 15vh;
+    position: absolute;
     box-sizing: border-box;
     
   }
