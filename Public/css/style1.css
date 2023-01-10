@@ -76,6 +76,43 @@
 .boton-calcular{
     margin-left: 15px;
 }
+/*FORMULARIO LOGIN*/
+.formulario{
+  padding: 20px 15px;
+  text-align: center;
+  
+}
+.titulo-login{
+  padding-bottom: 20px;
+  text-shadow: 2px 2px 5px white;
+  
+}
+.input-box{
+  margin-bottom: 15px;
+
+}
+.input-box label{
+  margin-bottom: 12px;
+  display: block;
+  font-size: 20px;
+}
+.campo-input{
+  width: 80%;
+  padding: 5px 8px;
+  border-radius: 5px;
+  border: none;
+}
+.boton-login{
+  padding: 8px 15px;
+  border-radius: 5px;
+  background-color: aliceblue;
+  margin-top: 15px;
+  border: none;
+
+}
+
+
+/*FIN LOGIN NO RESPONSIVE*/
 
 @media(min-width: 769px){
     /*laptop*/
@@ -151,6 +188,7 @@
     
    
   }
+ 
  
       
   
