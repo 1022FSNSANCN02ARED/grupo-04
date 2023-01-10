@@ -188,9 +188,36 @@
     
    
   }
- 
+ .formulario{
+  background-image:url(../images/fotohsection2.jpg) ;
+  background-size: cover;
+  background-position: center center;
+ }
+ .campo-input{
+  width: 40%;
+  display: flex;
+  padding: 10px 0px
+ }
+ .input-box label{
+  text-align: left;
+  color: white;
+ }
+ .boton-login{
+  display: flex;
+  margin-top: 35px;
+  width: 40%;
+  text-align: center;
+ }
+ .boton-login:hover{
+  background-color: #74BDE0;
+  box-shadow: 1px 1px 3px white;
+ }
  
       
   
   
 }
+
+/*background-image: url(../imagenes/Ezequiel-Parodi.jpg);
+background-size: cover;
+background-position: center center;*/
