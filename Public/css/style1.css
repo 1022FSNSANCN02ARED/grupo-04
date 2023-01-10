@@ -65,7 +65,7 @@
     border-radius: 5px;
     background-color: #74BDE0;
     position: absolute;
-    top: 320px;
+    top: 450px;
     right: 100px;
 }
 .total a{
@@ -76,6 +76,43 @@
 .boton-calcular{
     margin-left: 15px;
 }
+/*FORMULARIO LOGIN*/
+.formulario{
+  padding: 20px 15px;
+  text-align: center;
+  
+}
+.titulo-login{
+  padding-bottom: 20px;
+  text-shadow: 2px 2px 5px white;
+  
+}
+.input-box{
+  margin-bottom: 15px;
+
+}
+.input-box label{
+  margin-bottom: 12px;
+  display: block;
+  font-size: 20px;
+}
+.campo-input{
+  width: 80%;
+  padding: 5px 8px;
+  border-radius: 5px;
+  border: none;
+}
+.boton-login{
+  padding: 8px 15px;
+  border-radius: 5px;
+  background-color: aliceblue;
+  margin-top: 15px;
+  border: none;
+
+}
+
+
+/*FIN LOGIN NO RESPONSIVE*/
 
 @media(min-width: 769px){
     /*laptop*/
@@ -95,13 +132,15 @@
     width: 80%;
     height: 80%;
     display: flex;
-      flex-wrap: wrap;
+    flex-wrap: wrap;
+      
   }
   .imagen{
     width: 80%;
   }
   .section-box{
     display: flex;
+    margin-bottom: 150px;
     
   }
   .h2-responsive{
@@ -139,6 +178,18 @@
   .envio{
     justify-content: space-around;
   }
+  .boton-tacho{
+    
+    border: none;
+   
+  }
+  .boton-tacho i{
+    font-size: 1.5em;
+    
+   
+  }
+ 
+ 
       
   
   
