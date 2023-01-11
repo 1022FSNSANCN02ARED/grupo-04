@@ -164,22 +164,23 @@ body{
   }
 
   .foto-registro {
-    width: 15vw;
-    height: 15vh;
+    width: 55vw;
+    height: 55vh;
     position: absolute;
     box-sizing: border-box;
     
   }
-  
-  
+    
   .formulario-centrado {
-    width: 90vw;
+    width: 80vw;
     margin: auto;
     position: relative;
     background-color:  #4a8db7;
   }
   .p-centrada {
      text-align: center;
+     position: relative;
+     box-sizing: border-box;
   }
   .div-form-login {
     margin: 15px 0;
