@@ -148,23 +148,7 @@ body{
   color:white;
   text-align: center;
 }
-.titulo-pag{
-  /*width: 35vw;*/
-  position: absolute;
-  color:white;
-  font-size: 18px;
-  bottom: 0;
-  top:10%;
-  right: 0;
-  left:40%;
-}
-.welcome-header{
-  font-family: 'Lobster', cursive;
-  font-family: 'Orbitron', sans-serif;
-  font-family: 'Pacifico', cursive;
-  text-align: center;
-  color:white;
-}
+
   /*Formulario de Registro*/
   .carac-main {
     width: 100vw;
@@ -181,22 +165,23 @@ body{
   }
 
   .foto-registro {
-    width: 89vw;
-    height: 75vh;
-    position: relative;
+    width: 55vw;
+    height: 55vh;
+    position: absolute;
     box-sizing: border-box;
     
   }
-  
-  
+    
   .formulario-centrado {
-    width: 90vw;
+    width: 80vw;
     margin: auto;
     position: relative;
     background-color:  #4a8db7;
   }
   .p-centrada {
      text-align: center;
+     position: relative;
+     box-sizing: border-box;
   }
   .div-form-login {
     margin: 15px 0;
@@ -746,6 +731,7 @@ color: grey;
     width: 25vw;
     height: 50vh;
     background-color: white;
+    margin-top: -100px;
     margin-bottom: 10px;
     border: solid 1px #ebebeb;
     box-sizing: border-box;
@@ -759,9 +745,9 @@ color: grey;
   font-weight: bold;
   background-color:orange ;
   bottom: 0;
-  top:50%;
+  top:40%;
   right: 0;
-  left:60%;
+  left:58%;
 }
 .boton-donar:hover{
   background-color: #DC630A;
@@ -868,7 +854,7 @@ color: grey;
   font-weight: bold;
   background-color:orange ;
   bottom: 0;
-  top: 50%;
+  top: 400px;
   right: 0;
   left:65%;
 }
@@ -881,6 +867,9 @@ color: grey;
   position: relative;
   box-sizing: border-box;
 
+}
+.propiedades-main{
+  padding-top:300px;
 }
   .seccion-articulos {
    display:flex;
@@ -961,7 +950,7 @@ color: grey;
     width: 25vw;
     height: 50vh;
     background-color: white;
-    margin-top: 30px;
+    margin-top: 15px;
     margin-bottom: 30px;
     border: solid 1px #ebebeb;
     box-sizing: border-box;

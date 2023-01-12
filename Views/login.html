@@ -7,7 +7,7 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
 rel="stylesheet" />
 <link href="/css/normalize.css" rel="stylesheet" >
-<link href="/css/styleLOGIN.css" rel="stylesheet">
+<link href="/css/style1.css" rel="stylesheet">
 <link href="/css/style.css" rel="stylesheet">
     
         <title>Login</title>
@@ -63,25 +63,33 @@ rel="stylesheet" />
                     </div>
             </div>  
     </header>     
-<form class="form-login"> 
-    <div class="login-container1">
-        <p><h2 class="titulo">BIENVENIDOS</h2></p>
-     <p><label for="Correo"><b>Correo electronico</b></label></p>
-     <p><input type="text" placeholder="Ingrese su usuario" name="usuario"> </p>
-    
-      <p><label for="Contraseña"><b> Contraseña</b></label> </p>
-      <p> <input type="clave" placeholder="Ingrese su contraseña" name="clave" required> </p>
-    
-       <p><button type="submit">Login</button> </p>
-        <label>
-         <p><input type="checkbox" checked="checked" name="remember"> Recuerdame </p>
-        </label>
-         
-        <p><button type="button" class="cancelbtn">Cancelar</button> </p>
-       <p><span class="psw"> <a href="#"> ¿Olvido su contraseña? </a></span> </p>
-       
-      </div>
-    </form>
+
+<form action="" method="POST" class="formulario">
+
+    <h2 class="titulo-login">BIENVENIDOS</h2>
+
+    <div class="input-box">
+        <label for="">Ingrese Usuario</label>
+        <input type="text"  class="campo-input" placeholder="Usuario"    name="usuario" required>
+    </div>
+
+    <div class="input-box">
+        <label for="">Ingrese Contraseña</label>
+        <input type="password"  class="campo-input"  placeholder="Contraseña"    name="contraseña" required>
+    </div>
+
+    <button  class="boton-login" type="submit">Ingresar</button>
+
+    <div class="input-box check-login" >
+        <label > Recordar </label>
+        <input type="checkbox"   checked="checked" name="remember"> 
+    </div>
+
+        <div> <span class="psw"> <a href="#"> ¿Olvido su contraseña? </a></span></div>
+</form>
+
+
+
 
     
     <footer>
