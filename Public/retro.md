@@ -26,6 +26,27 @@ Qué deberían dejar de hacer?
 
 Reunirnos largas. 
 
+CONCLUSION DEL SEGUNDO SPRINT:
+
+1) Qué hicieron bien en el sprint anterior?
+
+* Dividir las tareas
+* Consultar dudas
+
+
+2) qué hicieron mal?
+* no hacer daylis
+* no terminar a tiempo algunas cosas
+
+
+3) qué deberían empezar a hacer? 
+* daily standup, mas alla de que sabemos en que está enfocado cada un0
+deberiamos ir poniendo al tanto nuestros avances y complicaciones sobretodo para 
+ver si requerimos ayuda para no atrasar el trabajo
+
+
+
+4)qué deberían dejar de hacer?
 
 
 

@@ -92,7 +92,7 @@
 
 }
 .input-box label{
-  margin-bottom: 12px;
+  margin-bottom: 10px;
   display: block;
   font-size: 20px;
 }
@@ -109,6 +109,10 @@
   margin-top: 15px;
   border: none;
 
+}
+.check-login{
+  text-align: left;
+  display: flex;
 }
 
 
@@ -188,11 +192,20 @@
     
    
   }
+  /*formulario login responsive*/
+
  .formulario{
   background-image:url(../images/fotohsection2.jpg) ;
   background-size: cover;
   background-position: center center;
  }
+ .titulo-login{
+  text-align: left;
+  margin-left: 150px;
+  color: white;
+  text-shadow: 5px 5px 5px #74BDE0;
+ }
+
  .campo-input{
   width: 40%;
   display: flex;
@@ -201,6 +214,8 @@
  .input-box label{
   text-align: left;
   color: white;
+  margin-bottom: 20px;
+  margin-top: 10px;
  }
  .boton-login{
   display: flex;
@@ -212,12 +227,13 @@
   background-color: #74BDE0;
   box-shadow: 1px 1px 3px white;
  }
+ .check-login{
+  color: white;
+  text-align: left;
+ }
  
       
   
   
 }
 
-/*background-image: url(../imagenes/Ezequiel-Parodi.jpg);
-background-size: cover;
-background-position: center center;*/
