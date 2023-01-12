@@ -64,6 +64,8 @@
                 </div>  
     </header>
     <!--detalle de productos-->
+
+  
 <div class="detalle-producto-body">
     
 
@@ -169,12 +171,12 @@
                 </div>  
                      <div class="container-add-card">
                         <div class="container-quantity">
-                            <input type="number" placeholder="1" value="1" min="1" class="input-quantity">
+                            <input type="number" placeholder="1" value="1" min="1" class="input-quantity"/>  
                         </div>
-
+                
                          <div class="btn-increment-decrement">
-                            <i class="fa-solid fa-chevron-up"></i>
-                            <i class="fa-solid fa-chevron-down"></i>
+                            <i class="fa-solid fa-chevron-up" id="increment"></i>
+                            <i class="fa-solid fa-chevron-down" id="decrement"></i>
 
                          </div>
                          
@@ -195,7 +197,7 @@
                                 <i class="fa-sharp fa-solid fa-chevron-down"></i>
                             </div>
 
-                                <div class="text-description">
+                                <div class="text-description hidden">
 
                                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita eum inventore 
                                     facilis ducimus? Eveniet hic ducimus 
@@ -216,7 +218,7 @@
                                         <i class="fa-sharp fa-solid fa-chevron-down"></i>
 
                                       </div>
-                                   <div class="text-aditional-information">
+                                   <div class="text-aditional-information hidden">
 
 
                                         <p>------------------</p>
@@ -225,7 +227,7 @@
 
                                  </div>
 
-                                 <div class="container-reviews">
+                                 <div class="container-reviews hidden">
 
                                       <div class="title-reviews">
                                         <h4> Calificacion </h4>
@@ -454,6 +456,7 @@
 
 
    <li><a href="cuadro1"></a></li> 
-    
+   <script src='productos.js'></script>
 </body>
+    
 </html>
