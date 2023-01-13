@@ -150,40 +150,47 @@ body{
 }
 
   /*Formulario de Registro*/
+
+  .formulario{
+    background-image:url(../images/fotohsection2.jpg) ;
+    background-size: cover;
+    background-position: center center;
+   }
+  
   .carac-main {
     width: 100vw;
     margin: auto;
     background-color:  #4a8db7;
   }
-  .centrado-h2 {
-    text-align: center;
-    font-family: 'Lobster', cursive;
-    font-family: 'Orbitron', sans-serif;
-    font-family: 'Pacifico', cursive;
-    text-align: center;
-    color:white;
-  }
-
-  .foto-registro {
-    width: 55vw;
-    height: 55vh;
-    position: absolute;
-    box-sizing: border-box;
-    
-  }
-    
-  .formulario-centrado {
+  .titulo-h2 {
+      text-align: center;
+      margin-left: 150px;
+      color: white;
+      text-shadow: 5px 5px 5px #74BDE0;
+     }
+     .titulo-h3 {
+      text-align: left;
+      margin-left: 176px;
+      color: white;
+      text-shadow: 5px 5px 5px #0b4f6e;
+     }
+  .formulario-ubicado {
     width: 80vw;
     margin: auto;
     position: relative;
     background-color:  #4a8db7;
   }
   .p-centrada {
-     text-align: center;
+     text-align: left;
      position: relative;
+     color: white;
+     margin-left: 160px;
+     margin-bottom: 20px;
+     margin-top: 10px;
      box-sizing: border-box;
   }
-  .div-form-login {
+
+  .div-form-submit {
     margin: 15px 0;
     text-align: center;
   }
@@ -191,7 +198,8 @@ body{
     background-color: #1259c3;
     color: white;
     width: 15%;
-    padding: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
     border-radius: 5px;
     transition: background-color 0.3s ease;
     cursor: pointer;
