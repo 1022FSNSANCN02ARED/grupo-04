@@ -77,6 +77,11 @@
     margin-left: 15px;
 }
 /*FORMULARIO LOGIN*/
+.box-form-login{
+  width: 100%;
+ 
+}
+
 .formulario{
   padding: 20px 15px;
   text-align: center;
@@ -113,7 +118,18 @@
 .check-login{
   text-align: left;
   display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  align-items: center;
 }
+.check{
+  margin-left: 5px;
+}
+.olvido-contraseña{
+   
+   text-align: center;
+}
+
 
 
 /*FIN LOGIN NO RESPONSIVE*/
@@ -221,19 +237,35 @@
   display: flex;
   margin-top: 35px;
   width: 40%;
+  justify-content: center;
+  background-color: #74BDE0;
   text-align: center;
+  font-size: 15px;
+
  }
  .boton-login:hover{
-  background-color: #74BDE0;
+  background-color: #052838;
   box-shadow: 1px 1px 3px white;
+  color: white;
  }
  .check-login{
   color: white;
   text-align: left;
+  justify-content: left;
  }
- 
+ .olvido-contraseña{
+  text-align: left;
+  margin-left: 40px;
+ }
       
   
   
 }
+
+
+/*@media (min-width:1281px){
+  .olvido-contraseña{
+    margin-left: 10em;
+  }
+}*/
 
