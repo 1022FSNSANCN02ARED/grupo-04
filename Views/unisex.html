@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+ <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,10 +10,13 @@
     rel="stylesheet" />
     <link href="/css/normalize.css" rel="stylesheet">
     <link href="/css/style.css" rel="stylesheet">
+    
     <title>Home</title>
-</head>
-
+ </head>
+<body>
+    
     <header>
+       
         <!--Menu no Responsive Tablet/Laptop/Escritorio-->
         <nav class="nav-nonresponsive">
             <div >
@@ -63,22 +66,22 @@
                         </div>
                 </div>  
 
-                 <li><a href="productoHombre"></a></li> 
+                
     </header>
 
      <!--detalle de productos-->
 
-<div class="detalle-producto-body">
+  <div class="detalle-producto-body">
     
 
     <main class="detalle-main-producto">
-    
-            <div class="container-img">
+            <div class="productos-unisex">
+                   <div class="container-img">
                   <img src="images/unisex3.png" alt="">
 
-            </div>
+                   </div>
 
-            <div class="container-info-producto">
+                   <div class="container-info-producto">
                  <div class="container-price">
                        <span> $6.000 </span>
                       <i class="fa-solid fa-gift"></i>
@@ -177,8 +180,8 @@
                         </div>
 
                          <div class="btn-increment-decrement">
-                            <i class="fa-solid fa-chevron-up"></i>
-                            <i class="fa-solid fa-chevron-down"></i>
+                            <i class="fa-solid fa-chevron-up" id="increment"></i>
+                            <i class="fa-solid fa-chevron-down" id="decrement"></i>
 
                          </div>
                          
@@ -261,11 +264,11 @@
                         </div>
 
 
+                   </div>
+
+        
             </div>
-
-   </main>
-
-   <section class="container-related-products">
+               <section class="container-related-products">
                <h2>Productos Relacionados</h2>
 
                 <div class="card-list-products">
@@ -372,11 +375,12 @@
             
 
 
-   </section>
+               </section>
 
+  
+  </main>     
 </div>
-
-
+   <script src="/productos.js"></script>
     <footer>
 
     <div class="footer-container-all">
@@ -461,4 +465,5 @@
         
         
    </footer>
-        
+</body>
+</html>       
