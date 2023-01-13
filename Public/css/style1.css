@@ -215,6 +215,11 @@
   background-size: cover;
   background-position: center center;
  }
+ .formulario{
+  background-image:url(../images/fotohsection2.jpg) ;
+  background-size: cover;
+  background-position: center center;
+ }
  .titulo-login{
   text-align: left;
   margin-left: 150px;
@@ -263,9 +268,9 @@
 }
 
 
-/*@media (min-width:1281px){
+@media (min-width:1281px){
   .olvido-contraseña{
     margin-left: 10em;
   }
-}*/
+}
 
