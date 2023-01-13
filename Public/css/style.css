@@ -151,11 +151,11 @@ body{
 
   /*Formulario de Registro*/
 
-  .formulario{
+  /*.formulario{
     background-image:url(../images/fotohsection2.jpg) ;
     background-size: cover;
     background-position: center center;
-   }
+   }*/
   
   .carac-main {
     width: 100vw;
