@@ -151,17 +151,23 @@ body{
 
   /*Formulario de Registro*/
 
-  /*.formulario{
+  .fondo-formulario-reg{
     background-image:url(../images/fotohsection2.jpg) ;
     background-size: cover;
     background-position: center center;
-   }*/
+   }
   
   .carac-main {
     width: 100vw;
     margin: auto;
     background-color:  #4a8db7;
   }
+
+  .cajas-datos {
+    display: flex;
+    flex-direction: row;
+  }
+
   .titulo-h2 {
       text-align: center;
       margin-left: 150px;
