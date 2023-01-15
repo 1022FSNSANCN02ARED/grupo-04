@@ -165,21 +165,23 @@ body{
 
   .cajas-datos {
     display: flex;
-    flex-direction: row;
+    flex-wrap: nowrap;
   }
-
+    
   .titulo-h2 {
       text-align: center;
       margin-left: 150px;
       color: white;
       text-shadow: 5px 5px 5px #74BDE0;
      }
-     .titulo-h3 {
-      text-align: left;
-      margin-left: 176px;
+
+  .titulo-h3 {
+      text-align: center;
+      margin-left: 195px;
       color: white;
       text-shadow: 5px 5px 5px #0b4f6e;
      }
+
   .formulario-ubicado {
     width: 80vw;
     margin: auto;
@@ -190,7 +192,7 @@ body{
      text-align: left;
      position: relative;
      color: white;
-     margin-left: 160px;
+     margin-left: 200px;
      margin-bottom: 20px;
      margin-top: 10px;
      box-sizing: border-box;
