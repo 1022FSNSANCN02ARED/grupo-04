@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+ <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,10 +10,13 @@
     rel="stylesheet" />
     <link href="/css/normalize.css" rel="stylesheet">
     <link href="/css/style.css" rel="stylesheet">
+    
     <title>Home</title>
-</head>
+ </head>
 <body>
+    
     <header>
+       
         <!--Menu no Responsive Tablet/Laptop/Escritorio-->
         <nav class="nav-nonresponsive">
             <div >
@@ -57,31 +60,30 @@
                                      <li><a href="#" class="respmenu-link">Nosotros</a></li>
                                      <li><a href="/login" class="respmenu-link">Ingresar</a></li>
                                      <li><a href="/registro" class="respmenu-link">Registrarse</a></li>
-                                     <li><a href="productoMujer"></a></li> 
                                     </ul>
                                 </nav>
                             </div>  
                         </div>
                 </div>  
+
+                
     </header>
 
-     
+     <!--detalle de productos-->
 
-
-       <!--detalle de productos-->
-<div class="detalle-producto-body">
+  <div class="detalle-producto-body">
     
 
     <main class="detalle-main-producto">
-    
-            <div class="container-img">
+            <div class="productos-unisex">
+                   <div class="container-img">
                   <img src="images/taza.png" alt="">
 
-            </div>
+                   </div>
 
-            <div class="container-info-producto">
+                   <div class="container-info-producto">
                  <div class="container-price">
-                       <span> $3.000 </span>
+                       <span> $6.000 </span>
                       <i class="fa-solid fa-gift"></i>
                   
                  </div>
@@ -90,7 +92,7 @@
 
                     <div class="form-group">
                        
-                        <label for="colour"> Tupo de taza </label>
+                        <label for="colour"> Remera Unisex</label>
 
                         <select name="colour" id="colour">
                           <option disabled selected value="">
@@ -98,29 +100,34 @@
                              Escoge una opcion 
                           </option>
 
+                            <option value="rojo">
+ 
+                                Perro coraje 
+                          </option>
+
+
                           <option value="rojo">
  
-                                Hocico
+                                Best Friends Forever
                           </option>
 
                           <option value="blanco">
 
-                               Gatitos
+                               Hocico
 
                           </option>
 
                           <option value="beige">
 
-                              Caffeine
+                               Pack gatitos
 
                           </option>
 
                           <option value="beige">
 
-                              Perro Coraje
+                              Gato Caffeine!
 
                           </option>
-
 
 
                         </select>
@@ -141,28 +148,24 @@
 
                             <option value="12x15x62">
  
-                                Grande
+                               Pequeña
                              </option>
 
                             <option value="5x10x22">
 
-                              Mediana
+                             Chica
 
                             </option>
 
                             <option value="2.5x5x3">
 
-                                 Chica
+                               Grande
 
                             </option>
-                            <option value="2.5x5x3">
+
+                             <option value="2.5x5x3">
 
                                 Extra Grande
-
-                            </option>
-                            <option value="2.5x5x3">
-
-                                 Taza de plastico
 
                             </option>
 
@@ -183,8 +186,8 @@
                         </div>
 
                          <div class="btn-increment-decrement">
-                            <i class="fa-solid fa-chevron-up"></i>
-                            <i class="fa-solid fa-chevron-down"></i>
+                            <i class="fa-solid fa-chevron-up" id="increment"></i>
+                            <i class="fa-solid fa-chevron-down" id="decrement"></i>
 
                          </div>
                          
@@ -267,15 +270,15 @@
                         </div>
 
 
+                   </div>
+
+        
             </div>
-
-   </main>
-
-   <section class="container-related-products">
+               <section class="container-related-products">
                <h2>Productos Relacionados</h2>
 
                 <div class="card-list-products">
-                     <div class="card">
+                     <div class="card card1">
 
                       <div class="card-img">
 
@@ -283,11 +286,11 @@
                      <img src="images/taza1.png" alt="">
 
                       </div>
-                      <div class="info-card">
+                      <div class="info-card card2">
 
                      <div class="text-product">
-                          <h3> Vinilo </h3>
-                        <p class="category"> Cuadro de vinilo </p>
+                          <h3> Best friends forever  </h3>
+                        <p class="category"> Taza ceramica </p>
                      </div>
                        <div class="price">
                         $2.800
@@ -308,14 +311,14 @@
                      <img src="images/taza2.png" alt="">
 
                       </div>
-                      <div class="info-card">
+                      <div class="info-card card3">
 
                      <div class="text-product">
-                          <h3> Vinilo </h3>
-                        <p class="category"> Pintura a mano </p>
+                          <h3> Hocico </h3>
+                        <p class="category"> Taza de plastico </p>
                      </div>
                        <div class="price">
-                        $3.500
+                        $1.500
 
                        </div>
                       </div>
@@ -333,14 +336,14 @@
                      <img src="images/taza3.png" alt="">
 
                       </div>
-                      <div class="info-card">
+                      <div class="info-card card4">
 
                      <div class="text-product">
-                          <h3> 4K </h3>
-                        <p class="category"> Cuadro 4K </p>
+                          <h3> Pack gatitos </h3>
+                        <p class="category"> Taza de cristales </p>
                      </div>
                        <div class="price">
-                        $8.800
+                        $5.800
 
                        </div>
                       </div>
@@ -361,11 +364,11 @@
                       <div class="info-card">
 
                      <div class="text-product">
-                          <h3> Static </h3>
-                        <p class="category"> Static </p>
+                          <h3> Gato Caffeine! </h3>
+                        <p class="category"> Taza ceramica </p>
                      </div>
                        <div class="price">
-                        $5.600
+                        $2.600
 
                        </div>
                       </div>
@@ -378,10 +381,13 @@
             
 
 
-   </section>
+               </section>
 
+  
+  </main>     
 </div>
-<footer>
+   <script src="/productos.js"></script>
+    <footer>
 
     <div class="footer-container-all">
 
@@ -462,8 +468,8 @@
            
         </div>
 
-   
-
         
         
    </footer>
+</body>
+</html>       
