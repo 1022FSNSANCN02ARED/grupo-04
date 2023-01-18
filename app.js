@@ -12,9 +12,11 @@ console.log('se prendio');
 
 });
 
+
+
 app.get ('/',(req,res)=>{
 
-res.sendFile(path.resolve(__dirname,'views/home.html'));
+res.render('home');
 
 });
 app.get ('/home',(req,res)=>{
@@ -70,7 +72,4 @@ app.get ('/unisex',(req,res)=>{
         res.sendFile(path.resolve(__dirname,'views/cuadro1.html'));
         
         });
-
-
-
-
+        
