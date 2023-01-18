@@ -1,7 +1,8 @@
 const express = require ('express');
-
 const app = express ();
 const path = require ('path');
+
+const rutaHome = require('./routers/main-router.js')
 
 
 app.use(express.static(path.join(__dirname,'public')));
@@ -11,25 +12,32 @@ app.listen(3026,() => {
 console.log('se prendio');
 
 });
+/*EJS ENGINE*/
+app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname, 'views'));
 
 
+app.use('/', rutaHome);
 
-app.get ('/',(req,res)=>{
+/*app.get ('/',(req,res)=>{
 
 res.render('home');
 
-});
+});*/
+
 app.get ('/home',(req,res)=>{
 
 res.sendFile(path.resolve(__dirname,'views/home.html'));
 
 });
 
+app.use('/login',rutaHome);
+/*
 app.get ('/login',(req,res)=>{
 
     res.sendFile(path.resolve(__dirname,'views/login.html'));
     
-    });
+    });*/
 
 app.get ('/registro',(req,res)=>{
 
