@@ -158,8 +158,17 @@
     /*laptop*/
 
     .total button{
-   
-        box-shadow: 2px 2px 5px white;
+      width: 200px;
+      height: 40px;
+      box-shadow: 2px 2px 5px white;
+      font-size: 16px;
+      position: absolute;
+      left: 250px;
+      top: 580px
+    }
+    .total a{
+      text-align: center;
+      margin-left: 280px;
     }
     .producto{
       width: 80%;
@@ -179,7 +188,7 @@
       
   }
   .imagen{
-    width: 80%;
+    width: 40%;
   }
   .image:hover{
     box-shadow: ;
@@ -330,6 +339,22 @@
 @media (min-width:1281px){
   .olvido-contraseña{
     margin-left: 10em;
+  }
+
+  .total button{
+    width: 200px;
+    height: 40px;
+    box-shadow: 2px 2px 5px white;
+    font-size: 16px;
+    position: absolute;
+    left: 500px;
+    top: 760px
+  }
+  .total a{
+    text-align: center;
+    margin-left: 540px;
+    
+    
   }
 }
 
