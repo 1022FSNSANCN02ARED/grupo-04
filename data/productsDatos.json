@@ -1,0 +1,91 @@
+[{
+  "id": 1,
+  "name": "rhoncus dui vel sem sed sagittis nam congue risus semper porta volutpat quam pede lobortis ligula sit amet",
+  "description": "nulla justo aliquam quis turpis eget elit sodales scelerisque mauris sit amet",
+  "category": "Cuadro1",
+  "price": 16,
+  "colores": "Fuscia",
+  "image": "remera.png",
+  "size": "M"
+}, {
+  "id": 2,
+  "name": "augue a suscipit nulla elit ac nulla sed vel enim sit amet nunc viverra dapibus",
+  "description": "auctor gravida sem praesent id massa id nisl venenatis lacinia aenean",
+  "category": "Tazas",
+  "price": 70,
+  "colores": "Crimson",
+  "image": "remera.png",
+  "size": "S"
+}, {
+  "id": 3,
+  "name": "convallis nulla neque libero convallis eget eleifend luctus ultricies eu nibh quisque id justo sit",
+  "description": "eget elit sodales scelerisque mauris sit amet eros suspendisse accumsan tortor",
+  "category": "Tazas",
+  "price": 17,
+  "colores": "Pink",
+  "image": "taza.png",
+  "size": "M"
+}, {
+  "id": 4,
+  "name": "luctus rutrum nulla tellus in sagittis dui vel nisl duis ac nibh fusce lacus purus aliquet",
+  "description": "faucibus orci luctus et ultrices posuere cubilia curae duis faucibus accumsan odio curabitur convallis duis consequat dui nec",
+  "category": "Unisex",
+  "price": 65,
+  "colores": "Fuscia",
+  "image": "cuadroPerro.png",
+  "size": "M"
+}, {
+  "id": 5,
+  "name": "convallis duis consequat dui nec nisi volutpat eleifend donec ut dolor morbi vel lectus in quam",
+  "description": "potenti cras in purus eu magna vulputate luctus cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus",
+  "category": "Unisex",
+  "price": 97,
+  "colores": "Violet",
+  "image": "cuadroGato.png",
+  "size": "M"
+}, {
+  "id": 6,
+  "name": "integer a nibh in quis justo maecenas rhoncus aliquam lacus morbi quis tortor id nulla ultrices",
+  "description": "orci luctus et ultrices posuere cubilia curae donec pharetra magna vestibulum aliquet ultrices erat tortor sollicitudin mi sit amet",
+  "category": "RemeraHombre",
+  "price": 25,
+  "colores": "Green",
+  "image": "cuadroPerro.png",
+  "size": "XL"
+}, {
+  "id": 7,
+  "name": "nisl nunc nisl duis bibendum felis sed interdum venenatis turpis enim blandit mi in porttitor",
+  "description": "porta volutpat quam pede lobortis ligula sit amet eleifend pede libero quis",
+  "category": "Cuadro",
+  "price": 35,
+  "colores": "Pink",
+  "image": "taza.png",
+  "size": "S"
+}, {
+  "id": 8,
+  "name": "quis tortor id nulla ultrices aliquet maecenas leo odio condimentum id luctus nec molestie sed justo pellentesque viverra",
+  "description": "mauris sit amet eros suspendisse accumsan tortor quis turpis sed ante vivamus tortor",
+  "category": "Cuadro1",
+  "price": 33,
+  "colores": "Indigo",
+  "image": "cuadroGato.png",
+  "size": "S"
+}, {
+  "id": 9,
+  "name": "sit amet sem fusce consequat nulla nisl nunc nisl duis bibendum felis sed interdum venenatis",
+  "description": "volutpat dui maecenas tristique est et tempus semper est quam pharetra magna",
+  "category": "Unisex",
+  "price": 43,
+  "colores": "Khaki",
+  "image": "taza.png",
+  "size": "L"
+}, {
+  "id": 10,
+  "name": "dapibus duis at velit eu est congue elementum in hac",
+  "description": "tortor risus dapibus augue vel accumsan tellus nisi eu orci mauris lacinia",
+  "category": "Cuadro",
+  "price": 43,
+  "colores": "Puce",
+  "image": "remera.png",
+  "size": "M"
+}]

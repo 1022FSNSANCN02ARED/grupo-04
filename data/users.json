@@ -1,0 +1,141 @@
+[{
+  "id": 1,
+  "firstName": "vulputate nonummy",
+  "lastName": "nulla nisl",
+  "email": "cwaller0@umn.edu",
+  "password": "N8p1k0",
+  "type": "Customer"
+}, {
+  "id": 2,
+  "firstName": "diam erat",
+  "lastName": "nullam",
+  "email": "pnottle1@cornell.edu",
+  "password": "AYQUrer",
+  "type": "Admin"
+}, {
+  "id": 3,
+  "firstName": "congue eget",
+  "lastName": "pretium",
+  "email": "clidden2@blog.com",
+  "password": "Rui9rozj1P",
+  "type": "Admin"
+}, {
+  "id": 4,
+  "firstName": "eu",
+  "lastName": "mollis molestie",
+  "email": "pvickors3@php.net",
+  "password": "jwRap7yAIS",
+  "type": "Admin"
+}, {
+  "id": 5,
+  "firstName": "eu",
+  "lastName": "integer pede",
+  "email": "csoda4@acquirethisname.com",
+  "password": "NNCEWpLAQ",
+  "type": "Customer"
+}, {
+  "id": 6,
+  "firstName": "augue vestibulum",
+  "lastName": "et",
+  "email": "cpellew5@cbsnews.com",
+  "password": "WlC8kL12roFL",
+  "type": "Customer"
+}, {
+  "id": 7,
+  "firstName": "consectetuer adipiscing",
+  "lastName": "sit amet",
+  "email": "criach6@sitemeter.com",
+  "password": "PXjaIzN",
+  "type": "Admin"
+}, {
+  "id": 8,
+  "firstName": "metus aenean",
+  "lastName": "hendrerit",
+  "email": "gawty7@ezinearticles.com",
+  "password": "6pMWR4VtI",
+  "type": "Admin"
+}, {
+  "id": 9,
+  "firstName": "sapien quis",
+  "lastName": "libero",
+  "email": "aseward8@nifty.com",
+  "password": "BbEWd0bDDUX",
+  "type": "Admin"
+}, {
+  "id": 10,
+  "firstName": "libero",
+  "lastName": "faucibus orci",
+  "email": "ehakewell9@home.pl",
+  "password": "EsyRhXxarW",
+  "type": "Admin"
+}, {
+  "id": 11,
+  "firstName": "posuere cubilia",
+  "lastName": "suscipit nulla",
+  "email": "clambola@trellian.com",
+  "password": "pD16LAgp",
+  "type": "Admin"
+}, {
+  "id": 12,
+  "firstName": "consequat morbi",
+  "lastName": "eu pede",
+  "email": "gbendikb@google.com",
+  "password": "NszvwnZIZ",
+  "type": "Customer"
+}, {
+  "id": 13,
+  "firstName": "in congue",
+  "lastName": "ante",
+  "email": "mfrightc@delicious.com",
+  "password": "YGRltGE",
+  "type": "Admin"
+}, {
+  "id": 14,
+  "firstName": "nisl",
+  "lastName": "nec sem",
+  "email": "iemertond@epa.gov",
+  "password": "q13t9SMbCZIb",
+  "type": "Admin"
+}, {
+  "id": 15,
+  "firstName": "molestie nibh",
+  "lastName": "cras",
+  "email": "lmapplethorpee@home.pl",
+  "password": "QKlEBS",
+  "type": "Admin"
+}, {
+  "id": 16,
+  "firstName": "nisl",
+  "lastName": "lorem",
+  "email": "owoodroughf@princeton.edu",
+  "password": "aNWvkCfK",
+  "type": "Customer"
+}, {
+  "id": 17,
+  "firstName": "risus",
+  "lastName": "primis in",
+  "email": "obeesg@rakuten.co.jp",
+  "password": "3twNnTlw1z9H",
+  "type": "Customer"
+}, {
+  "id": 18,
+  "firstName": "fusce",
+  "lastName": "erat tortor",
+  "email": "mserrish@go.com",
+  "password": "V7V5Y2a3wI",
+  "type": "Customer"
+}, {
+  "id": 19,
+  "firstName": "sit",
+  "lastName": "sem sed",
+  "email": "dcrewesi@tripadvisor.com",
+  "password": "hoyKm8Ldmi",
+  "type": "Customer"
+}, {
+  "id": 20,
+  "firstName": "quis",
+  "lastName": "praesent",
+  "email": "atarbornj@4shared.com",
+  "password": "oRJcL7xPYF",
+  "type": "Customer"
+}]
