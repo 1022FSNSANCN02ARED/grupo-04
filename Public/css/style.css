@@ -150,22 +150,25 @@ body{
 }
 
   /*Formulario de Registro*/
-
-  .fondo-formulario-reg{
-    background-image:url(../images/fotohsection2.jpg) ;
-    background-size: cover;
-    background-position: center center;
-   }
-  
+ 
   .carac-main {
     width: 100vw;
-    margin: auto;
+    margin: 0 auto;
     background-color:  #4a8db7;
   }
 
   .cajas-datos {
     display: flex;
-    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .caja1-form{
+    justify-content: left;
+  }
+
+  .caja2-form{
+    text-align: left;
   }
     
   .titulo-h2 {
@@ -177,7 +180,6 @@ body{
 
   .titulo-h3 {
       text-align: center;
-      margin-left: 195px;
       color: white;
       text-shadow: 5px 5px 5px #0b4f6e;
      }
@@ -185,14 +187,12 @@ body{
   .formulario-ubicado {
     width: 80vw;
     margin: auto;
-    position: relative;
     background-color:  #4a8db7;
   }
   .p-centrada {
      text-align: left;
-     position: relative;
      color: white;
-     margin-left: 200px;
+     margin-left: 30px;
      margin-bottom: 20px;
      margin-top: 10px;
      box-sizing: border-box;
@@ -971,7 +971,26 @@ color: grey;
   justify-content: center;
 
 }
+/*Estilo de Formulario de Registro*/
 
+.fondo-formulario-reg{
+  background-image:url(../images/fotohsection2.jpg) ;
+  background-size: cover;
+  background-position: center center;
+ }
+
+ .cajas-datos{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+ }
+ .caja1-form{
+  width: 30%;
+ }
+
+ .caja2-form{
+  width: 30;
+ }
 
 }
 @media (min-width:1281px){
