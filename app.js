@@ -4,6 +4,7 @@ const path = require ('path');
 const router = require('./routers/mainRouter.js');
 
 
+
 /*Carpeta public*/
 app.use(express.static(path.join(__dirname,'public')));
 
@@ -31,6 +32,8 @@ app.use('/registro',router);
 app.use('/tienda',router);
 
 app.use('/carrito',router);
+
+app.use('/create',router)
 
 /*Vistas sin renderizar*/
 
