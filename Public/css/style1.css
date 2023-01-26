@@ -190,9 +190,9 @@
   .imagen{
     width: 40%;
   }
-  .image:hover{
+  /*.image:hover{
     box-shadow: ;
-  }
+  }*/  
   .section-box{
     display: flex;
     flex-wrap: wrap;

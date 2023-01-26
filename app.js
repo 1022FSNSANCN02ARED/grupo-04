@@ -32,6 +32,8 @@ app.use('/tienda',router);
 
 app.use('/carrito',router);
 
+
+
 /*Vistas sin renderizar*/
 
 app.get ('/productoHombre',(req,res)=>{
