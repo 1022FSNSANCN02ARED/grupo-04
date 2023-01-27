@@ -5,6 +5,8 @@ const router = require('./routers/mainRouter.js');
 
 
 
+
+
 /*Carpeta public*/
 app.use(express.static(path.join(__dirname,'public')));
 
@@ -12,7 +14,7 @@ var PORT = 3026;
 
 app.listen(PORT,() => {
 
-console.log(`Se prendrio el servidor en ${PORT}`);
+console.log(`Se prendio el servidor en ${PORT}`);
 
 });
 
@@ -33,8 +35,12 @@ app.use('/tienda',router);
 
 app.use('/carrito',router);
 
+app.use('/create',router);
+
+app.use ('/list',router);
 
 /*Vistas sin renderizar*/
+
 
 app.get ('/productoHombre',(req,res)=>{
 
@@ -64,6 +70,10 @@ app.get ('/cuadro1',(req,res)=>{
 
 /*Vistas anteriores*/
 /*
+app.get ('/list',(req,res)=>{
+
+    res.render('products/list',{ products: products.findAll() });
+    });
 
 app.get ('/registro',(req,res)=>{
 

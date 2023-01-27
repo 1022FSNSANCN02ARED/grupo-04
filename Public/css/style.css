@@ -941,6 +941,9 @@ color: grey;
  }
 
  /*productos*/
+.all-product{
+  flex-wrap: wrap;
+}
 .container-info-producto{
   margin-left: 30px;
 }
