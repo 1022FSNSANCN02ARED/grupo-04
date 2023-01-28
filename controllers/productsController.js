@@ -8,9 +8,9 @@ module.exports= {
      },
     /*Formulario de creación de productos*/
     create: (req,res)=> {
-        res.render ('users/productForm');
+        res.render ('users/create');
       },
-    store: (req, res) => {
+  store: (req, res) => {
         const product = {
             id: Date.now(),
             name: req.body.name,
@@ -20,8 +20,13 @@ module.exports= {
             discount: Number(req.body.discount),
             image: req.file ? req.file.filename : "default-image.png",
         }
+},
+new: (req,res)=> {
+        res.render ('users/sprint4');
       },
+
 };
+
 /*
 
 3. /products/:id (GET)
