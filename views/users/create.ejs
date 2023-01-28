@@ -16,26 +16,27 @@
             </div>
             <div class="col-12">
                 <form
-                    action="/products"
+                    action="/mainRouter"
                     method="post"
                     enctype="multipart/form-data"
                 >
                     <div class="row product-detail">
                         <div class="col-12 col-md-6">
                             <label for="name" class="form-label"
-                                >Nombre del producto:</label
+                                >id del producto:</label
                             >
                             <input
                                 type="text"
-                                id="name"
+                                id="date"
                                 name="name"
-                                placeholder="Ej: Zapatillas Reebok"
+                                placeholder=""
                                 class="form-input"
+                                name="id"
                             />
                         </div>
                         <div class="col-12 col-md-6">
                             <label for="price" class="form-label"
-                                >Precio del producto:</label
+                                >Nombre:</label
                             >
                             <input
                                 type="text"
@@ -43,11 +44,12 @@
                                 name="price"
                                 placeholder="Ej: 5678"
                                 class="form-input"
+                                name="name"
                             />
                         </div>
                         <div class="col-12 col-md-6">
                             <label for="discount" class="form-label"
-                                >Descuento:</label
+                                >Descripción:</label
                             >
                             <input
                                 type="text"
@@ -55,6 +57,7 @@
                                 name="discount"
                                 placeholder="Ej: 15"
                                 class="form-input"
+                                name="description"
                             />
                         </div>
                         <div class="col-12 col-md-6">
@@ -85,12 +88,13 @@
                         </div>
                         <div class="col-12">
                             <label for="description" class="form-label"
-                                >Descripción:</label
+                                >Precio:</label
                             >
                             <textarea
                                 name="description"
                                 id="description"
                                 class="form-input"
+                                name="price"
                             ></textarea>
                         </div>
                         <div class="col-12">
