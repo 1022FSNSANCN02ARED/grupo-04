@@ -10,9 +10,6 @@ app.use(bodyParser.urlencoded({ extended: false }))
 // parse application/json
 app.use(bodyParser.json())
 
-
-
-
 //Carpeta public/
 app.use(express.static(path.join(__dirname,'public')));
 
@@ -46,6 +43,7 @@ app.use('/create',router);
 app.use ('/list',router);
 
 /Vistas sin renderizar/
+
 
 
 app.get ('/productoHombre',(req,res)=>{
