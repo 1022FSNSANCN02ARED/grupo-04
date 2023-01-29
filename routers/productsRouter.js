@@ -1,11 +1,11 @@
 // *Require's *
+
 const express = require("express");
-const productsControllers = require("../controllers/productsController");
 const router = express.Router();
-
+const productsControllers = require("../controllers/productsController");
 // *Controller Require *
-const productsController = require("../controllers/productsController");
-
+//const productsController = require("../controllers/productsController");
+router.get('/create',productsControllers.create)
 
 /*1. 
 /products (GET)
@@ -48,7 +48,7 @@ router.delete("/:id",);
 Acción de borrado */
 
 
-
+module.exports = router;
 
 
 

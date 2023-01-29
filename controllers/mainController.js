@@ -20,4 +20,3 @@ module.exports = {
     return res.render('users/carrito');
   },  
 };
-
