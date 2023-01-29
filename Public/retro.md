@@ -48,6 +48,48 @@ ver si requerimos ayuda para no atrasar el trabajo
 
 4)qué deberían dejar de hacer?
 
+CONCLUSION 3ER SPRINT
+
+1) Qué hicieron bien en el sprint anterior?
+
+* daily standup
+* Consultar dudas
+* Buscar apoyo extra
+
+
+2) qué hicieron mal?
+* no dividir las tareas de un principio
+* no terminar a tiempo algunas cosas
+
+
+3) qué deberían empezar a hacer? 
+
+* reuniones para poner al tanto a los otros miembros, de los avances logrados.
+* dividir las tares de un principio, considerando su dificultad y el nivel de cada integrante para resolverla
+
+4)qué deberían dejar de hacer?
+
+* avanzar individualmente sin explicar al grupo l oque se hizo
+
+CONCLUSION SPRINT 4
+
+* comenzar a hacer
+
+
+* hacer mas 
+
+
+
+* continuar haciendo
+
+
+
+* hacer menos
+
+
+
+* dejar de hacer
+
 
 
 
