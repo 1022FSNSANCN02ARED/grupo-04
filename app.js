@@ -5,13 +5,14 @@ const path = require ('path');
 const router = require('./routers/mainRouter.js');
 
 
+
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }))
 // parse application/json
 app.use(bodyParser.json())
 
 //Carpeta public/
-app.use(express.static(path.join(__dirname,'public')));
+app.use(express.static(path.join(__dirname,'Public')));
 
 var PORT = 3026;
 
@@ -21,28 +22,29 @@ console.log(`Se prendio el servidor en ${PORT}`);
 
 });
 
-/EJS ENGINE/
+/*EJS ENGINE*/
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
-/Vistas renderizadas/
+/*Vistas renderizadas*/
+/*Ruta index.js*/
 app.use('/', router);
-
+/*Ruta login.ejs*/
 app.use('/login',router);
-
+/*Ruta index.ejs*/
 app.use('/home',router);
-
+/*Ruta Registro.ejs*/
 app.use('/registro',router);
-
+/*Ruta tiend.ejs*/
 app.use('/tienda',router);
-
+/*Ruta carito.ejs*/
 app.use('/carrito',router);
 
 app.use('/create',router);
-
+/*Ruta list.ejs*/
 app.use ('/list',router);
 
-/Vistas sin renderizar/
+/*Vistas sin renderizar*/
 
 
 
