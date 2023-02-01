@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
 //Carpeta public/
-app.use(express.static(path.join(__dirname,'Public')));
+app.use(express.static(path.join(__dirname,'public')));
 
 var PORT = 3026;
 
