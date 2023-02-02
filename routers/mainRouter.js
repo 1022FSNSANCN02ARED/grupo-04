@@ -1,7 +1,7 @@
 const express = require ('express');
 const router = express.Router();
 const mainController = require("../controllers/mainController.js");
-const productsControllers = require("../controllers/productsController");
+const productRouter = require("./productRouter");
 
 /* Rutas de generales*/
 router.get("/carrito",mainController.carrito);
@@ -13,14 +13,10 @@ router.get("/tienda",mainController.tienda);
 
 
 /*Rutas de productos*/
-
-router.get("/create",productsControllers.create);
-router.get("/list",productsControllers.allProducts);
-router.get("/mas", productsControllers.create);
-router.get("/new", productsControllers.new);
+router.use("/products",productRouter);
 
 
-/recibir informacion del producto creado/
+/*recibir informacion del producto creado*/
 
 
 router.post ('/mainRouter', async (req,res)=>{
