@@ -10,20 +10,22 @@ module.exports= {
     create: (req,res)=> {
         res.render ('users/create');
       },
-  store: (req, res) => {
-        const product = {
-            id: Date.now(),
-            name: req.body.name,
-            description: req.body.description,
-            category: req.body.category,
-            price: Number(req.body.price),
-            discount: Number(req.body.discount),
-            image: req.file ? req.file.filename : "default-image.png",
-        }
-},
-new: (req,res)=> {
+   store: (req, res) => {
+        const product = req.body;
+        res.send(product);
+    },
+   new: (req,res)=> {
         res.render ('users/sprint4');
       },
+     detail: (req,res)=> {
+        res.render ('users/detail');
+      },
+     destroy: (req, res) => {
+        res.send(`deleting ${req.params.id}`);
+    },
+     /*traer un producto con id*/
+     
+      
 
 };
 

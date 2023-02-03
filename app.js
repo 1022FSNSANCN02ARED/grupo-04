@@ -5,6 +5,9 @@ const path = require ('path');
 const router = require('./routers/mainRouter.js');
 
 
+
+
+
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }))
 // parse application/json
