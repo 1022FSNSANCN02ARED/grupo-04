@@ -5,13 +5,15 @@ const path = require ('path');
 const router = require('./routers/mainRouter.js');
 
 
-
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }))
 // parse application/json
 app.use(bodyParser.json())
 
-//Carpeta public/
+
+
+
+/*Carpeta public*/
 app.use(express.static(path.join(__dirname,'public')));
 
 var PORT = 3026;
@@ -27,12 +29,23 @@ app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
 /*Vistas renderizadas*/
-/*Ruta index.js*/
-app.use(router);
+app.use('/', router);
 
+app.use('/login',router);
+
+app.use('/home',router);
+
+app.use('/registro',router);
+
+app.use('/tienda',router);
+
+app.use('/carrito',router);
+
+app.use('/create',router);
+
+app.use ('/list',router);
 
 /*Vistas sin renderizar*/
-
 
 
 app.get ('/productoHombre',(req,res)=>{
