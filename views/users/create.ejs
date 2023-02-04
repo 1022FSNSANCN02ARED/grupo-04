@@ -16,24 +16,13 @@
             </div>
             <div class="col-12">
                 <form
-                    action="/mainRouter"
+                    action="/list"
                     method="post"
                     enctype="multipart/form-data"
+                    
                 >
                     <div class="row product-detail">
-                        <div class="col-12 col-md-6">
-                            <label for="name" class="form-label"
-                                >id del producto:</label
-                            >
-                            <input
-                                type="text"
-                                id="date"
-                                name="name"
-                                placeholder=""
-                                class="form-input"
-                                name="id"
-                            />
-                        </div>
+                        
                         <div class="col-12 col-md-6">
                             <label for="price" class="form-label"
                                 >Nombre:</label
@@ -44,20 +33,35 @@
                                 name="price"
                                 placeholder="Ej: 5678"
                                 class="form-input"
-                                name="name"
+                                
+                            
                             />
                         </div>
-                        <div class="col-12 col-md-6">
-                            <label for="discount" class="form-label"
-                                >Descripción:</label
+                  
+                              <div class="col-12 col-md-6">
+                            <label for="size" class="form-label"
+                                >Size:</label
                             >
                             <input
                                 type="text"
-                                id="discount"
-                                name="discount"
-                                placeholder="Ej: 15"
+                                id="size"
+                                name="size"
+                                placeholder="L"
                                 class="form-input"
-                                name="description"
+                             
+                            />
+                        </div>
+                              <div class="col-12 col-md-6">
+                            <label for="colour" class="form-label"
+                                >Colour:</label
+                            >
+                            <input
+                                type="text"
+                                id="colour"
+                                name="colour"
+                                placeholder="azul"
+                                class="form-input"
+                               
                             />
                         </div>
                         <div class="col-12 col-md-6">
@@ -85,10 +89,24 @@
                                     Últimos agregados
                                 </option>
                             </select>
+                            
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <label for="price" class="form-label"
+                                >Precio:</label
+                            >
+                            <input
+                                type="text"
+                                id="price"
+                                name="price"
+                                placeholder="$1500"
+                                class="form-input"
+                               
+                            />
                         </div>
                         <div class="col-12">
                             <label for="description" class="form-label"
-                                >Precio:</label
+                                >Descripcion:</label
                             >
                             <textarea
                                 name="description"
