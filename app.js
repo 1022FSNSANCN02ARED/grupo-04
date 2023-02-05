@@ -1,23 +1,15 @@
 const express = require ('express');
 const bodyParser = require('body-parser')
 const app = express ();
-const multer = require ('multer');
 const path = require ('path');
 const router = require('./routers/mainRouter.js');
-
-
-
-const storage = multer.diskStorage({
-    destination: path.join(__dirname, "./public/images"),
-    filename: (req, file, cb) => {
-        cb(null, "image-" + Date.now() + path.extname(file.originalname));
-    },
-});
 
 const upload = multer({
     storage,
 });
 
+=======
+>>>>>>> 2b7b0110906c07b5d1f3cbb408f41f9aa0908df8
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }))
 // parse application/json
