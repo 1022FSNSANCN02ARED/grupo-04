@@ -6,7 +6,6 @@ const path = require ('path');
 const router = require('./routers/mainRouter.js');
 
 
-<<<<<<< HEAD
 
 const storage = multer.diskStorage({
     destination: path.join(__dirname, "./public/images"),
@@ -19,8 +18,6 @@ const upload = multer({
     storage,
 });
 
-=======
->>>>>>> f9201f08da7cf07c244dc360880ef3098b8543b3
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }))
 // parse application/json
