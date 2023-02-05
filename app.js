@@ -4,12 +4,7 @@ const app = express ();
 const path = require ('path');
 const router = require('./routers/mainRouter.js');
 
-const upload = multer({
-    storage,
-});
 
-=======
->>>>>>> 2b7b0110906c07b5d1f3cbb408f41f9aa0908df8
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }))
 // parse application/json

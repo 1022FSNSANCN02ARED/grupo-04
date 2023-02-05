@@ -25,7 +25,7 @@ module.exports= {
         };
 
     products.saveProduct(product);
-    res.redirect('users/list')
+    res.redirect('/')
 
     },
     dashboard: (req,res)=> {
@@ -38,7 +38,11 @@ module.exports= {
      destroy: (req, res) => {
         res.send(`deleting ${req.params.id}`);
     },
-     /*traer un producto con id*/
+     
+    edit : function (req,res){
+
+      const idUser = req.params.idUser;
+    }
      
       
 

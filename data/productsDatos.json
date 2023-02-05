@@ -118,5 +118,65 @@
         "image": "image-1675543112050.jpg",
         "colour": "azul",
         "size": "L"
+    },
+    {
+        "id": 1675603916688,
+        "name": "26",
+        "description": "vsdas",
+        "category": "in-sale",
+        "price": 15000,
+        "image": "image-1675603916683.png",
+        "colour": "CDv",
+        "size": "cADC"
+    },
+    {
+        "id": 1675607247356,
+        "name": "1",
+        "description": "PRODUCTSDA",
+        "category": "visited",
+        "price": 30.022,
+        "image": "image-1675607247350.png",
+        "colour": "rojo",
+        "size": "M"
+    },
+    {
+        "id": 1675607615552,
+        "name": "26",
+        "description": "jjfjiajsfas",
+        "category": "in-sale",
+        "price": 66000,
+        "image": "image-1675607615545.png",
+        "colour": "rojo",
+        "size": "s"
+    },
+    {
+        "id": 1675607728313,
+        "name": "33",
+        "description": "safvda",
+        "category": "",
+        "price": 66000,
+        "image": "image-1675607728309.png",
+        "colour": "vsvsd",
+        "size": "lll"
+    },
+    {
+        "id": 1675607978796,
+        "name": "acc",
+        "description": "vsdsav",
+        "category": "in-sale",
+        "price": 7777,
+        "image": "image-1675607978784.png",
+        "colour": "rojo",
+        "size": "vas"
+    },
+    {
+        "id": 1675608024461,
+        "name": "",
+        "description": "",
+        "category": "",
+        "price": 0,
+        "image": "default-image.png",
+        "colour": "",
+        "size": ""
     }
 ]
