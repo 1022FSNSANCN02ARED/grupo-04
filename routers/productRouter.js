@@ -21,7 +21,7 @@ router.get("/create",productsControllers.create);
 router.get("/list",productsControllers.allProducts);
 router.get("/dashboard", productsControllers.dashboard);
 router.post("/create", upload.single("image"), productsControllers.store);
-router.get('/edit/:id',productsControllers.edit);
+router.get('/edit/:idUser',productsControllers.edit);
 router.delete("/:id", productsControllers.destroy);
 
 

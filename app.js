@@ -3,12 +3,14 @@ const bodyParser = require('body-parser')
 const app = express ();
 const path = require ('path');
 const router = require('./routers/mainRouter.js');
+const methodOverride = require("method-override");
 
 
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }))
 // parse application/json
 app.use(bodyParser.json())
+app.use(methodOverride("_method")); 
 
 
 

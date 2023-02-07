@@ -1,6 +1,7 @@
 const express = require ('express');
 const router = express.Router();
 const mainController = require("../controllers/mainController.js");
+const productsController = require('../controllers/productsController.js');
 const productRouter = require("./productRouter");
 
 
@@ -15,6 +16,7 @@ router.get("/", mainController.index);
 router.get("/login",mainController.login);
 router.get("/registro",mainController.registro);
 router.get("/tienda",mainController.tienda);
+
 
 router.use("/products",productRouter);
 
