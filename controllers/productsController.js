@@ -42,6 +42,8 @@ module.exports= {
     edit : function (req,res){
 
       const idUser = req.params.idUser;
+
+      res.send(idUser)
     }
      
       
