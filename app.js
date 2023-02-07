@@ -2,6 +2,7 @@ const express = require ('express');
 const bodyParser = require('body-parser')
 const app = express ();
 const path = require ('path');
+const methodOverride = require("method-override");
 const router = require('./routers/mainRouter.js');
 
 
@@ -10,8 +11,8 @@ app.use(bodyParser.urlencoded({ extended: false }))
 // parse application/json
 app.use(bodyParser.json())
 
-
-
+//Para utilizar delete//
+app.use(methodOverride("_method"));
 
 /*Carpeta public*/
 app.use(express.static(path.join(__dirname,'public')));
