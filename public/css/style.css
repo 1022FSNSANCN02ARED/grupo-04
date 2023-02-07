@@ -737,6 +737,11 @@ color: grey;
     display: flex;
     list-style: none;
   }
+  .nav-menu1 a, .nav-menu2 a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+  }
    
   .nav-menu1 li{
     margin-right: 1px;
@@ -851,7 +856,14 @@ color: grey;
       width: 50vw;
       margin:auto;
      }
-    
+     .nav-menu1 a:hover, .nav-menu2 a:hover{
+     
+      padding: 10px;
+      border-radius: 10px;
+      background-color: #03264C;
+      box-shadow: 2px 2px 10px orange;
+     
+    }
 
 
     .nav-nonresponsive{
