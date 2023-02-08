@@ -4,7 +4,7 @@ const app = express ();
 const path = require ('path');
 const methodOverride = require("method-override");
 const router = require('./routers/mainRouter.js');
-const methodOverride = require("method-override");
+
 
 
 // parse application/x-www-form-urlencoded
@@ -13,8 +13,7 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 app.use(methodOverride("_method")); 
 
-//Para utilizar delete//
-app.use(methodOverride("_method"));
+
 
 /*Carpeta public*/
 app.use(express.static(path.join(__dirname,'public')));
@@ -34,19 +33,6 @@ app.set('views', path.join(__dirname, 'views'));
 /*Vistas renderizadas*/
 app.use('/', router);
 
-app.use('/login',router);
-
-app.use('/home',router);
-
-app.use('/registro',router);
-
-app.use('/tienda',router);
-
-app.use('/carrito',router);
-
-app.use('/create',router);
-
-app.use ('/list',router);
 
 /*Vistas sin renderizar*/
 

@@ -36,7 +36,7 @@ module.exports= {
         res.render ('users/detail');
       },
      destroy: (req, res) => {
-        res.send(`deleting ${req.params.id}`);
+      res.send('Eliminar')
     },
      
     edit : function (req,res){
