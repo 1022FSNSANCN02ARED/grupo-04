@@ -1,4 +1,5 @@
-const path = require("path")
+const path = require("path");
+const { saveProduct, findById } = require("../data/products");
 const products = require("../data/products");
 
 module.exports= {
@@ -25,7 +26,7 @@ module.exports= {
         };
 
     products.saveProduct(product);
-    res.redirect('/')
+    res.redirect('/tienda')
 
     },
     dashboard: (req,res)=> {
@@ -39,12 +40,15 @@ module.exports= {
       res.send('Eliminar')
     },
      
-    edit : function (req,res){
+    edit: (req, res) => {
+        const product = products.findById(req.params.id);
+        res.render("products/edit-form", { product });
+    },
 
-      const idUser = req.params.idUser;
-
-      res.send(idUser)
-    }
+   update: (req, res) => {
+        const product = req.body;
+        res.send(product);
+    },
      
       
 

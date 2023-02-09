@@ -1,23 +1,22 @@
-
- <%- include('../partials/head') %>
+<%- include('../partials/head') %>
  <title>Product-form</title>
     <body>
         <!-- Header -->
-        <%- include('../partials/header') %>
+        <%- include('../partials/header',{title: 'Editando: ' + product.name}) %>
         <!-- /Header -->
 
         <div class="container products-wrapper">
             <div class="row">
                 <div class="col-12">
                     <h2 class="products-title">
-                        Formulario de creación de productos
+                        Estás editando: <i><%= product.name %> </i>
                     </h2>
                 </div>
             </div>
             <div class="col-12">
                 <form
-                    method="post"
-                    enctype="multipart/form-data"   
+                      action="/products/<%= product.id %>?_method=put"
+                    method="POST"  
                 >
                     <div class="row product-detail">
                         
@@ -31,7 +30,7 @@
                                 name="name"
                                 placeholder="Ej: 5678"
                                 class="form-input"
-                               
+                                value="<%= product.name %>"
                                
                                 
                             
@@ -48,7 +47,7 @@
                                 name="size"
                                 placeholder="L"
                                 class="form-input"
-                             
+                                value="<%= product.size %>"
                              
                             />
                         </div>
@@ -62,7 +61,7 @@
                                 name="colour"
                                 placeholder="Ej:azul"
                                 class="form-input"
-                            
+                                value="<%= product.colour %>"
                                
                             />
                         </div>
@@ -74,7 +73,7 @@
                                 name="image"
                                 class="form-input"
                                 accept="image/png,image/jpeg"
-                               
+                                value="<%= product.image %>"
                                
                             />
                         </div>
@@ -88,8 +87,8 @@
                                 class="form-input"
                             >
                                 <option value="">Elegí</option>
-                                <option value="in-sale">En oferta</option>
-                                <option value="visited">
+                                <option value="in-sale" <%= product.category=="in-sale" ? "selected" : "" %>>En oferta</option>
+                                <option value="visited" <%= product.category=="visited" ? "selected" : "" %>>
                                     Últimos agregados
                                 </option>
                             </select>
@@ -105,7 +104,7 @@
                                 name="price"
                                 placeholder="Ej:1500"
                                 class="form-input"
-                          
+                                 value="<%= product.price %>"
                                
                             />
                         </div>
@@ -118,7 +117,7 @@
                                 id="description"
                                 class="form-input"
                                 name="price"
-                            ></textarea>
+                            ><%= product.description %></textarea>
                         </div>
                         <div class="col-12">
                             <button type="submit" class="buy-now-button">
