@@ -15,6 +15,7 @@ router.get("/", mainController.index);
 router.get("/login",mainController.login);
 router.get("/registro",mainController.registro);
 router.get("/tienda",mainController.tienda);
+router.get("/nosotros",mainController.nosotros);
 
 
 router.use("/products",productRouter);
