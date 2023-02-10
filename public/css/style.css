@@ -439,6 +439,7 @@ body{
  }
 
  .card-nos .back-nos p{
+  font-size: 10px;
  letter-spacing: 1.5px;
  color: black;
  }
