@@ -17,7 +17,6 @@ app.use(methodOverride("_method"));
 app.use(session({secret:'Ayuda a los animales '}))
 
 
->>>>>>> 9f34c659caf5fab2140abb49f486bdc368d681f1
 
 /*Carpeta public*/
 app.use(express.static(path.join(__dirname,'public')));

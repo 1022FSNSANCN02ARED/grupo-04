@@ -45,21 +45,12 @@ module.exports= {
         res.render("products/edit-form", { product });
     },
 
-<<<<<<< HEAD
-      const idUser = req.params.idUser;
-
-      res.send(idUser)
-    }
-    
-    
-=======
    update: (req, res) => {
         const product = req.body;
         res.send(product);
     },
      
       
->>>>>>> 9f34c659caf5fab2140abb49f486bdc368d681f1
 
     };
 
