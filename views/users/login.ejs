@@ -4,11 +4,8 @@
 
 <section class="box-form-login">
     <form action= "" method="post" class="formulario">
-    
+      
         <h2 class="titulo-login">BIENVENIDOS</h2>
-      <% if(locals.errors && errors.name){ %>
-       <p><%= errors.name %></p>
-       <% }%>
         <div class="input-box">
             <label for="">Ingrese Usuario</label>
             <input type="text" name="usuarioLogin" id="usuarioLogin" class="campo-input" >
@@ -18,9 +15,14 @@
             <label for="">Ingrese Contraseña</label>
             <input type="password" name="passwordLogin" id="passwordLogin" class="campo-input" >
         </div>
+
+        <% if(errors) { %>
+            <p class="errores">Atencion: Usuario/Contraseña incorrecto/s</p>
+            <% } %>
     
         
         <button  class="boton-login" type="submit">Ingresar</button>
+      
     
         <div class="input-box check-login" >
             <label > Recordar </label>
