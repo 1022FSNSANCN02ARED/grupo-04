@@ -268,5 +268,15 @@
         "image": "default-image.png",
         "colour": "vs",
         "size": "VA"
+    },
+    {
+        "id": 1676124791922,
+        "price": null,
+        "image": "default-image.png"
+    },
+    {
+        "id": 1676125149419,
+        "price": null,
+        "image": "default-image.png"
     }
 ]

@@ -19,16 +19,9 @@ const upload = multer({
 
 router.get("/create",productsControllers.create);
 router.get("/list",productsControllers.allProducts);
-router.get("/dashboard", productsControllers.dashboard);
 router.post("/create", upload.single("image"), productsControllers.store);
 router.get("/:id/edit", productsControllers.edit);
 router.put("/:id", productsControllers.update);
-
-
-
-
-
-
 
 
 module.exports = router;
