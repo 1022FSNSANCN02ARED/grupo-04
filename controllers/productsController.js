@@ -45,8 +45,8 @@ module.exports= {
 
       res.send(idUser)
     }
-     
-      
+    
+    
 
     };
 

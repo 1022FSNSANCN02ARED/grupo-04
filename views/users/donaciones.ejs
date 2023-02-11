@@ -1,0 +1,66 @@
+<%- include('../partials/head') %>
+ <title>detail</title>
+    <body>
+        <!-- Header -->
+        <%- include('../partials/header') %>
+        <!-- /Header -->
+        <section class="box-form-donaciones">
+            <form action="" method="POST" class="formulario">
+            
+                <h1 class="titulo-login">ENTRE TODOS ES MAS FACIL</h1>
+
+                <P>Colaborá con nosotros, para ellos</P>
+            
+                <div class="input-box">
+                    <label for="">Nombre</label>
+                    <input type="text"  class="campo-input" placeholder="Nombre"    name="nombre" required>
+                </div>
+            
+                <div class="input-box">
+                    <label for="">Apellido</label>
+                    <input type="text"  class="campo-input"  placeholder="Apellido"    name="apellido" required>
+                </div>
+                <div class="input-box">
+                    <label for="">Localidad</label>
+                    <input type="text"  class="campo-input"  placeholder="Localidad"    name="localidad" required>
+                </div>
+                <div class="input-box">
+                    <label for="">Provincia</label>
+                    <input type="text"  class="campo-input"  placeholder="Provincia"    name="provincia" required>
+                </div>
+                <div class="input-box">
+                    <label for="">Documento de Identidad</label>
+                    <input type="number"  class="campo-input"  placeholder="D.N.I"    name="documento" required>
+                </div>
+                <div class="input-box">
+                    <label for="">Correo Electrónico</label>
+                    <input type="email"  class="campo-input"  placeholder="E-mail"    name="email" required>
+                </div>
+                <div class="input-box">
+                    <label for="">Telefono</label>
+                    <input type="number"  class="campo-input"  placeholder="Telefono"    name="telefono" required>
+                </div>
+                <div class="input-box">
+                    <label for="">Donacion</label>
+                    <input type="checkbox"  class="campo-input"  placeholder="Donacion"    name="donacion" required>
+                </div>
+                
+                <button  class="boton-login" type="submit">Ingresar</button>
+            
+                <div class="input-box check-login" >
+                    <label > Recordar </label>
+                    <div class="check"><input type="checkbox"   checked="checked" name="remember"> </div>
+                </div>
+            
+                    <div class="olvido-contraseña"> <a href="#"> ¿Olvidó su contraseña? </a></div>
+                    
+            </form>
+        </section>
+            
+        
+        
+        
+        
+        <footer>
+        <%- include('../partials/footer') %>  
+        </footer>

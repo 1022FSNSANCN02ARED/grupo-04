@@ -4,7 +4,7 @@ const app = express ();
 const path = require ('path');
 const methodOverride = require("method-override");
 const router = require('./routers/mainRouter.js');
-const methodOverride = require("method-override");
+
 
 
 // parse application/x-www-form-urlencoded
@@ -14,7 +14,7 @@ app.use(bodyParser.json())
 app.use(methodOverride("_method")); 
 
 //Para utilizar delete//
-app.use(methodOverride("_method"));
+//app.use(methodOverride("_method"));//
 
 /*Carpeta public*/
 app.use(express.static(path.join(__dirname,'public')));

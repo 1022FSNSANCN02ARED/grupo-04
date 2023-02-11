@@ -4,6 +4,9 @@
     
     width: 100%;
 }
+body{
+  background-color: whitesmoke;
+}
 .producto{
    /* box-shadow: rgb(100, 100, 100) 0px 0px 10px;
    border-bottom: 1px solid black;
