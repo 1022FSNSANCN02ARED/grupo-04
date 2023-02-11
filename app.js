@@ -13,8 +13,12 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 app.use(methodOverride("_method")); 
 
+<<<<<<< HEAD
 //Para utilizar delete//
 //app.use(methodOverride("_method"));//
+=======
+
+>>>>>>> 9f34c659caf5fab2140abb49f486bdc368d681f1
 
 /*Carpeta public*/
 app.use(express.static(path.join(__dirname,'public')));
@@ -34,19 +38,6 @@ app.set('views', path.join(__dirname, 'views'));
 /*Vistas renderizadas*/
 app.use('/', router);
 
-app.use('/login',router);
-
-app.use('/home',router);
-
-app.use('/registro',router);
-
-app.use('/tienda',router);
-
-app.use('/carrito',router);
-
-app.use('/create',router);
-
-app.use ('/list',router);
 
 /*Vistas sin renderizar*/
 

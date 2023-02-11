@@ -6,9 +6,7 @@
         <h3>LISTA DE PRODUCTOS</h3>
     <% products.forEach(product => { %> <%-
         include("../partials/productCard",{product}) %> 
-        <form method="POST" action="/resource?_method=DELETE">
-            <button type="submit">Delete resource</button>
-          </form>
+        
     <% }) %>
    
     </div>

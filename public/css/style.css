@@ -12,6 +12,10 @@ body{
     padding-top: 5px;
     margin: auto;
 }
+
+/*login*/
+
+
 .img-logo{
     width: 70px;
     height: 60px;
@@ -363,6 +367,111 @@ body{
     text-decoration: none;
     color: beige;
    }
+ /*Nosotros*/
+
+ .main-nosotros{
+  width: 100%;
+  display: block;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color:  #4a8db7;
+  }
+  
+  .card-nos{
+ position: relative;
+ width: 210px;
+ height: 210px;
+ margin: 5px;
+ background-color: #f0f3f5;
+ }
+
+  .card-nos .face-nos{
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ backface-visibility: hidden;
+ border-radius: 10px;
+ overflow: hidden;
+ transition: .5s;
+ }
+
+  .card-nos .front-nos{
+  transform: perspective(600px) rotateY(0deg);
+  box-shadow: 0 5px 10px black;
+  }
+
+  .card-nos .front-nos img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit:fill;
+  }
+
+   .card-nos .front-nos h1{
+  position: absolute;
+  width: 100%;
+  height: 45px;
+  bottom: 0;
+  line-height: 45px;
+  color: black;
+  background: black rgba(0,0,0,.4) ;
+  text-align: center;
+  }
+
+ .card-nos .back-nos{
+ transform: perspective(600px) rotateY(180deg);
+ background: #456789 (3,35,54);
+ padding: 15px;
+ color: rgb(48, 57, 188);
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ text-align: center;
+ box-shadow: 0px 5px 10px black;
+ }
+
+ .card-nos .back-nos .link-nos{
+  border-top: solid 1px white;
+  height: 50px;
+  line-height: 50px;
+ }
+
+ .card-nos .back-nos .link-nos a{
+ color: white;
+ }
+
+ .card-nos .back-nos h1{
+  font-size: 30px;
+  margin-top: 20px;
+  letter-spacing: 2px;
+ }
+
+ .card-nos .back-nos p{
+  font-size: 10px;
+ letter-spacing: 1.5px;
+ color: black;
+ }
+
+ .card-nos:hover .front-nos{
+ transform: perspective(600px) rotateY(180deg);
+ }
+
+ .card-nos:hover .back-nos{
+   transform: perspective(600px) rotateY(360deg);
+ }
+
+  .cuadro-nos{
+    display: inline-block
+  }
+
+  .container-related-products-nos{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    margin-bottom: 50px;
+    margin-top: 50px;
+    background-color:#74BDE0;
+  }
 
    /*Tienda*/
    .main-tienda{
@@ -898,6 +1007,17 @@ color: grey;
   }
 
   
+/*Nosotros*/
+ .body-nosotros{
+  position: relative;
+  
+ }
+  .main-nosotros{
+    width: 100%;
+  display: flex;
+   margin: auto;
+  
+  }
 
 }
 
@@ -1080,6 +1200,16 @@ color: grey;
   width: 30;
  }
 
+ .cuadro-nos{
+    display: flex;
+  }
+
+  .container-related-products-nos{
+    padding: 25px;
+    width: 90vw;
+    justify-content: center;
+  
+  }
 }
 @media (min-width:1281px){
    /*escritorio*/

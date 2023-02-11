@@ -16,6 +16,9 @@ module.exports = {
   tienda:(req,res)=>{
     return res.render('users/tienda');
   },
+  nosotros:(req,res)=>{
+    return res.render('users/nosotros');
+  },
   carrito:(req,res)=>{
     return res.render('users/carrito');
   },  
