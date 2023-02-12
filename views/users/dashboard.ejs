@@ -1,30 +1,39 @@
 <%- include('../partials/head') %>
 
+  <%- include('../partials/header') %>
+
 <title>dashboard</title>
-
-<button><a class="btn btn-success btn-block my-4"
+<div class="box-dashboard">
+<button class="dashboard-button"></button><a class="btn btn-success btn-block my-4"
 href="create">
-   
-Crear nuevo producto
 
+CREAR PRODUCTO 
+</a> </button>
+<button class="dashboard-button"></button><a class="btn btn-success btn-block my-4"
+href="/views/users/edit">
+
+   EDICION DEL PRODUCTO 
 </a> </button>
 
+<button class="dashboard-button"></button><a class="btn btn-success btn-block my-4"
+href="edit">
 
-<button><a class="btn btn-success btn-block my-4"
-href="detail">
-
-    detalle del producto
+    DETALLE DEL PRODUCTO 
 </a> </button>
 
-<button><a class="btn btn-success btn-block my-4"
+<button class="dashboard-button"></button><a class="btn btn-success btn-block my-4"
 href="destroy">
 
-    eliminar producto
-</a> </button>
+    ELIMINAR PRODUCTO 
+</a>
 
-<button><a class="btn btn-success btn-block my-4"
+<button class="dashboard-button"></button><a class="btn btn-success btn-block my-4"
 href="list">
 
-    lista de productos 
-</a> </button>
+   LISTA DE PRODUCTOS 
+</a> 
 
+  <!-- footer -->
+        <%- include('../partials/footer') %>
+        <!-- /footer -->
+</div>

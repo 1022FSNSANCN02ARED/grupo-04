@@ -53,10 +53,7 @@ module.exports= {
 
         res.render ('users/dashboard');
       },
-    
-     destroy: (req, res) => {
-      res.send('')
-    },
+  
      
   edit: (req, res) => {
       const product = products.findById(req.params.id);

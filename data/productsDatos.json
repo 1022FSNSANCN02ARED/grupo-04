@@ -1,8 +1,8 @@
 [
     {
         "id": 1,
-        "name": "rhoncus dui vel sem sed sagittis nam congue risus semper porta volutpat quam pede lobortis ligula sit amet",
-        "description": "nulla justo aliquam quis turpis eget elit sodales scelerisque mauris sit amet",
+        "name": "rhoncus ",
+        "description": "remera de algodon ultra fina",
         "category": "Cuadro1",
         "price": 16,
         "colores": "Fuscia",
@@ -21,7 +21,7 @@
     },
     {
         "id": 3,
-        "name": "convallis nulla neque libero convallis eget eleifend luctus ultricies eu nibh quisque id justo sit",
+        "name": "COraje",
         "description": "eget elit sodales scelerisque mauris sit amet eros suspendisse accumsan tortor",
         "category": "Tazas",
         "price": 17,
@@ -31,7 +31,7 @@
     },
     {
         "id": 4,
-        "name": "luctus rutrum nulla tellus in sagittis dui vel nisl duis ac nibh fusce lacus purus aliquet",
+        "name": "luctus",
         "description": "faucibus orci luctus et ultrices posuere cubilia curae duis faucibus accumsan odio curabitur convallis duis consequat dui nec",
         "category": "Unisex",
         "price": 65,
@@ -41,7 +41,7 @@
     },
     {
         "id": 5,
-        "name": "convallis duis consequat dui nec nisi volutpat eleifend donec ut dolor morbi vel lectus in quam",
+        "name": "convallis",
         "description": "potenti cras in purus eu magna vulputate luctus cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus",
         "category": "Unisex",
         "price": 97,
@@ -51,7 +51,7 @@
     },
     {
         "id": 6,
-        "name": "integer a nibh in quis justo maecenas rhoncus aliquam lacus morbi quis tortor id nulla ultrices",
+        "name": "integer ",
         "description": "orci luctus et ultrices posuere cubilia curae donec pharetra magna vestibulum aliquet ultrices erat tortor sollicitudin mi sit amet",
         "category": "RemeraHombre",
         "price": 25,
@@ -61,7 +61,7 @@
     },
     {
         "id": 7,
-        "name": "nisl nunc nisl duis bibendum felis sed interdum venenatis turpis enim blandit mi in porttitor",
+        "name": "nisl nunc ",
         "description": "porta volutpat quam pede lobortis ligula sit amet eleifend pede libero quis",
         "category": "Cuadro",
         "price": 35,
@@ -71,7 +71,7 @@
     },
     {
         "id": 8,
-        "name": "quis tortor id nulla ultrices aliquet maecenas leo odio condimentum id luctus nec molestie sed justo pellentesque viverra",
+        "name": "viverra",
         "description": "mauris sit amet eros suspendisse accumsan tortor quis turpis sed ante vivamus tortor",
         "category": "Cuadro1",
         "price": 33,
@@ -81,7 +81,7 @@
     },
     {
         "id": 9,
-        "name": "sit amet sem fusce consequat nulla nisl nunc nisl duis bibendum felis sed interdum venenatis",
+        "name": "sit amet",
         "description": "volutpat dui maecenas tristique est et tempus semper est quam pharetra magna",
         "category": "Unisex",
         "price": 43,
@@ -101,7 +101,7 @@
     },
     {
         "id": 11,
-        "name": "rhoncus dui vel sem sed sagittis nam congue risus semper porta volutpat quam pede lobortis ligula sit amet",
+        "name": "rhoncus dui ",
         "description": "nulla justo aliquam quis turpis eget elit sodales scelerisque mauris sit amet",
         "category": "Cuadro1",
         "price": 16,
@@ -150,126 +150,6 @@
         "size": "s"
     },
     {
-        "id": 1675607728313,
-        "name": "33",
-        "description": "safvda",
-        "category": "",
-        "price": 66000,
-        "image": "image-1675607728309.png",
-        "colour": "vsvsd",
-        "size": "lll"
-    },
-    {
-        "id": 1675607978796,
-        "name": "acc",
-        "description": "vsdsav",
-        "category": "in-sale",
-        "price": 7777,
-        "image": "image-1675607978784.png",
-        "colour": "rojo",
-        "size": "vas"
-    },
-    {
-        "id": 1675608024461,
-        "name": "",
-        "description": "",
-        "category": "",
-        "price": 0,
-        "image": "default-image.png",
-        "colour": "",
-        "size": ""
-    },
-    {
-        "id": 1675976592395,
-        "name": "3366",
-        "description": "vsssffs",
-        "category": "in-sale",
-        "price": 26665,
-        "image": "image-1675976592390.png",
-        "colour": "rojo",
-        "size": "M"
-    },
-    {
-        "id": 1675985443250,
-        "name": "1",
-        "description": "aaVSSA",
-        "category": "in-sale",
-        "price": 2655,
-        "image": "image-1675985443245.jpg",
-        "colour": "rojo",
-        "size": "M"
-    },
-    {
-        "id": 1675985480419,
-        "name": "",
-        "description": "",
-        "category": "",
-        "price": 0,
-        "image": "default-image.png",
-        "colour": "",
-        "size": ""
-    },
-    {
-        "id": 1675985504685,
-        "name": "",
-        "description": "",
-        "category": "",
-        "price": 0,
-        "image": "default-image.png",
-        "colour": "",
-        "size": ""
-    },
-    {
-        "id": 1675985547315,
-        "name": "",
-        "description": "",
-        "category": "",
-        "price": 0,
-        "image": "default-image.png",
-        "colour": "",
-        "size": ""
-    },
-    {
-        "id": 1675985665122,
-        "name": "",
-        "description": "",
-        "category": "",
-        "price": 0,
-        "image": "default-image.png",
-        "colour": "",
-        "size": ""
-    },
-    {
-        "id": 1675985705788,
-        "name": "26",
-        "description": "vevw",
-        "category": "in-sale",
-        "price": 2665,
-        "image": "image-1675985705777.png",
-        "colour": "vsvsd",
-        "size": "vas"
-    },
-    {
-        "id": 1675985763197,
-        "name": "homlaV",
-        "description": "VASA",
-        "category": "visited",
-        "price": 56565,
-        "image": "image-1675985763187.png",
-        "colour": "VV",
-        "size": "vas"
-    },
-    {
-        "id": 1675986685490,
-        "name": "26",
-        "description": "VAE",
-        "category": "in-sale",
-        "price": 8000,
-        "image": "default-image.png",
-        "colour": "vs",
-        "size": "VA"
-    },
-    {
         "id": 1676124791922,
         "price": null,
         "image": "default-image.png"
@@ -278,6 +158,15 @@
         "id": 1676125149419,
         "price": null,
         "image": "default-image.png"
+    },
+    {
+        "id": 1676239531423,
+        "name": "",
+        "description": "",
+        "category": "",
+        "price": 0,
+        "image": "default-image.png",
+        "colour": "",
+        "size": ""
     }
-    
 ]
