@@ -13,12 +13,8 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 app.use(methodOverride("_method")); 
 
-<<<<<<< HEAD
 //Para utilizar delete//
 //app.use(methodOverride("_method"));//
-=======
-
->>>>>>> 9f34c659caf5fab2140abb49f486bdc368d681f1
 
 /*Carpeta public*/
 app.use(express.static(path.join(__dirname,'public')));
