@@ -77,11 +77,12 @@ CONCLUSION SPRINT 4
 
 
 * hacer mas 
-
+comentar avances diarios
 
 
 * continuar haciendo
-
+dividir tareas desde un comienzo
+compartir avances y dificultades
 
 
 * hacer menos

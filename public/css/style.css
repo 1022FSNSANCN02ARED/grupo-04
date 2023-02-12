@@ -271,6 +271,27 @@ body{
     margin-top: 10px;
     box-shadow: 3px 3px 10px black;
   }
+  .imagen-fondo-donaciones{
+    background-image: url(../images/animales-rescatados.jpeg);
+    background-position: center center;
+  }
+  .imagen-fondo-insumos{
+    background-image: url(../images/insumos2.jpg);
+    background-position: center center;
+  }
+  .articulo-caracteristica a{
+    text-decoration: none;
+    border: 1px solid black;
+    color: black;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 4px;
+    background-color:whitesmoke;
+  }
+  .h2-colabora{
+    text-align: center;
+  }
    /*Footer*/
 
    footer{
@@ -954,22 +975,15 @@ color: grey;
     border: solid 1px #ebebeb;
     box-sizing: border-box;
 }
-.boton-donar{
-  width: 100px;
-  height: 40px;
-  border: none;
-  border-radius: 15%;
-  color:white; 
-  font-weight: bold;
-  background-color:orange ;
-  bottom: 0;
-  top:40%;
-  right: 0;
-  left:58%;
+.h2-colabora{
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+    
+  justify-content: center;
+  margin-top: 30px;
 }
-.boton-donar:hover{
-  background-color: #DC630A;
-}
+
 .foto-header{
   width: 100vw;
   height: 400px;
@@ -1088,29 +1102,23 @@ color: grey;
     /*Home Responsive*/
   .articulo-caracteristica{
     width: 25vw;
-    height: 50vh;
+    height: 60vh;
     background-color: white;
     margin-bottom: 10px;
     border: solid 1px #ebebeb;
     box-sizing: border-box;
-    margin-top: 100px;
+    margin-top: 150px;
+    box-shadow: 2px 2px 3px rgb(47, 45, 45);
 }
-.boton-donar{
-  width: 100px;
-  height: 40px;
-  border: none;
-  border-radius: 15%;
-  color:white; 
-  font-weight: bold;
-  background-color:orange ;
-  bottom: 0;
-  top: 400px;
-  right: 0;
-  left:65%;
+.h2-colabora{
+  display: flex;
+  
 }
-.boton-donar:hover{
-  background-color: #DC630A;
+
+.articulo-caracteristica:hover{
+  box-shadow: 3px 3px 3px 5px rgb(177, 134, 53);
 }
+
 .foto-header{
   width: 100vw;
   height: 80vh;
@@ -1126,6 +1134,8 @@ color: grey;
    display:flex;
    justify-content: space-between;
    flex-wrap: wrap;
+   border-top:2px solid #454141;
+   margin-top: 100px;
   }
   /*footer*/
 .footer-container{
@@ -1263,7 +1273,7 @@ color: grey;
   /*Home Responsive*/
   .articulo-caracteristica{
     width: 25vw;
-    height: 50vh;
+    height: 60vh;
     background-color: white;
     margin-top: 15px;
     margin-bottom: 30px;
