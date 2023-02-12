@@ -11,10 +11,15 @@ module.exports = {
         if (errors.isEmpty() && req.body.usuarioLogin == 'admin' && req.body.passwordLogin == 123){
          res.render('users/dashboard');
         }else{
-          //return res.status(422).json({ errors: errors.mapped()});//
-           res.render('users/login',{errors:errors.mapped(), old: req.body});
-          // res.send('Hay errores');//
+           //return res.status(422).json({ errors: errors.mapped()});//
+          //res.redirect('users/login',{errors:errors.mapped(), old: req.body});
+          errors = errors.array();
+          res.render('users/login',{errors})
+          // res.send('Hay errores');
+         // const alert = errors.array()
+         // res.render('users/login', { alert});
         }
+        
     },
     registro:(req,res)=>{
       return res.render('users/registro');

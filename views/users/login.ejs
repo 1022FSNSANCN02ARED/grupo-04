@@ -15,11 +15,11 @@
             <label for="">Ingrese Contraseña</label>
             <input type="password" name="passwordLogin" id="passwordLogin" class="campo-input" >
         </div>
-
-        <% if(errors) { %>
+        <% if(typeof errors != 'undefined') { %>
             <p class="errores">Atencion: Usuario/Contraseña incorrecto/s</p>
             <% } %>
-    
+
+       
         
         <button  class="boton-login" type="submit">Ingresar</button>
       
