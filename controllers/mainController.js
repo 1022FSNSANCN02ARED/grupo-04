@@ -10,11 +10,11 @@ module.exports = {
   login:(req, res) => {
     return res.render('users/login');
   },
-  registro:(req,res)=>{
-    return res.render('users/registro');
-  },
   tienda:(req,res)=>{
     return res.render('users/tienda');
+  },
+  nosotros:(req,res)=>{
+    return res.render('users/nosotros');
   },
   carrito:(req,res)=>{
     return res.render('users/carrito');

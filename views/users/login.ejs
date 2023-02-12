@@ -3,22 +3,26 @@
     <%- include('../partials/header') %>  
 
 <section class="box-form-login">
-    <form action="" method="POST" class="formulario">
-    
+    <form action= "" method="post" class="formulario">
+      
         <h2 class="titulo-login">BIENVENIDOS</h2>
-    
         <div class="input-box">
             <label for="">Ingrese Usuario</label>
-            <input type="text"  class="campo-input" placeholder="Usuario"    name="usuario" required>
+            <input type="text" name="usuarioLogin" id="usuarioLogin" class="campo-input" >
         </div>
     
         <div class="input-box">
             <label for="">Ingrese Contraseña</label>
-            <input type="password"  class="campo-input"  placeholder="Contraseña"    name="contraseña" required>
+            <input type="password" name="passwordLogin" id="passwordLogin" class="campo-input" >
         </div>
-    
+        <% if(typeof errors != 'undefined') { %>
+            <p class="errores">Atencion: Usuario/Contraseña incorrecto/s</p>
+            <% } %>
+
+       
         
         <button  class="boton-login" type="submit">Ingresar</button>
+      
     
         <div class="input-box check-login" >
             <label > Recordar </label>
