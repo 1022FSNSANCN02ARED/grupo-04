@@ -11,8 +11,8 @@ module.exports = {
         if (errors.isEmpty() && req.body.usuarioLogin == 'admin' && req.body.passwordLogin == 123){
          res.render('users/dashboard');
         }else{
-          //return res.status(422).json({ errors: errors.mapped()});//
-           res.render('users/login',{errors:errors.mapped(), old: req.body});
+          return res.status(422).json({ errors: errors.mapped()});//
+           //res.render('users/login',{errors:errors.mapped(), old: req.body});
           // res.send('Hay errores');//
         }
     },
