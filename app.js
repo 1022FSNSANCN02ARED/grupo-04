@@ -4,17 +4,19 @@ const app = express ();
 const path = require ('path');
 const methodOverride = require("method-override");
 const router = require('./routers/mainRouter.js');
-
+const session = require('express-session');
 
 
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }))
-// parse application/json
+// Parse application/json
 app.use(bodyParser.json())
 app.use(methodOverride("_method")); 
 
-//Para utilizar delete//
-//app.use(methodOverride("_method"));//
+/*Trabajar con session*/
+app.use(session({secret:'Ayuda a los animales '}))
+
+
 
 /*Carpeta public*/
 app.use(express.static(path.join(__dirname,'public')));
@@ -63,6 +65,15 @@ app.get ('/cuadro1',(req,res)=>{
     res.sendFile(path.resolve(__dirname,'views/products/cuadro1.html'));
     
     });
+
+/*Probando session*/
+app.get('/pruebaSession',function(req,res){
+    if(req.session.numeroVisitas == undefined){
+        req.session.numeroVisitas = 0;
+    }
+    req.session.numeroVisitas ++;
+ res.send('Session tiene el numero:'+req.session.numeroVisitas);   
+});
 
 /*Vistas anteriores*/
 /*
