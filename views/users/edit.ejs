@@ -1,22 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
 <%- include('../partials/head') %>
- <title>Product-form</title>
+ <title>Edicion-form</title>
     <body>
         <!-- Header -->
         <%- include('../partials/header',{title: 'Editando: ' + product.name}) %>
         <!-- /Header -->
-
-        <div class="container products-wrapper">
+ <div class="container products-wrapper">
             <div class="row">
                 <div class="col-12">
                     <h2 class="products-title">
-                        Estás editando: <i><%= product.name %> </i>
+                        FORMULARIO EDICION DE PRODUCTO
                     </h2>
                 </div>
+                 <h2 class="products-title">
+                        Estás editando: <i><%= product.name %> </i>
+                    </h2>
             </div>
             <div class="col-12">
                 <form
-                      action="/products/<%= product.id %>?_method=put"
-                    method="POST"  
+                    action="/products/<%= product.id %>?_method=put"
+                    method="POST" 
                 >
                     <div class="row product-detail">
                         
@@ -31,6 +35,8 @@
                                 placeholder="Ej: 5678"
                                 class="form-input"
                                 value="<%= product.name %>"
+                                
+                               
                                
                                 
                             
@@ -47,7 +53,7 @@
                                 name="size"
                                 placeholder="L"
                                 class="form-input"
-                                value="<%= product.size %>"
+                             
                              
                             />
                         </div>
@@ -61,7 +67,7 @@
                                 name="colour"
                                 placeholder="Ej:azul"
                                 class="form-input"
-                                value="<%= product.colour %>"
+                            
                                
                             />
                         </div>
@@ -73,7 +79,7 @@
                                 name="image"
                                 class="form-input"
                                 accept="image/png,image/jpeg"
-                                value="<%= product.image %>"
+                               
                                
                             />
                         </div>
@@ -87,7 +93,7 @@
                                 class="form-input"
                             >
                                 <option value="">Elegí</option>
-                                <option value="in-sale" <%= product.category=="in-sale" ? "selected" : "" %>>En oferta</option>
+                                 <option value="in-sale" <%= product.category=="in-sale" ? "selected" : "" %>>En oferta</option>
                                 <option value="visited" <%= product.category=="visited" ? "selected" : "" %>>
                                     Últimos agregados
                                 </option>
@@ -105,6 +111,7 @@
                                 placeholder="Ej:1500"
                                 class="form-input"
                                  value="<%= product.price %>"
+                          
                                
                             />
                         </div>
@@ -112,11 +119,10 @@
                             <label for="description" class="form-label"
                                 >Descripcion:</label
                             >
-                            <textarea
+                              <textarea
                                 name="description"
                                 id="description"
                                 class="form-input"
-                                name="price"
                             ><%= product.description %></textarea>
                         </div>
                         <div class="col-12">

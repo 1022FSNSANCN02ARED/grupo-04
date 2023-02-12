@@ -1,6 +1,36 @@
-<%- include('../partials/head') %>
+<%- include('../partials/head')%>
  <title>detail</title>
     <body>
         <!-- Header -->
         <%- include('../partials/header') %>
+        
         <!-- /Header -->
+
+        <h3> DETALLE DEL PRODUCTO :
+
+        </h3>
+          <p>probando</p>
+           <p><%= product.name %></p>
+     
+   <a
+                                href="/products/<%= product.id %>/edit"
+                                class="action-button edit"
+                                >EDITAR PRODUCTO</a
+                            >
+                            <form
+                                action="/products/<%= product.id %>?_method=delete"
+                                method="POST"
+                                style="display: inline-flex"
+                            >
+                                <button
+                                    type="submit"
+                                    class="action-button delete"
+                                >
+                                    ELIMINAR
+                                </button>
+                                </form>
+        <!-- footer -->
+        <%- include('../partials/footer') %>
+        <!-- /footer -->
+                   </div>
+        

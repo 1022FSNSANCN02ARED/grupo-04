@@ -7,9 +7,29 @@ module.exports= {
     allProducts: (req, res) => {
       res.render('users/list', { products: products.findAll() });
      },
+
+     
+    //detalle del producto/
+   // detail: (req,res)=> {
+       //res.render ('users/detail');      },
+      detail: (req, res) => {
+       const product = products.findById(req.params.id);
+       if (product != undefined){
+        res.render("users/detail", { product });  
+       }
+      else {
+
+        res.redirect ('../notFound')
+      }
+      },
+     
+
+
+
    //Formulario de creación de productos/
     create: (req,res)=> {
         res.render ('users/create');
+       
       },
  
 
@@ -33,23 +53,23 @@ module.exports= {
 
         res.render ('users/dashboard');
       },
-     detail: (req,res)=> {
-        res.render ('users/detail');
-      },
+    
      destroy: (req, res) => {
-      res.send('Eliminar')
+      res.send('')
     },
      
-    edit: (req, res) => {
-        const product = products.findById(req.params.id);
-        res.render("products/edit-form", { product });
-    },
+  edit: (req, res) => {
+      const product = products.findById(req.params.id);
+       res.render("users/edit", { product });
+   },
 
    update: (req, res) => {
         const product = req.body;
         res.send(product);
     },
-     
+      destroy: (req, res) => {
+        res.send(`deleting ${req.params.id}`);
+    },
       
 
     };

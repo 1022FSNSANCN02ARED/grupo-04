@@ -257,6 +257,7 @@ body{
   .carrusel{
 
   }
+  
    /*Footer*/
 
    footer{
@@ -410,7 +411,7 @@ body{
     }
   .card .back{
   transform: perspective(600px) rotateY(180deg);
-  background: #456789 (3,35,54);
+  background: #456789 rgba(3,35,54);
   padding: 15px;
   color: white;
   display: flex;
@@ -428,7 +429,7 @@ body{
 
   }
   .card .back .link a{
-  color: white;
+  color: black;
 
   }
   .card .back h3{

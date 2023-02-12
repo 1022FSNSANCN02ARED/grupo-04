@@ -1,11 +1,14 @@
 <%- include('../partials/head')%>
+<title>list</title>
 
 <body class="all-products">
     <%- include('../partials/header') %>
+   
     <div>
         <h3>LISTA DE PRODUCTOS</h3>
     <% products.forEach(product => { %> <%-
         include("../partials/productCard",{product}) %> 
+       
         
     <% }) %>
    
