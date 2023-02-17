@@ -15,16 +15,23 @@ const upload = multer({
     storage,
 });
 
+var auth = function(req, res, next) {
+    if (req.session && req.session.userid=== "admin")
+      return next();
+    else
+      return res.send('Usted no se encuentra logeado');
+  };
 
 
-router.get("/create",productsControllers.create);
+
+router.get("/create",auth,productsControllers.create);
 router.get("/list",productsControllers.allProducts);
-router.get("/dashboard", productsControllers.dashboard);
+router.get("/dashboard",auth, productsControllers.dashboard);
 router.get("/:id", productsControllers.detail);
 router.post("/create", upload.single("image"), productsControllers.store);
-router.get("/:id/edit", productsControllers.edit);
+router.get("/:id/edit",auth, productsControllers.edit);
 router.put("/:id", productsControllers.update);
-router.delete("/:id", productsControllers.destroy);
+router.delete("/:id",auth, productsControllers.destroy);
 
 
 module.exports = router;

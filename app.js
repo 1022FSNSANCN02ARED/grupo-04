@@ -5,16 +5,24 @@ const path = require ('path');
 const methodOverride = require("method-override");
 const router = require('./routers/mainRouter.js');
 const session = require('express-session');
-
+const cookieParser = require('cookie-parser');
 
 // parse application/x-www-form-urlencoded
-app.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.urlencoded({ extended: true }))
 // Parse application/json
 app.use(bodyParser.json())
 app.use(methodOverride("_method")); 
 
 /*Trabajar con session*/
-app.use(session({secret:'Ayuda a los animales '}))
+// creating 24 hours from milliseconds
+const oneDay = 1000 * 60 * 60 * 24;
+app.use(session({
+    secret:'Ayuda a los animales ',
+    resave: false,
+    saveUninitialized: true,
+    cookie: { maxAge: oneDay },
+
+}))
 
 
 
