@@ -7,19 +7,19 @@ const users = require("../data/user");
 module.exports = {
     //User Login
     login: (req,res) =>{
-        let errors = validationResult(req) ;
-        if (errors.isEmpty() && req.body.usuarioLogin == 'admin' && req.body.passwordLogin == 123){
-         res.render('users/dashboard');
-        }else{
-           //return res.status(422).json({ errors: errors.mapped()});//
-          //res.redirect('users/login',{errors:errors.mapped(), old: req.body});
-          errors = errors.array();
-          res.render('users/login',{errors})
-          // res.send('Hay errores');
-         // const alert = errors.array()
-         // res.render('users/login', { alert});
-        }
-        
+      let myusername = 'admin';
+      let mypassword = 123;
+      let errors = validationResult(req) ;
+      if(req.body.usuarioLogin == myusername && req.body.passwordLogin == mypassword){
+        session=req.session;
+        session.userid=req.body.usuarioLogin;
+        console.log(req.session)
+        res.render('users/dashboard');
+    }
+    else{
+      errors = errors.array();
+      res.render('users/login',{errors})
+    }
     },
     registro:(req,res)=>{
       return res.render('users/registro');
@@ -36,5 +36,7 @@ module.exports = {
     res.send('Se registro con exito')
 
     },
+
+   
 
 };
