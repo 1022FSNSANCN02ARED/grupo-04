@@ -18,5 +18,8 @@ module.exports = {
   },
   carrito:(req,res)=>{
     return res.render('users/carrito');
-  },  
+  }, 
+  donaciones:(req,res)=>{
+    return res.render('users/donaciones');
+  },
 };

@@ -10,8 +10,8 @@ module.exports= {
 
      
     //detalle del producto/
-   // detail: (req,res)=> {
-       //res.render ('users/detail');      },
+    //detail: (req,res)=> {
+      // res.render ('users/detail');      },
       detail: (req, res) => {
        const product = products.findById(req.params.id);
        if (product != undefined){
