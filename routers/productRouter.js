@@ -29,7 +29,7 @@ router.get("/dashboard",auth, productsControllers.dashboard);
 router.get("/:id", productsControllers.detail);
 router.post("/create", upload.single("image"), productsControllers.store);
 router.get("/:id/edit",auth, productsControllers.edit);
-router.put("/:id", productsControllers.update);
+router.put("/:id", auth,productsControllers.update);
 router.delete("/:id",auth, productsControllers.destroy);
 
 
