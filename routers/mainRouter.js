@@ -4,7 +4,7 @@ const mainController = require("../controllers/mainController.js");
 const productRouter = require("./productRouter");
 const userLoginRouter = require ("./userLoginRouter");
 const userRegisterRouter = require('./userRegisterRouter');
-const tiendaRouter = require('./tiendaRouter');
+
 
 
 
@@ -25,7 +25,7 @@ router.use("/products",productRouter);
 router.use("/user", userLoginRouter);
 router.use("/user",userRegisterRouter);
 
-router.use("/tienda",tiendaRouter);
+
 
 router.post ('/list', async (req,res)=>{
 
