@@ -18,7 +18,6 @@ module.exports = {
         const productsFileContent = JSON.stringify(products, null, 4);
         fs.writeFileSync(productsFilePath, productsFileContent, "utf-8");
     },
-
     /*encontrar producto por id*/
     findById(id) {
         return this.findAll().find((p) => p.id == id);
