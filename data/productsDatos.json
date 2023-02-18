@@ -168,5 +168,15 @@
         "image": "default-image.png",
         "colour": "",
         "size": ""
+    },
+    {
+        "id": 1676673045528,
+        "name": "Producto Prueba",
+        "description": "sfsfsfs",
+        "category": "in-sale",
+        "price": 1250,
+        "image": "default-image.png",
+        "colour": "Azul",
+        "size": "L"
     }
 ]
