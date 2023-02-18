@@ -2,102 +2,14 @@
     
 <body class="body-tienda">
     <%- include('../partials/header') %>
-<p><a href="products/list">Todos los productos>>></a></p>
-<main class="main-tienda"> 
-   
-    <div class="card">
 
-      <div class="face front">
-         <img src="images/remera.png" alt="">
-          <h3></h3>
-        
-      </div>
-          <div class="face back">
-             <h3>Unisex</h3>
-              <p>REMERA TANTO PARA EL COMO PARA ELLA, ALGODON DE PRIMERA CALIDAD CON LA IMAGEN DEL PERRITO QUE MAS TE GUSTE</p>
-                 <div class="link">
-                    <a href="tienda/unisex"> Leer mas</a>
-
-                  </div>
-        
-          </div>
-
-      </div>
-
-      <div class="card">
-
-      <div class="face front">
-         <img src="images/remera1.png" alt="">
-          <h3></h3>
-        
-      </div>
-          <div class="face back">
-             <h3>Remera Hombre</h3>
-              <p>REMERAS SUBLIMADAS - PERSONALIZADAS EXCELENTE COLORES SUBLIMADOS, EL MEJOR PRECIO SIN COMPRA MÍNIMA.</p>
-                 <div class="link">
-                    <a href="tienda/productoHombre"> Leer mas</a>
-                  
-
-                  </div>
-        
-          </div>
-
-      </div>
-
-
-      <div class="card">
-
-      <div class="face front">
-         <img src="images/taza1.png" alt="">
-          <h3></h3>
-        
-      </div>
-          <div class="face back">
-             <h3>Tazas</h3>
-              <p>TODOS LOS MODELOS DE TAZAS DE PERRITOS Y ANIMALITOS PARA QUE ARRANQUES EL DESAYUNO CON UNA SONRISA</p>
-                 <div class="link">
-                    <a href="tienda/productoMujer"> Leer mas</a>
-
-                  </div>
-        
-          </div>
-
-      </div>
-            <div class="card cuadro">
-                <div class="face front">
-                  <img src="images/cuadro.png" alt="">
-                  <h3></h3>
-                </div>
-                <div class="face back">
-                  <h3>Cuadro</h3>
-                  <p>ELEGI TU CUADRO CON LAS IMAGENES DE GATITOS QUE MAS TE GUSTEN</p>
-                  <div class="link">
-                  <a href="tienda/cuadro"> Leer mas</a>
-                  </div>
-                </div>
-
-            </div>
-
-
-      <div class="card cuadro">
-
-      <div class="face front">
-         <img src="images/cuadro1.jpg" alt="">
-          <h3></h3>
-        
-      </div>
-          <div class="face back">
-             <h3>Cuadro</h3>
-              <p>ELEGI TU CUADRO CON LAS IMAGENES DE PERRITOS QUE MAS TE GUSTEN</p>
-                 <div class="link">
-                    <a href="tienda/cuadro1"> Leer mas</a>
-
-                  </div>
-        
-          </div>
-
-      </div>
- 
+<main class="main-tienda">   
+    
+        <% products.forEach(product => { %> <%-
+            include("../partials/productCard",{product}) %> 
+           
+            
+        <% }) %>
 
 </main>
 

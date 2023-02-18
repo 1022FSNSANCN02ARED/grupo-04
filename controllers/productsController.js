@@ -1,21 +1,14 @@
+const session = require("express-session");
 const path = require("path");
 const { saveProduct, findById } = require("../data/products");
 const products = require("../data/products");
 
 module.exports= {
-  //Listado de productos/
-    allProducts: (req, res) => {
-      res.render('users/list', { products: products.findAll() });
-     },
-
-     
-    //detalle del producto/
-    //detail: (req,res)=> {
-      // res.render ('users/detail');      },
       detail: (req, res) => {
        const product = products.findById(req.params.id);
+       let estado = req.session.userid;
        if (product != undefined){
-        res.render("users/detail", { product });  
+        res.render("users/detail", { product,estado });  
        }
       else {
 
@@ -23,9 +16,6 @@ module.exports= {
       }
       },
      
-
-
-
    //Formulario de creación de productos/
     create: (req,res)=> {
         res.render ('users/create');
@@ -53,7 +43,6 @@ module.exports= {
 
         res.render ('users/dashboard');
       },
-  
      
   edit: (req, res) => {
       const product = products.findById(req.params.id);

@@ -1,4 +1,6 @@
 const path = require("path");
+const { saveProduct, findById } = require("../data/products");
+const products = require("../data/products");
 
 module.exports = {
   Home: (req,res)=> {
@@ -11,7 +13,7 @@ module.exports = {
     return res.render('users/login');
   },
   tienda:(req,res)=>{
-    return res.render('users/tienda');
+    return res.render('products/tienda', { products: products.findAll()});
   },
   nosotros:(req,res)=>{
     return res.render('users/nosotros');

@@ -100,7 +100,7 @@
                   
                   
 
-
+     <% if (estado == 'admin') { %>
                           <a
                                 href="/products/<%= product.id %>/edit"
                                 class="btn-detail-edit"
@@ -118,7 +118,7 @@
                                     ELIMINAR
                                 </button>
                                 </form>
-                              
+                                <% } %>         
           
 
         <!-- footer -->
