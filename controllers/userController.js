@@ -14,11 +14,11 @@ module.exports = {
         session=req.session;
         session.userid=req.body.usuarioLogin;
         console.log(req.session)
-        res.render('users/dashboard');
+        res.render('index');
     }
     else{
       errors = errors.array();
-      res.render('users/login',{errors})
+      res.render('users/admin/login',{errors})
     }
     },
     registro:(req,res)=>{

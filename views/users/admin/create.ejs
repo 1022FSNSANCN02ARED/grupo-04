@@ -1,26 +1,23 @@
-<!DOCTYPE html>
-<html lang="es">
-<%- include('../partials/head') %>
- <title>Edicion-form</title>
+
+ <%- include('../../partials/head') %>
+ <title>Product-form</title>
     <body>
         <!-- Header -->
-        <%- include('../partials/header',{title: 'Editando: ' + product.name}) %>
+        <%- include('../../partials/header') %>
         <!-- /Header -->
- <div class="container products-wrapper product-detail">
+
+        <div class="container products-wrapper">
             <div class="row">
                 <div class="col-12">
                     <h2 class="products-title">
-                        FORMULARIO EDICION DE PRODUCTO
+                        FORMULARIO CREACION DE PRODUCTO
                     </h2>
                 </div>
-                 <h2 class="products-title">
-                        Estás editando: <i><%= product.name %> </i>
-                    </h2>
             </div>
-            <div class="col-12 box1">
+            <div class="col-12">
                 <form
-                    action="/products/<%= product.id %>?_method=put"
-                    method="POST" 
+                    method="post"
+                    enctype="multipart/form-data"   
                 >
                     <div class="row product-detail">
                         
@@ -34,8 +31,6 @@
                                 name="name"
                                 placeholder="Ej: 5678"
                                 class="form-input"
-                                value="<%= product.name %>"
-                                
                                
                                
                                 
@@ -93,8 +88,8 @@
                                 class="form-input"
                             >
                                 <option value="">Elegí</option>
-                                 <option value="in-sale" <%= product.category=="in-sale" ? "selected" : "" %>>En oferta</option>
-                                <option value="visited" <%= product.category=="visited" ? "selected" : "" %>>
+                                <option value="in-sale">En oferta</option>
+                                <option value="visited">
                                     Últimos agregados
                                 </option>
                             </select>
@@ -110,7 +105,6 @@
                                 name="price"
                                 placeholder="Ej:1500"
                                 class="form-input"
-                                 value="<%= product.price %>"
                           
                                
                             />
@@ -119,16 +113,17 @@
                             <label for="description" class="form-label"
                                 >Descripcion:</label
                             >
-                              <textarea
+                            <textarea
                                 name="description"
                                 id="description"
                                 class="form-input"
-                            ><%= product.description %></textarea>
+                                name="price"
+                            ></textarea>
                         </div>
                         <div class="col-12">
-                            <button type="submit" class="edit"> <span> Guardar Producto</span>
-</button>
-                           
+                            <button type="submit" class="edit">
+                               <span> Guardar Producto</span>
+                            </button>
                         </div>
                     </div>
                 </form>
@@ -137,10 +132,7 @@
         <!-- /todos los productos -->
 
         <!-- footer -->
-        <%- include('../partials/footer') %>
+        <%- include('../../partials/footer') %>
         <!-- /footer -->
     </body>
 </html>
-
-
-

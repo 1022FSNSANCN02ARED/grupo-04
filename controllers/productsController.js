@@ -8,7 +8,7 @@ module.exports= {
        const product = products.findById(req.params.id);
        let estado = req.session.userid;
        if (product != undefined){
-        res.render("users/detail", { product,estado });  
+        res.render("products/detail", { product,estado });  
        }
       else {
 
@@ -18,7 +18,7 @@ module.exports= {
      
    //Formulario de creación de productos/
     create: (req,res)=> {
-        res.render ('users/create');
+        res.render ('users/admin/create');
        
       },
  
@@ -39,21 +39,17 @@ module.exports= {
     res.redirect('/tienda')
 
     },
-    dashboard: (req,res)=> {
-
-        res.render ('users/dashboard');
-      },
-     
-  edit: (req, res) => {
+  
+    edit: (req, res) => {
       const product = products.findById(req.params.id);
-       res.render("users/edit", { product });
-   },
+      res.render("users/admin/edit", { product });
+    },
 
-   update: (req, res) => {
+    update: (req, res) => {
         const product = req.body;
         res.send(product);
     },
-      destroy: (req, res) => {
+    destroy: (req, res) => {
         res.send(`deleting ${req.params.id}`);
     },
       
