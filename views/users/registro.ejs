@@ -1,53 +1,70 @@
 <%- include('../partials/head') %>
-   
-<body class="body-registro">
-    <%- include('../partials/header') %>
-<main class="carac-main">
-            <form action="" method="POST" class="fondo-formulario-reg">
-            <div class = "cajas-datos">
-                <div calss="caja1-form">
-                    <h3 class="titulo-h3">Datos Personales</h3>
-                    <P class="p-centrada"><label for="">Nombre y Aplellido:</label></P>
-                    <p class="p-centrada" ><input type="text" placeholder="Tu nombe completo" required></p>
-                    <P class="p-centrada"><label for="">Domicilio:</label></P>
-                    <p class="p-centrada" ><input type="text" placeholder="Calle y altura" required></p>
-                    <P class="p-centrada"><label for="">Localidad:</label></P>
-                    <p class="p-centrada" ><input type="text" placeholder="Localidad" required></p>
-                    <P class="p-centrada"><label for="">Provincia:</label></P>
-                    <p class="p-centrada" ><input type="text" placeholder="Provincia" required></p>
-                    <P class="p-centrada"><label for="">Móvil:</label></P>
-                    <p class="p-centrada" ><input type="text" placeholder="Número de celular" required></p>
+ <title>detail</title>
+    <body>
+        <!-- Header -->
+        <%- include('../partials/header') %>
+        <!-- /Header -->
+        <section class="box-form-donaciones">
+            <form action="" method="POST" class="formulario">
+            
+                <h1 class="titulo-login">FORMULARIO DE REGISTRO</h1>
+
+                     
+                <div class="input-box">
+                    <label for="">Nombre y Apellido</label>
+                    <input type="text"  class="campo-input" placeholder="Nombre"    name="nombre" required>
                 </div>
-
-        <div class="caja2-form">
-            <h2 class="titulo-h2">FORMULARIO DE REGISTRO</h2>
-            <br>
-            <br>
-            <P class="p-centrada"><label for="">NOMBRE DE USUARIO:</label></P>
-            <p class="p-centrada" ><input type="text" name="userRegister" id="userRegister" placeholder="Ingrese su usuario"></p>
-            <p class="p-centrada"><label for="">EMAIL:</label></P>
-            <p class="p-centrada"><input type="email"  name="userEmail" id="userEmail" placeholder="Ingrese su mail"></p>
-            <p class="p-centrada"><label for="">CONTRASEÑA:</label></P>
-            <p class="p-centrada"><input type="password" name="userPassword" id="userPassword"  placeholder="Caracteres alfanumericos"></p>
-            <p class="p-centrada"><label for="">REINGRESAR CONTRASEÑA:</label></P>
-            <p class="p-centrada"><input type="password"  name="userPasswordSecond" id="userPasswordSecond"  placeholder="Caracteres alfanumericos"></p>
-
+            
+                <div class="input-box">
+                    <label for="">Domicilio</label>
+                    <input type="text"  class="campo-input"  placeholder="Domicilio"    name="domicilio" required>
+                </div>
+                <div class="input-box">
+                    <label for="">Localidad</label>
+                    <input type="text"  class="campo-input"  placeholder="Localidad"    name="localidad" required>
+                </div>
+                <div class="input-box">
+                    <label for="">Provincia</label>
+                    <input type="text"  class="campo-input"  placeholder="Provincia"    name="provincia" required>
+                </div>
+                <div class="input-box">
+                    <label for="">Documento de Identidad</label>
+                    <input type="number"  class="campo-input"  placeholder="D.N.I"    name="documento" required>
+                <div class="input-box">
+                    <label for="">Móvil</label>
+                    <input type="number"  class="campo-input"  placeholder="Teléfono celular"    name="movil" required>
+                </div>
+                <div class="input-box">
+                    <label for="">Correo Electrónico</label>
+                    <input type="email"  class="campo-input"  placeholder="E-mail"    name="email" required>
+                </div>
+                <div class="input-box">
+                    <label for="">Elija un Nombre de Usuario</label>
+                    <input type="text"  class="campo-input"  placeholder="Nombre de usuario"    name="usuario" required>
+                </div>
+                <div class="input-box">
+                    <label for="">Elija una Contraseña</label>
+                    <input type="number"  class="campo-input"  placeholder="Contraseña"    name="contraseña" required>
+                <div class="input-box">
+                    <label for="">Reingresar su Contraseña</label>
+                    <input type="number"  class="campo-input"  placeholder="Reingrese su Contraseña"    name="contraseña" required>
+                </div>    
+                </div>
+                <div class="input-box check-login" >
+                    <label > Acepto las condiciones del Registro... </label>
+                    <div class="check"><input type="checkbox"   checked="checked" name="aceptación"> </div>
+                </div>
+            
+                    <div class="olvido-contraseña"> <a href="#"> Leer las Condiciones del Registro </a></div>
+                                
+                <button  class="boton-login" type="submit">¡REGISTRESE AHORA!</button>
+            
+                                    
+            </form>
+        </section>
+           
+                    
         
-        </div>
-        
-               </div>
-            <div class="div-form-submit">
-                
-                <input class="btn" type="submit" value="Enviar Ahora"><br>
-                
-            </div>
-    </form>
-</section>
-
-<footer>
-    <%- include('../partials/footer') %> 
-</footer>
-
-</body>
-
-</html>
+        <footer>
+        <%- include('../partials/footer') %>  
+        </footer>

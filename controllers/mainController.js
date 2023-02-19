@@ -10,7 +10,7 @@ module.exports = {
     return res.render('index');
   },
   login:(req, res) => {
-    return res.render('users/login');
+    return res.render('users/admin/login');
   },
   tienda:(req,res)=>{
     return res.render('products/tienda', { products: products.findAll()});
