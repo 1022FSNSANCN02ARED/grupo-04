@@ -152,13 +152,44 @@ body{
    text-align: center;
 }
 
-
-
-
-
-
-
 /*FIN LOGIN NO RESPONSIVE*/
+
+/*VISTA DONACIONES*/
+
+.body-donaciones{
+  background-color: whitesmoke;
+  margin: 0 auto;
+}
+.donaciones{
+  border-bottom: 2px solid black;
+ 
+}
+.donaciones h1{
+  text-align: center;
+  text-shadow: 2px 2px orange;
+
+}
+.body-donaciones p{
+  text-align: left;
+  font-size: 20px;
+  padding: 5px;
+  margin-left: 10px;
+}
+.donacion-monetaria{
+  display: flex;
+  flex-direction: column;
+}
+.logo-en-donoaciones, .info-banco{
+  margin: auto;
+}
+.whatsapp{
+  font-size: 25px;
+  text-align: center;
+}
+.otras-donaciones{
+  border-top: 2px solid black;
+  margin-top: 15px;
+}
 
 @media(min-width: 769px){
     /*laptop*/
@@ -334,6 +365,31 @@ body{
   text-align: left;
   margin-left: 40px;
  }
+ /*VISTA DONACIONES*/
+
+ .donacion-monetaria{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: no rap;
+  margin-left: 15px;
+ }
+ .info-banco{
+  width: 50%;
+ }
+ .logo-en-donaciones{
+  width: 50%;
+ }
+ .donaciones{
+  margin-bottom: 20px;
+ }
+ .h2-donaciones{
+  text-align: center;
+  margin-bottom: 30px;
+ }
+ .otras-donaciones{
+
+ }
+ 
       
   
   

@@ -1,62 +1,52 @@
 <%- include('../partials/head') %>
  <title>detail</title>
-    <body>
+    <body class="body-donaciones">
         <!-- Header -->
         <%- include('../partials/header') %>
         <!-- /Header -->
-        <section class="box-form-donaciones">
-            <form action="" method="POST" class="formulario">
-            
-                <h1 class="titulo-login">ENTRE TODOS ES MAS FACIL</h1>
-
-                <P>Colaborá con nosotros, para ellos</P>
-            
-                <div class="input-box">
-                    <label for="">Nombre</label>
-                    <input type="text"  class="campo-input" placeholder="Nombre"    name="nombre" required>
-                </div>
-            
-                <div class="input-box">
-                    <label for="">Apellido</label>
-                    <input type="text"  class="campo-input"  placeholder="Apellido"    name="apellido" required>
-                </div>
-                <div class="input-box">
-                    <label for="">Localidad</label>
-                    <input type="text"  class="campo-input"  placeholder="Localidad"    name="localidad" required>
-                </div>
-                <div class="input-box">
-                    <label for="">Provincia</label>
-                    <input type="text"  class="campo-input"  placeholder="Provincia"    name="provincia" required>
-                </div>
-                <div class="input-box">
-                    <label for="">Documento de Identidad</label>
-                    <input type="number"  class="campo-input"  placeholder="D.N.I"    name="documento" required>
-                </div>
-                <div class="input-box">
-                    <label for="">Correo Electrónico</label>
-                    <input type="email"  class="campo-input"  placeholder="E-mail"    name="email" required>
-                </div>
-                <div class="input-box">
-                    <label for="">Telefono</label>
-                    <input type="number"  class="campo-input"  placeholder="Telefono"    name="telefono" required>
-                </div>
-                <div class="input-box">
-                    <label for="">Donacion</label>
-                    <input type="checkbox"  class="campo-input"  placeholder="Donacion"    name="donacion" required>
-                </div>
+       <section  class="donaciones">
+            <h1> COLABORA CON NOSOTROS, PARA ELLOS</h1>
+            <p> Tu aporte nos ayuda a seguir cumpliendo nuestro objetivo. Rescatamos animales en situación de riesgo, le brindamos atención veterinaria, higiene, alimentación adecuada y tránsito. Lo hacemos con mucho amor, pero necesitamos tu ayuda. </p>
+            <p> Podes contactarte con nosotros para ver como trabajamos, tu contribucion tiene destino seguro</p>
+            <p> Ellos te lo agradecen!!</p>
+       </section>
+       <section>
+        <h2 class="h2-donaciones"> Tu donacion monetaria</h2>
+            <div class="donacion-monetaria">
                 
-                <button  class="boton-login" type="submit">Ingresar</button>
-            
-                <div class="input-box check-login" >
-                    <label > Recordar </label>
-                    <div class="check"><input type="checkbox"   checked="checked" name="remember"> </div>
+                <div class="info-banco"> 
+                    <h3> Depósito o transferencia bancaria</h3>
+                    <h4> BANCO PEPITO</h4>
+                    <p> Cuenta Cte N° 123456789111</p>
+                    <p>Sucursal n° 111</p>
+                    <p>CBU 2222222222222222222222</p>
+                    <p>Alias: Asoc.areani</p>
+                    <p>Titular de la cuenta: "Juanita Gonzalez"</p>
+                    <p>CUIT: 30151515152</p>
+                    <br>
+                    <p>Te pedimos que una vez hecha la donación nos avises a cualquiera de nuestros datos de contacto para que podamos corroborar y dejar registrada la misma.</p>
                 </div>
-            
-                    <div class="olvido-contraseña"> <a href="#"> ¿Olvidó su contraseña? </a></div>
-                    
-            </form>
-        </section>
-            
+
+                <div class="logo-en-donaciones">
+                    <img src="/images/logoPATITAsinfondo.png" alt="logo">
+                    <b class="whatsapp"> Envianos el comprobante <a href="tel:5493364197789">
+                        <i class="fa-brands fa-whatsapp" style="color:green ;"></i>
+                      </a></b>
+                </div>
+
+            </div>
+            <div class="otras-donaciones">
+                <h2> Otro tipo de donaciones</h2>
+                <p> Contactate con nosotros, hay muchas formas de colaborar!! </p>
+                <p> Armamos las cuchitas para darles tránsito mientras los tenemos, por lo que son bienvenidos
+                    cualquier tipo de material que sirva para la confeccion de las mismas(maderas, pinturas,chapas); 
+                    como así también alimentos, insumos veterinarios, mantas y todo lo que se te ocurra que puedan necesitar.
+                    <p>Esperamos tu mensaje!!</p>
+                </p>
+            </div>
+       </section>
+         
+    </body>  
         
         
         
