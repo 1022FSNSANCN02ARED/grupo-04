@@ -47,7 +47,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     margin-left: 10px;
-    border-top: 1px solid white;
+    border-top: 3px solid white;
 }
 .detalle{
     display: flex;
@@ -85,7 +85,10 @@ body{
     background-color: #74BDE0;
   
 }
-.total a{
+.boton-y-link{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
     text-align: center;
     margin-top: 80px;
     padding-bottom: 10px;
@@ -165,12 +168,10 @@ body{
       height: 40px;
       box-shadow: 2px 2px 5px white;
       font-size: 16px;
-      position: absolute;
-      left: 250px;
-      top: 580px
+      margin-bottom: 20px;
     }
-    .total a{
-      text-align: center;
+    .boton-y-link{
+      
       margin-left: 280px;
     }
     .producto{
