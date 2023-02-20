@@ -62,10 +62,20 @@ module.exports= {
       data[id]["size"] = req.body.size;
 
       fs.writeFileSync(productsFilePath,(JSON.stringify (data)));
+     
       res.redirect('/tienda');
+
     },
     destroy: (req, res) => {
-        res.send(`deleting ${req.params.id}`);
+      let id = req.params.id;
+      let jsonData = fs.readFileSync(productsFilePath);
+      let data = JSON.parse(jsonData);
+      let removed = data.filter(p => p.id != id);
+      fs.writeFileSync(productsFilePath,(JSON.stringify (removed)));
+     
+      res.redirect('/tienda');
+      
+      
     },
       
 
