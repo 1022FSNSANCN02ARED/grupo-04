@@ -154,6 +154,7 @@ body{
 
 /*FIN LOGIN NO RESPONSIVE*/
 
+
 /*VISTA DONACIONES*/
 
 .body-donaciones{
@@ -161,26 +162,32 @@ body{
   margin: 0 auto;
 }
 .donaciones{
+  display: flex;
   border-bottom: 2px solid black;
  
 }
 .donaciones h1{
+  margin-top: 10px;
   text-align: center;
   text-shadow: 2px 2px orange;
 
 }
+
 .body-donaciones p{
   text-align: left;
-  font-size: 20px;
-  padding: 5px;
+  font-size: 18px;
+  padding-left: 5px;
   margin-left: 10px;
 }
 .donacion-monetaria{
   display: flex;
   flex-direction: column;
 }
-.logo-en-donoaciones, .info-banco{
-  margin: auto;
+.logo-en-donoaciones, .info-banco, .box1-donaciones{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.logo-en-donaciones{
+  display: none;
 }
 .whatsapp{
   font-size: 25px;
@@ -194,6 +201,13 @@ body{
   border-top: 2px solid black;
   margin-top: 15px;
 }
+.otras-donaciones h2{
+  text-align: center;
+}
+
+
+
+
 
 @media(min-width: 769px){
     /*laptop*/
@@ -375,27 +389,36 @@ body{
   display: flex;
   flex-direction: row;
   flex-wrap: no rap;
-  margin-left: 15px;
+ 
+  
+
  }
  .info-banco{
   width: 50%;
  }
  .logo-en-donaciones{
-  width: 50%;
+  width: 30%;
+  display: block;
+  margin-top: 40px;
  }
  .donaciones{
   margin-bottom: 20px;
+  display: flex;
+  flex-wrap: nowrap;
  }
  .h2-donaciones{
-  text-align: center;
+ text-align: center;
   margin-bottom: 30px;
  }
- .otras-donaciones{
-
+ .box1-donaciones{
+  width: 70%;
  }
- 
-      
-  
+ .otras-donaciones{
+width: 50%;
+border: none;
+margin-top: 0px;
+ }
+
   
 }
 
