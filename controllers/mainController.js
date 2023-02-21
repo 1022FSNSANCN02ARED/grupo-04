@@ -13,7 +13,8 @@ module.exports = {
     return res.render('users/admin/login');
   },
   tienda:(req,res)=>{
-    return res.render('products/tienda', { products: products.findAll()});
+    let estado = req.session.userid;
+    return res.render('products/tienda', { products: products.findAll(),estado});
   },
   nosotros:(req,res)=>{
     return res.render('users/nosotros');

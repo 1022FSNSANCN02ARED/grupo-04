@@ -4,6 +4,7 @@
   background-color: whitesmoke;
 }
 /*Manu responsive y no responsive*/
+
 .carrito{
     font-size: 35px;
     padding-top: 5px;
@@ -90,6 +91,31 @@
   .respmenu input:not(:checked) ~ .fa-times {
     display: none;
   }
+/*Tienda*/
+.div-boton-tienda{
+  width: 100vw;
+  text-align: center;
+}
+.boton-tienda{
+  border: 2px solid #24b4fb;
+  background-color: #24b4fb;
+  border-radius: 0.9em;
+  padding: 0.8em 1.2em 0.8em 1em;
+  transition: all ease-in-out 0.2s;
+  font-size: 16px;
+ }
+ 
+ .boton-tienda span{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-weight: 600;
+ }
+ 
+ .boton-tienda:hover{
+  background-color: #0071e2;
+ }
 /*Home*/
 .articulo-caracteristica {
   background-image: linear-gradient(to top, #4481eb 0%, #04befe 100%);

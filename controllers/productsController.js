@@ -21,8 +21,8 @@ module.exports= {
      
    //Formulario de creación de productos/
     create: (req,res)=> {
+        let estado = req.session.userid;
         res.render ('users/admin/create');
-       
       },
  
 
