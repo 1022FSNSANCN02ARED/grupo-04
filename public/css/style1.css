@@ -192,6 +192,11 @@ body{
 .whatsapp{
   font-size: 25px;
   text-align: center;
+  margin-bottom: 30px;
+}
+.whatsapp a{
+  text-align: center;
+ 
 }
 .whatsappFooter{
   font-size: 18px;
@@ -203,6 +208,11 @@ body{
 }
 .otras-donaciones h2{
   text-align: center;
+  color: rgba(255, 166, 0, 0.792);
+}
+.info-banco h2{
+  color: #2c83ab;
+  font-weight: bold;
 }
 
 
@@ -389,12 +399,13 @@ body{
   display: flex;
   flex-direction: row;
   flex-wrap: no rap;
- 
+ border-top: 2px solid black;
   
 
  }
  .info-banco{
   width: 50%;
+  margin-top: 25px;
  }
  .logo-en-donaciones{
   width: 30%;
@@ -416,7 +427,7 @@ body{
  .otras-donaciones{
 width: 50%;
 border: none;
-margin-top: 0px;
+margin-top: 25px;
  }
 
   
