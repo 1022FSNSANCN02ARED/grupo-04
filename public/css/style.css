@@ -281,6 +281,11 @@
     margin-top: 10px;
     box-shadow: 3px 3px 10px black;
   }
+  .box-boton-donar{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+  }
   .imagen-fondo-donaciones{
     background-image: url(../images/animales-rescatados.jpeg);
     background-position: center center;

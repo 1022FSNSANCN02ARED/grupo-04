@@ -172,6 +172,11 @@ body{
   text-shadow: 2px 2px orange;
 
 }
+.h2-donaciones{
+  text-align: center;
+  margin-bottom: 15px;
+  border-bottom: 2px solid black;
+}
 
 .body-donaciones p{
   text-align: left;
@@ -183,7 +188,7 @@ body{
   display: flex;
   flex-direction: column;
 }
-.logo-en-donoaciones, .info-banco, .box1-donaciones{
+.logo-en-donoaciones, .info-banco, .box1-donaciones, .donaciones-mercado-pago{
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .logo-en-donaciones{
@@ -209,12 +214,21 @@ body{
 .otras-donaciones h2{
   text-align: center;
   color: rgba(255, 166, 0, 0.792);
+  margin: 20px 0 20px 0;
 }
 .info-banco h2{
   color: #2c83ab;
   font-weight: bold;
+  text-align: center;
 }
-
+.info-banco{
+  border-bottom: 2px solid black;
+}
+.donacion-mercado-pago h2{
+  color: crimson;
+  font-weight: bold;
+  text-align: center;
+}
 
 
 
@@ -400,11 +414,16 @@ body{
   flex-direction: row;
   flex-wrap: no rap;
  border-top: 2px solid black;
+ justify-content: space-around;
   
 
  }
  .info-banco{
-  width: 50%;
+  width: 30%;
+  margin-top: 25px;
+ }
+ .donacion-mercado-pago{
+  width: 30%;
   margin-top: 25px;
  }
  .logo-en-donaciones{
@@ -420,12 +439,13 @@ body{
  .h2-donaciones{
  text-align: center;
   margin-bottom: 30px;
+  border: none;
  }
  .box1-donaciones{
   width: 70%;
  }
  .otras-donaciones{
-width: 50%;
+width: 30%;
 border: none;
 margin-top: 25px;
  }
@@ -454,5 +474,16 @@ margin-top: 25px;
     
     
   }
+  .logo-en-donaciones{
+    width: 30%;
+    display: block;
+    margin-top: 5px;
+   }
+   .box1-donaciones p{
+    font-size: 22px;
+   }
+   .donacion-monetaria h2{
+    margin-top: 20px;
+   }
 }
 
