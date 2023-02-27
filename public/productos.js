@@ -38,3 +38,4 @@ toggleReviews.addEventListener('click',()=>{
   contentReviews.classList.toggle('hidden')
 
 })
+

@@ -1,5 +1,19 @@
+
+
 <header>
+
+
     <!--Menu no Responsive Tablet/Laptop/Escritorio-->
+ <!--CSS PROPIO-->
+   <link href="/css/normalize.css" rel="stylesheet">
+   <link href="/css/style.css" rel="stylesheet">
+   <link href="/css/style1.css" rel="stylesheet">
+
+       <!--Iconos-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    rel="stylesheet" />
+
     <nav class="nav-nonresponsive">
         <div >
           <a href="/home"><img src="/images/logoPATITAsinfondo.png" alt="logo" class="logo-noresponsive" ></a>
@@ -15,12 +29,40 @@
       
         <div class="menu2">
             <ul class="nav-menu2">
-                 <li><a href="/carrito"><i class="fa-solid fa-cart-shopping"></i></a></li>   
+                
+                 <li class="container-icon"id='container-icon'><a href="/carrito"> <i class="fa-solid fa-cart-shopping"></i>
+                  <div class="count-products">  <span id="contador-productos">0</span></div> 
+                    
+                  <div class="container-cart-products hidden-cart" id="container-cart-products">
+
+
+                    <div class="cart-product">
+                      <div class="info-cart-product">
+   
+                  <span class="cantidad-producto-carrito">1</span>
+                  <p class="titulo-producto-carrito"> cuadros</p>
+                  <span class="precio-producto-carrito"> 100</span>
+
+                      </div>
+                        <i class="fa-sharp fa-regular fa-xmark"></i>
+             
+
+                    </div>
+
+                  <div class="cart-total">
+                    <h3>TOTAL:</h3>
+                    <span class="total-pagar"> $300</span>
+                  </div>
+              
+                  </div>
+                 
+                    
+               </a> </li>   
                  <li><a href="/user/login">Ingresar |</a></li>
                  <li><a href="/user/registro">Registrarse</a></li>  
             </ul>
         </div>
-   
+  
     </nav>
          <!--Menu Responsive para celular-->
            <div class="menuresponsive">
@@ -46,5 +88,7 @@
                             </nav>
                         </div>  
                     </div>
-            </div>  
+                  
+            </div> 
+      <script src="/carrito.js"></script>    
 </header>

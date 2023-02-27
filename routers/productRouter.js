@@ -32,4 +32,6 @@ router.put("/:id", auth,productsControllers.update);
 router.delete("/:id",auth,productsControllers.destroy);
 
 
+
+
 module.exports = router;
