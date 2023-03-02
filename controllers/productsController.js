@@ -49,17 +49,20 @@ module.exports= {
     },
 
     update: (req, res) => {
-      let id = req.params.id - 1;
-
+      let id = req.params.id;
       let jsonData = fs.readFileSync(productsFilePath);
       let data = JSON.parse(jsonData);
-      data[id]["name"] = req.body.name;
-      data[id]["description"] = req.body.description;
-      data[id]["category"] = req.body.category;
-      data[id]["price"] = Number(req.body.price);
-      data[id]["filename"] = req.file ? req.file.filename : "default-image.png";
-      data[id]["colour"] = req.body.colour;
-      data[id]["size"] = req.body.size;
+      const objToUpdate = data.find(obj => obj.id === id);
+
+      
+      objToUpdate.name = req.body.name,
+      objToUpdate.description = req.body.description;
+      objToUpdate.category = req.body.category;
+      objToUpdate.price = Number(req.body.price);
+      objToUpdate.filename = req.file ? req.file.filename : "default-image.png";
+      objToUpdate.colour = req.body.colour;
+      objToUpdate.size = req.body.size
+    
 
       fs.writeFileSync(productsFilePath,(JSON.stringify (data)));
      
