@@ -13,6 +13,7 @@ app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
 app.use(methodOverride("_method")); 
 
+app.use(cookieParser());
 /*Trabajar con session*/
 // creating 24 hours from milliseconds
 const oneDay = 1000 * 60 * 60 * 24;

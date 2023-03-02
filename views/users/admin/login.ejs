@@ -2,36 +2,34 @@
 <body class="body-login">
     <%- include('../../partials/header') %>  
 
-<section class="box-form-login">
-    <form action= "" method="post" class="formulario">
-      
-        <h2 class="titulo-login">BIENVENIDOS</h2>
-        <div class="input-box">
-            <label for="">Ingrese Usuario</label>
-            <input type="text" name="usuarioLogin" id="usuarioLogin" class="campo-input" >
+<section class="section-login">
+   <div class="form-box">
+       <div class="form-value">
+                 <form action="" method="post">
+                    <h2 class="h2-login">Login</h2>
+                    <div class="inputbox"> 
+                       <i class="fa-solid fa-user icono-login"></i>  
+                       <input type="text" name="usuarioLogin" id="usuarioLogin" class="input-login"  required>
+                       <label for="" class="label-login">Usuario</label>
+                    </div>
+                    <div class="inputbox">
+                        <i class="fa-solid fa-lock icono-login"></i>   
+                        <input type="password" name="passwordLogin" id="passwordLogin"class="input-login" required>
+                        <label for="" class="label-login">Contraseña</label>
+                     </div>
+                     <% if(typeof errors != 'undefined') { %>
+                        <p class="errores">Atención: Usuario/Contraseña incorrecto/s</p>
+                        <% } %>
+                     <div class="forget">
+                      <label for=""><input type="checkbox">Recordarme <a href="#">Olvidé mi contraseña</a></label>
+                     </div>
+                     <button type="submit" class="button-login"> Ingresar</button>
+                     <div class="registro">
+                         <p>No tengo un Usuario <a href="/user/registro">Registrar</a></p>
+                     </div>
+                 </form>
         </div>
-    
-        <div class="input-box">
-            <label for="">Ingrese Contraseña</label>
-            <input type="password" name="passwordLogin" id="passwordLogin" class="campo-input" >
-        </div>
-        <% if(typeof errors != 'undefined') { %>
-            <p class="errores">Atencion: Usuario/Contraseña incorrecto/s</p>
-            <% } %>
-
-       
-        
-        <button  class="boton-login" type="submit">Ingresar</button>
-      
-    
-        <div class="input-box check-login" >
-            <label > Recordar </label>
-            <div class="check"><input type="checkbox"   checked="checked" name="remember"> </div>
-        </div>
-    
-            <div class="olvido-contraseña"> <a href="#"> ¿Olvidó su contraseña? </a></div>
-            
-    </form>
+   </div>
 </section>
     
 

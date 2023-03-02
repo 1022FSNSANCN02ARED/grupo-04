@@ -50,22 +50,22 @@ module.exports= {
 
     update: (req, res) => {
       let id = req.params.id;
+      
+
       let jsonData = fs.readFileSync(productsFilePath);
       let data = JSON.parse(jsonData);
-      const objToUpdate = data.find(obj => obj.id === id);
-
+      const dataFind = data.find(obj => obj.id == id)
       
-      objToUpdate.name = req.body.name,
-      objToUpdate.description = req.body.description;
-      objToUpdate.category = req.body.category;
-      objToUpdate.price = Number(req.body.price);
-      objToUpdate.filename = req.file ? req.file.filename : "default-image.png";
-      objToUpdate.colour = req.body.colour;
-      objToUpdate.size = req.body.size
-    
-
+      
+      dataFind.name  = req.body.name;
+      dataFind.description=req.body.description;
+      dataFind.category= req.body.category;
+      dataFind.price = Number(req.body.price);
+      dataFind.filename = req.file ? req.file.filename : "default-image.png";
+      dataFind.colour = req.body.colour;
+      dataFind.size= req.body.size;
       fs.writeFileSync(productsFilePath,(JSON.stringify (data)));
-     
+      
       res.redirect('/tienda');
 
     },
