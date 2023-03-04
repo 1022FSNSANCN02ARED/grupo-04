@@ -20,11 +20,16 @@ module.exports = {
     return res.render('users/nosotros');
   },
   carrito:(req,res)=>{
-  
-    return res.render('users/carrito');
+   return res.render('users/carrito');
     
-  }, 
+    },
+
   donaciones:(req,res)=>{
     return res.render('users/donaciones');
   },
 };
+
+
+ 
+
+    
