@@ -158,7 +158,7 @@ body{
 /*VISTA DONACIONES*/
 
 .body-donaciones{
-  background-color: whitesmoke;
+  background: linear-gradient(#f3f5f6,rgb(199, 186, 186));
   margin: 0 auto;
 }
 .donaciones{
@@ -356,15 +356,12 @@ body{
   /*formulario login responsive*/
 
  .formulario{
-  background-image:url(../images/fotohsection2.jpg) ;
+  /*background-image:url(../images/fotohsection2.jpg) ;*/
   background-size: cover;
   background-position: center center;
+   background: linear-gradient(#f3f5f6,rgb(199, 186, 186));
  }
- .formulario{
-  background-image:url(../images/fotohsection2.jpg) ;
-  background-size: cover;
-  background-position: center center;
- }
+
  .titulo-login{
   text-align: left;
   margin-left: 150px;

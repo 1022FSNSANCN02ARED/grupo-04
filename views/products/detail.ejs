@@ -1,25 +1,26 @@
 
                    
          <%- include('../partials/head') %>
- <title>Detalle de producto</title>
-    <body>
+
+
         <!-- Header -->
         <%- include('../partials/header') %>
         <!-- /Header -->
 
-        
-  <!-- codigo nuevo -->
-        <h3> DETALLE DEL PRODUCTO :
+      
+
+   <div class="detalle-producto-body">
+
+                <div class="detalle-main-producto">
+
+
+     <div class="detalle-del-producto">  <h3> DETALLE DEL PRODUCTO :
 
         </h3>
       
-           <p>Nombre del producto : <%= product.name %></p>
-           
-           
-   <div class="detalle-producto-body">
-    
-
-    <main class="detalle-main-producto">
+           <p>NOMBRE DEL PRODUCTO : <%= product.name %></p>
+           </div> 
+   
             <div class="productos-unisex">
                     <div class="container-img">
                   <img src="/images/<%= product.image %>" alt="">
@@ -198,13 +199,10 @@
                          </div>
                          
 
-                         <a href="/carrito"> <button class="btn-add-too-cart">
-                       
-
-                               <i class="fa-solid fa-plus"></i>
-                                   
-                                  Añade al carrito
-                             </button> </a>
+                       <button class="btn-add-too-cart"> <a href="/carrito"> 
+                                                  
+                               Añade al carrito
+                           </a>  </button> 
 
                      </div>
 
@@ -387,27 +385,32 @@
                       
 
 
-                     </div>
+                          </div>
            
 
+                     </div> 
+              </div> 
 
-               </section>
 
+</section>
   
-  </main> 
+    
+
+    
       
-</div>
+ 
    <script src="/productos.js"></script>
                   
       
    
-   <!-- codigo nuevo -->
+        
 
-  
+
 
         <!-- footer -->
         <%- include('../partials/footer') %>
         <!-- /footer -->
-    </body>
+   </div>
+   
 </html>  
         

@@ -1,7 +1,7 @@
 
 
 .bodyclass{
-  background-color: whitesmoke;
+   background: linear-gradient(#f3f5f6,rgb(199, 186, 186));
 }
 /*Manu responsive y no responsive*/
 
@@ -125,7 +125,8 @@ margin-top: -8px;
   align-items: center;
   min-height: 100vh;
   width:100%;
-  background-image:url(../images/fondo-login.jpg);
+   background: linear-gradient(#f3f5f6,rgb(199, 186, 186));
+ /* background-image:url(../images/fondo-login.jpg);*/
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -135,7 +136,7 @@ margin-top: -8px;
   position:relative;
   width:400px;
   height:450px;
-  background: transparent;
+  background: rgb(145, 134, 134);
   border: 2px solid rgba(255,255,255,0.5);
   border-radius:20px;
   backdrop-filter: blur(15px);
@@ -329,7 +330,10 @@ input:valid ~ .label-login{
   transition: all ease-in-out 0.2s;
   font-size: 16px;
  }
- 
+ .boton-tienda a{
+
+  text-decoration: none;
+ }
  .boton-tienda span{
   display: flex;
   justify-content: center;
@@ -646,12 +650,14 @@ input:valid ~ .label-login{
  .main-nosotros{
   width: 100%;
   display: block;
-  flex-wrap: wrap;
+  flex-wrap:wrap;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background-color:  #4a8db7;
+   background: linear-gradient(#f3f5f6,rgb(199, 186, 186));
+  
   }
+
   
   .card-nos{
  position: relative;
@@ -799,9 +805,9 @@ input:valid ~ .label-login{
     }
   .card .back{
   transform: perspective(600px) rotateY(180deg);
-  background: #456789 rgba(3,35,54);
+  background: linear-gradient(#f3f5f6,rgb(199, 186, 186));
   padding: 15px;
-  color: white;
+  color: black;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -814,10 +820,14 @@ input:valid ~ .label-login{
    border-top: solid 1px white;
    height: 50px;
    line-height: 50px;
+   
 
   }
-  .card .back .link a{
+
+  /*LINK CARD BACK*/
+ /* .card .back .link a{
   color: black;
+   text-decoration: none;
 
   }
   .card .back h3{
@@ -825,7 +835,68 @@ input:valid ~ .label-login{
     margin-top: 20px;
     letter-spacing: 2px;
   
-  }
+  }*/
+
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  cursor: pointer;
+  height: 50px;
+  background-image: linear-gradient(to top, #D8D9DB 0%, #fff 80%, #FDFDFD 100%);
+  border-radius: 30px;
+  border: 1px solid #8F9092;
+  transition: all 0.2s ease;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #606060;
+  text-shadow: 0 1px #fff;
+}
+
+.link:hover {
+  box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 3px 3px #CECFD1;
+}
+
+.link:active {
+  box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 5px 3px #999, inset 0 0 30px #aaa;
+}
+
+.link:focus {
+  box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 5px 3px #999, inset 0 0 30px #aaa;
+}
+.link a{
+  text-decoration: none;
+  color: #b7a9a9;
+}
+
+
+
+
+
+
+
+
+
+@keyframes pulse512 {
+ 0% {
+  box-shadow: 0 0 0 0 #05bada66;
+ }
+
+ 70% {
+  box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
+ }
+
+ 100% {
+  box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
+ }
+}
+
+
+
+
+
  
   .card .back p{
   letter-spacing: 1.5px;
@@ -848,20 +919,35 @@ input:valid ~ .label-login{
 box-shadow: 0px 0px 10px rgb(100, 100, 100);
 margin-bottom: 50px;
 margin-top: 50px;
-background-color:#74BDE0;
+ background: linear-gradient(#e5eaed,rgb(109, 98, 98));
+ padding: 25px;
+  width: 90vw;
+  justify-content: center;
+ 
+ 
 }
 
  /*detalle de productos*/
  .detalle-producto-body{
  
  font-family: 'Ubuntu';
- max-width: 1200px;
+ max-width: 1600px;
  margin: 0 auto;
- margin-top: 100px;
+  background: linear-gradient(#e5eaed,rgb(131, 121, 121));
+
+ 
  
  
  }
+.detalle-del-producto{
+ text-align: center;
+ padding: 4%;
+}
 
+.detalle-del-producto p{
+  border-bottom: 1px solid white;
+  padding-bottom: 3%;
+}
  img {
 
   max-width: 100%;
@@ -870,6 +956,8 @@ background-color:#74BDE0;
  .detalle-main-producto{
   width: 90vw;
   margin:auto;
+  position: relative;
+  
 
  }
 
@@ -878,10 +966,7 @@ background-color:#74BDE0;
  
   display: flex;
   flex-direction: column;
- 
- 
-
- }
+  }
  .container-price{
   padding-bottom: 10px;
   border-bottom: 1px solid #e4e4e4;
@@ -986,7 +1071,7 @@ margin-bottom: 20px;
 
 .btn-add-too-cart{
  border: none;
- background-color: #252525;
+ background-color: #423a3a;
  padding: 10px;
  color: #f7f7f7;
  display: flex;
@@ -995,10 +1080,18 @@ margin-bottom: 20px;
  gap: 5px;
  font-weight: 700;
  cursor: pointer;
+ border-radius: 15px;
 }
 .btn-add-too-cart:hover{
-  color: #4a8db7;
+  color: #eef2f5;
 }
+.btn-add-too-cart a{
+  text-decoration: none;
+ color:white;
+  
+}
+
+
 
 .hidden{
   display: none;
@@ -1618,9 +1711,10 @@ textarea.form-input {
 
 
   .main-tienda{
-    width: 90vw;
+   
   display: flex;
    margin: auto;
+    background: linear-gradient(#e5eaed,rgb(131, 121, 121));
   
   }
 
@@ -1634,6 +1728,7 @@ textarea.form-input {
     width: 100%;
   display: flex;
    margin: auto;
+
   
   }
 
@@ -1766,18 +1861,16 @@ textarea.form-input {
 .container-info-producto{
   margin-left: 30px;
 }
- .detalle-main-producto{
-  width: 90vw;
-  position: relative;
-  margin: auto;
- 
- }
+
 
  .productos-unisex{
   width: 90vw;
   display: flex;
   margin: auto;
-  margin-left: 30px;
+  border-bottom: 1px solid white;
+  padding: 5%;
+  
+ 
  }
 .card-list-products{
   width: 85vw;
@@ -1787,12 +1880,7 @@ textarea.form-input {
   
 }
  
-.container-related-products{
-  padding: 25px;
-  width: 90vw;
-  justify-content: center;
 
-}
 /*Estilo de Formulario de Registro*/
 
 .fondo-formulario-reg{
@@ -1818,10 +1906,12 @@ textarea.form-input {
     display: flex;
   }
 
+
   .container-related-products-nos{
     padding: 25px;
     width: 90vw;
     justify-content: center;
+    
   
   }
 }
@@ -1903,9 +1993,8 @@ textarea.form-input {
 .productos-unisex{
   width: 80vw;
 }
-.detalle-producto-body{
-  max-width: 1400px;
-}
+
+
 .text-article{
   font-size: 20px;
  
