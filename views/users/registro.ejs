@@ -1,50 +1,52 @@
 <%- include('../partials/head') %>
-    <body>
+    <body class="body-register">
         <!-- Header -->
         <%- include('../partials/header') %>
         <!-- /Header -->
-        <section class="box-form-donaciones">
-            <form action="" method="POST" class="formulario">
-            
-                <h1 class="titulo-login">FORMULARIO DE REGISTRO</h1>
-          
-                <div class="input-box">
-                    <label for="">Apellido y Nombres</label>
-                    <input type="text"  class="campo-input"  placeholder="Apellido y nombres"    name="nombre" required>
-                
-                <div class="input-box">
-                    <label for="">Correo Electrónico</label>
-                    <input type="email"  class="campo-input"  placeholder="E-mail"    name="email" required>
-                </div>
-
-                <div class="input-box">
-                    <label for="">Elija un Usuario</label>
-                    <input type="text"  class="campo-input"  placeholder="Nombre de usuario"    name="usuario" required>
-                </div>
-
-                <div class="input-box">
-                    <label for="">Elija una Contraseña</label>
-                    <input type="number"  class="campo-input"  placeholder="Contraseña"    name="contraseña" required>
-                <div class="input-box">
-                    <label for="">Reingrese la Contraseña elegida</label>
-                    <input type="number"  class="campo-input"  placeholder="Reingrese su Contraseña"    name="contraseña" required>
-                </div>    
-                </div>
-                <div class="input-box check-login" >
-                    <label > He leído y acepto las condiciones del presente Registro... </label>
-                    <div class="check"><input type="checkbox"   checked="checked" name="aceptación"> </div>
-                </div>
-            
-                    <div class="olvido-contraseña"> <a href="#"> Leer las condiciones del Registro </a></div>
-                                
-                <button  class="boton-login" type="submit">¡REGISTRESE AHORA!</button>
-            
-                                    
-            </form>
-        </section>
-           
-                    
         
-        <footer>
+        <div class="container-register">
+            <div class="form-box-register">
+               <form action="" name="Formfill" onsubmit="return validation()">
+                <h2>Registro</h2>
+                  <div class="input-registro">
+                   <i class="fa-solid fa-user icono-registro"></i> 
+                   <input type="text" name="nameRegister"    placeholder="Nombre y Apellido" required>
+                  </div>
+                  <div class="input-registro">
+                    <i class="fa-solid fa-envelope icono-registro"></i>
+                    <input type="text" name="emailRegister" placeholder="Email" required>
+                  </div>
+                  <div class="input-registro">
+                    <i class="fa-solid fa-lock icono-registro"></i>
+                    <input type="password" name="passwordRegister" placeholder="Contraseña" required>
+                  </div>
+                  <div class="input-registro">
+                    <i class="fa-solid fa-lock icono-registro"></i>
+                    <input type="password" name="cPasswordRegister" placeholder="Confirme la contraseña" required>
+                  </div>
+                  <div class="enviar-registro">
+                     <input type="submit" class="boton-registro" value="Registrar">
+                  </div>
+                  <div class="grupo">
+                   <span><a href="#">Olvidé la contraseña</a></span>
+                   <span><a href="/user/login">Login</a></span>
+                  </div>
+               </form>
+            </div>
+       <!--Pop up de validación de registro-->
+            <div class="popup" id="popup">
+              <i class="fa-regular fa-circle-check icono-check"></i>
+              <h2> Gracias por registrarte!</h2>
+              <p>Tu formulario de registro fue enviado.</p>
+              <a href=""><button onclick="closeSlide()">OK</button></a>
+            </div>
+
+        </div>            
+    
+     <script src="/popup.js">
+     </script>
+       
         <%- include('../partials/footer') %>  
-        </footer>
+
+        
+    </body>

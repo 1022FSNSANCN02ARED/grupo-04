@@ -317,6 +317,140 @@ input:valid ~ .label-login{
   .respmenu input:not(:checked) ~ .fa-times {
     display: none;
   }
+/*Register Form*/
+.body-register{
+  background: linear-gradient(#f3f5f6,rgb(199, 186, 186));
+}
+.container-register{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.form-box-register{
+  background:  rgb(145, 134, 134);
+  position: relative;
+  width: 400px;
+  height: 550px;
+  border: 2px solid rgba(255,255,255,0.5);
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-box-register h2{
+  color: #fff;
+  text-align: center;
+  font-size:32px;
+}
+
+.input-registro{
+  position: relative;
+  margin: 30px 0;
+  width: 310px;
+  border-bottom:2px solid #fff;
+}
+
+.input-registro input{
+  width: 100%;
+  height:45px;
+  background: transparent;
+  border:none;
+  outline:none;
+  padding:0 20px 0 5px;
+  color: #fff;
+  font-size:16px;
+}
+.icono-registro{
+  position: absolute;
+  color: #fff;
+  top:13px;
+  right:0px;
+
+}
+.input-registro input::placeholder{
+  color:#fff;
+}
+
+.boton-registro{
+  color: #fff;
+  background:blue;
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  outline:none;
+  border:none;
+  font-size:17px;
+  cursor:pointer;
+  box-shadow: 3px 0 10px rgba(0,0,0,0.5);
+}
+.grupo{
+  display: flex;
+  justify-content: space-between;
+}
+
+.grupo span a{
+  color: #fff;
+  position:relative;
+  top:10px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.grupo a:focus{
+    text-decoration:underline;
+}
+
+.popup{
+  width: 400px;
+  background-color: #fff;
+  border-radius: 6px;
+  position:absolute;
+  top:0;
+  left:50%;
+  transform: translate(-50%,-50%) scale(0);
+  transition: transform .4s, top .4s;
+  visibility: hidden;
+  text-align: center;
+  padding: 0 30px 30px;
+  height: 330px;
+}
+
+.icono-check{
+  color: #00ff00;
+  font-size:50px;
+}
+
+.popup button{
+  width: 100%;
+  background: #00ff00;
+  padding:10px 0;
+  margin-top: 50px;
+  border:none;
+  outline: none;
+  font-size: 18px;
+  color: #fff;
+  border-radius: 4px;
+  cursor:pointer;
+  box-shadow: rgba(0,0,0, 0.1 );
+}
+
+.popup a{
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing:2px;
+}
+
+.open-slide{
+  top:50px;
+  transform: translate(-50%,50%) scale(1);
+  visibility: visible;
+}
+/*-------------------------------------------------------------*/
 /*Tienda*/
 .div-boton-tienda{
   width: 100vw;
