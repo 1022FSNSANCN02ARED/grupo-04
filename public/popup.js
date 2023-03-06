@@ -1,5 +1,5 @@
 function validation(){
-    if(document.Formfill.passwordRegister.value == document.Formfill.cPasswordRegister.value){
+    if(document.Formfill.nameRegister.value != undefined){
      popup.classList.add("open-slide");
      return false;
     }
