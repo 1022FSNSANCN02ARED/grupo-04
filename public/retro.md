@@ -69,7 +69,7 @@ CONCLUSION 3ER SPRINT
 
 4)qué deberían dejar de hacer?
 
-* avanzar individualmente sin explicar al grupo l oque se hizo
+* avanzar individualmente sin explicar al grupo lo que se hizo
 
 CONCLUSION SPRINT 4
 
@@ -92,12 +92,19 @@ compartir avances y dificultades
 * dejar de hacer
 
 
+CONCLUSION SPRINT 5
 
+* comenzar a hacer
+reuniones semanales exponiendo avances y dificultades para no perdernos nada.
 
+* hacer mas 
+terminar de darle forma a la vista. Aun nos cuesta definir un estilo general para aplicar a los fondos y distintas vistas.
 
+* continuar haciendo
+    dividir tareas desde un comienzo
+    compartir avances y dificultades
 
-
-
+* hacer menos
 
 
 
