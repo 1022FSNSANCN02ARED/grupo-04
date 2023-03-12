@@ -197,12 +197,14 @@
                             <i class="fa-solid fa-chevron-down" id="decrement"></i>
 
                          </div>
-                         
-
-                       <button class="btn-add-too-cart"> <a href="/carrito"> 
-                                                  
-                               Añade al carrito
-                           </a>  </button> 
+                        <div>
+                       <form action="/carrito/<%= product.id %>" method="POST">
+                       <button  type="submit" class="btn-add-too-cart">
+                         Añade al carrito
+                        </button> 
+                      
+                      </form>
+                    </div>
 
                      </div>
 

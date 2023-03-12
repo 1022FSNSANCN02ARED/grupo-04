@@ -12,7 +12,8 @@ const userRegisterRouter = require('./userRegisterRouter');
 
 /* Rutas de generales*/
 
-router.get("/carrito",mainController.carrito);
+router.get("/carrito",mainController.vistaCarrito);
+router.post("/carrito/:id",mainController.carrito);
 router.get("/home",mainController.Home);
 router.get("/", mainController.index);
 router.get("/tienda",mainController.tienda);

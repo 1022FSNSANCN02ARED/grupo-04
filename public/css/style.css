@@ -125,7 +125,7 @@ margin-top: -8px;
   align-items: center;
   min-height: 100vh;
   width:100%;
-   background: linear-gradient(#f3f5f6,rgb(199, 186, 186));
+  background: linear-gradient(#f3f5f6,rgb(199, 186, 186));
  /* background-image:url(../images/fondo-login.jpg);*/
   background-repeat: no-repeat;
   background-position: center;
