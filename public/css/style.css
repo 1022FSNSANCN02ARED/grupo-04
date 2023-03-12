@@ -376,17 +376,17 @@ input:valid ~ .label-login{
 }
 
 .boton-registro{
-  color: #fff;
-  background:blue;
-  width: 100%;
-  height: 50px;
-  border-radius: 5px;
-  outline:none;
-  border:none;
-  font-size:17px;
-  cursor:pointer;
-  box-shadow: 3px 0 10px rgba(0,0,0,0.5);
-}
+    width:100%;
+    height: 40px;
+    border-radius: 40px;
+    background:#fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+  }
+  
 .grupo{
   display: flex;
   justify-content: space-between;
