@@ -25,6 +25,7 @@ module.exports = {
     let id = req.params.id;
     let productos = products.findById(id);
     let pCarrito = {
+      id: Date.now(),
       name: productos.name,
       price: productos.price,
     }
@@ -37,8 +38,22 @@ module.exports = {
     
     },
   vistaCarrito: (req,res)=>{
-    res.render('users/carrito')
+    let carritoArchivo = fs.readFileSync(carritoFilePath, "utf-8");
+    let agregados= JSON.parse(carritoArchivo);
+    let total = 0;
+    for(let i =0;i < agregados.length; i++){ 
+      total = total + agregados[i].price;}
+    res.render('users/carrito',{agregados,total});
   },
+ destroyProductosCarrito:(req,res)=>{
+  let id = req.params.id;
+  let jsonData = fs.readFileSync(carritoFilePath);
+  let data = JSON.parse(jsonData);
+  let removed = data.filter(p => p.id != id);
+  fs.writeFileSync(carritoFilePath,(JSON.stringify (removed)));
+ 
+  res.redirect('/carrito');
+ },
 
   donaciones:(req,res)=>{
     return res.render('users/donaciones');

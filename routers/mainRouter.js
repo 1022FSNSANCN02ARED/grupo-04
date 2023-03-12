@@ -14,6 +14,7 @@ const userRegisterRouter = require('./userRegisterRouter');
 
 router.get("/carrito",mainController.vistaCarrito);
 router.post("/carrito/:id",mainController.carrito);
+router.delete("/:id",mainController.destroyProductosCarrito);
 router.get("/home",mainController.Home);
 router.get("/", mainController.index);
 router.get("/tienda",mainController.tienda);

@@ -3,10 +3,33 @@
     <%- include('../partials/header') %>
     
 <main id="contenedor-productos">
+<table style="border:1px solid black">
+    <tr style="border:1px solid black">
+        <td  style="width: 300px;">Nombre</td>
+        <td  style="width: 200px;">Precio</td>
+    </tr>
+    
+    <% agregados.forEach(agregado => { %>
+    <tr style="border:1px solid black">
+        <td style="width: 300px;"><%= agregado.name%></td>
+        <td style="width: 200px;"><%= agregado.price%></td>
+       <td> <form
+        action="<%= agregado.id %>?_method=delete"
+        method="POST"
+        style="display: inline-flex"
+    >
+        <button
+            type="submit"
+        >
+            ELIMINAR
+        </button>
+        </form> 
+       </td>
+    </tr>   
+    <% }) %>
+</table>
 
-    
-  
-    
+    <p>Total de su compra: $<%= total %></p>
 
      
         

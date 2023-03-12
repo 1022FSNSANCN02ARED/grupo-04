@@ -1,11 +1,7 @@
 [
     {
-        "name": "nombre",
-        "price": "precio"
-    },
-    {
-        "name": "Coraje",
-        "price": 4000
+        "id": 1678651939307,
+        "name": "Cuadro Animales",
+        "price": 500
     }
-   
 ]
