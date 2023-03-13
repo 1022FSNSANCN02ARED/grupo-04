@@ -125,7 +125,7 @@ margin-top: -8px;
   align-items: center;
   min-height: 100vh;
   width:100%;
-   background: linear-gradient(#f3f5f6,rgb(199, 186, 186));
+  background: linear-gradient(#f3f5f6,rgb(199, 186, 186));
  /* background-image:url(../images/fondo-login.jpg);*/
   background-repeat: no-repeat;
   background-position: center;
@@ -376,17 +376,17 @@ input:valid ~ .label-login{
 }
 
 .boton-registro{
-  color: #fff;
-  background:blue;
-  width: 100%;
-  height: 50px;
-  border-radius: 5px;
-  outline:none;
-  border:none;
-  font-size:17px;
-  cursor:pointer;
-  box-shadow: 3px 0 10px rgba(0,0,0,0.5);
-}
+    width:100%;
+    height: 40px;
+    border-radius: 40px;
+    background:#fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+  }
+  
 .grupo{
   display: flex;
   justify-content: space-between;
