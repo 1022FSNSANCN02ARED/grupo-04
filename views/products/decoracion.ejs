@@ -1,0 +1,22 @@
+<%- include('../partials/head') %>
+    
+
+    <%- include('../partials/header') %>
+ 
+<main class="main-tienda">   
+   
+        <% pDecoracion.forEach(product => { %> <%-
+            include("../partials/productCard",{product}) %> 
+           
+            
+        <% }) %>
+
+</main>
+
+<footer>
+    <%- include('../partials/footer') %>  
+</footer>
+
+</body>
+
+</html>

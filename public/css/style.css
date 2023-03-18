@@ -513,6 +513,46 @@ input:valid ~ .label-login{
   width: 100vw;
 }
 
+/*menu desplegable header*/
+
+
+.nav-menu1{
+	list-style: none;
+	display: flex;
+
+}
+.nav-menu1 > li > a{
+	display: block;
+	padding: 15px 20px;
+	color: white;
+	text-decoration: none;
+}
+
+.menu-vertical{
+	position: absolute;
+	display: none;
+	list-style: none;
+	width: 200px;
+	background-color: rgba(199, 194, 194, 0.5);
+  z-index: 3;
+  border-radius: 10px;
+}
+.nav-menu1 li:hover .menu-vertical{
+	display: block;
+}
+
+
+.menu-vertical li a{
+	display: block;
+	color: white;
+	text-decoration: none;
+	padding: 15px 15px 15px 20px;
+}
+
+
+
+
+
 
 .img-art{
   margin-top: 30px;
@@ -2129,6 +2169,9 @@ textarea.form-input {
    flex-wrap: wrap;
    justify-content: space-around;
   }
+
+
+
 
   /*footer*/
   
