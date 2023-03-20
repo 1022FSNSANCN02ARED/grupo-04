@@ -34,4 +34,7 @@ router.delete("/:id",auth,productsControllers.destroy);
 
 
 
+
+
+
 module.exports = router;

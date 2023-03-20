@@ -94,9 +94,12 @@
                                 class="form-input"
                             >
                                 <option value="">Elegí</option>
-                                 <option value="in-sale" <%= product.category=="in-sale" ? "selected" : "" %>>En oferta</option>
-                                <option value="visited" <%= product.category=="visited" ? "selected" : "" %>>
-                                    Últimos agregados
+                                 <option value="decoracion" <%= product.category=="decoracion" ? "selected" : "" %>>Decoracion</option>
+                                <option value="hogar" <%= product.category=="hogar" ? "selected" : "" %>>
+                                    Hogar
+                                </option>
+                                <option value="indumentaria" <%= product.category=="indumentaria" ? "selected" : "" %>>
+                                  Indumentaria
                                 </option>
                             </select>
                             
