@@ -35,7 +35,6 @@ module.exports = {
     carritoFileContent = JSON.stringify(carrito, null, 4);
     fs.writeFileSync(carritoFilePath, carritoFileContent, "utf-8");
     res.redirect("/tienda")
-    
     },
   vistaCarrito: (req,res)=>{
     let carritoArchivo = fs.readFileSync(carritoFilePath, "utf-8");
