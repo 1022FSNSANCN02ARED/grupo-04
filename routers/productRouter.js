@@ -16,7 +16,7 @@ const upload = multer({
 });
 
 var auth = function(req, res, next) {
-    if (req.session && req.session.userid=== "admin")
+    if (req.session && req.session.userid)
       return next();
     else
       return res.send('Usted no se encuentra logeado');

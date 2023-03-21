@@ -318,6 +318,9 @@ input:valid ~ .label-login{
     display: none;
   }
 /*Register Form*/
+.label-registro{
+  color:white;
+}
 .body-register{
   background: linear-gradient(#f3f5f6,rgb(199, 186, 186));
 }
@@ -332,7 +335,7 @@ input:valid ~ .label-login{
   background:  rgb(145, 134, 134);
   position: relative;
   width: 400px;
-  height: 550px;
+  height: 700px;
   border: 2px solid rgba(255,255,255,0.5);
   border-radius: 20px;
   backdrop-filter: blur(15px);

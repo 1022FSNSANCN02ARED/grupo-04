@@ -2,18 +2,22 @@ const path = require ('path');
 const {validationResult} = require('express-validator');
 const { saveProduct, findById } = require("../data/user");
 const users = require("../data/user");
+const fs = require("fs");
+const userFilePath = path.resolve('data/users.json');
 
 
 module.exports = {
     //User Login
     login: (req,res) =>{
-      let myusername = 'admin';
-      let mypassword = 123;
+      let userEmail = req.body.usuarioLogin;
+      let userPassword = req.body.passwordLogin;
+      let userFileContent = fs.readFileSync(userFilePath, "utf-8");
+      let userFile = JSON.parse(userFileContent);
+      let userConfirm = userFile.find((user)=>user.email == userEmail)
       let errors = validationResult(req) ;
-      if(req.body.usuarioLogin == myusername && req.body.passwordLogin == mypassword){
+      if(userConfirm && userConfirm.password == userPassword){
         session=req.session;
-        session.userid=req.body.usuarioLogin;
-        console.log(req.session)
+        session.userid= userEmail;
         res.render('index');
     }
     else{
@@ -25,18 +29,30 @@ module.exports = {
       return res.render('users/registro');
     },
     
-    store:(req,res)=>{
+    registroUsuario:(req,res)=>{
       const user = {
         id: Date.now(),
-        usuario: req.body.userRegister,
-        email: req.body.userEmail,
-        password: req.body.userPassword,
+        usuario: req.body.nameRegister,
+        email: req.body.emailRegister,
+        password: req.body.passwordRegister,
+        direccion: req.body.direccionRegister,
+        pais: req.body.paisRegister,
+        telefono: req.body.telefonoRegister,
+        tipo: req.body.tipoRegistro,
     };
-    users.saveProduct(user);
-    res.send('Se registro con exito')
-
-    },
-
-   
+    
+    let userFileContent = fs.readFileSync(userFilePath, "utf-8");
+    let userFile = JSON.parse(userFileContent);
+    let userEmailCompare = user.email;
+    let userEmailExist = userFile.find( (user) => user.email == userEmailCompare);
+    if(userEmailExist){
+      res.send('Este usuario ya existe')
+    }else{
+      userFile.push(user);
+      userFileContent = JSON.stringify(userFile, null, 4);
+      fs.writeFileSync(userFilePath, userFileContent, "utf-8");
+      return res.redirect("/tienda");
+    }
+  },
 
 };

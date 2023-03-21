@@ -48,6 +48,7 @@ module.exports = {
     let productos = products.findById(id);
     let pCarrito = {
       id: Date.now(),
+      usuario: session.userid,
       name: productos.name,
       price: productos.price,
     }
@@ -59,8 +60,10 @@ module.exports = {
     res.redirect("/tienda")
     },
   vistaCarrito: (req,res)=>{
+    let usuarioSession = session.userid;
     let carritoArchivo = fs.readFileSync(carritoFilePath, "utf-8");
-    let agregados= JSON.parse(carritoArchivo);
+    let carritoTotal =JSON.parse(carritoArchivo)
+    let agregados= carritoTotal.filter( (carrito)=>carrito.usuario == usuarioSession );
     let total = 0;
     for(let i =0;i < agregados.length; i++){ 
       total = total + agregados[i].price;}
