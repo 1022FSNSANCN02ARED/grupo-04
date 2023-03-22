@@ -16,7 +16,7 @@ const upload = multer({
 });
 
 var auth = function(req, res, next) {
-    if (req.session && req.session.userid=== "admin")
+    if (req.session && req.session.userid)
       return next();
     else
       return res.send('Usted no se encuentra logeado');
@@ -30,6 +30,9 @@ router.post("/create", upload.single("image"), productsControllers.store);
 router.get("/:id/edit",auth,productsControllers.edit);
 router.put("/:id", productsControllers.update);
 router.delete("/:id",auth,productsControllers.destroy);
+
+
+
 
 
 

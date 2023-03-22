@@ -20,6 +20,11 @@ router.get("/", mainController.index);
 router.get("/tienda",mainController.tienda);
 router.get("/nosotros",mainController.nosotros);
 router.get("/donaciones",mainController.donaciones);
+router.get('/decoracion', mainController.decoracion);
+router.get('/hogar', mainController.hogar);
+router.get('/indumentaria', mainController.indumentaria);
+
+
 
 
 router.use("/products",productRouter);

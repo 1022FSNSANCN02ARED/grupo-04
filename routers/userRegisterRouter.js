@@ -8,6 +8,6 @@ const userController = require("../controllers/userController");
 
 //Registro Usuarios
 router.get("/registro",userController.registro);
-router.post("/registro",userController.store);
+router.post("/registro",userController.registroUsuario);
 
 module.exports = router;
