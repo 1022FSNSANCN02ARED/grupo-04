@@ -31,13 +31,13 @@ module.exports = {
   hogar: (req, res) => {
     let hogar = fs.readFileSync(productosfilepath, 'utf8');
     let pTotales = JSON.parse (hogar);
-    let pHogar = pTotales.filter(p => p.category == 'hogar')
+    let pHogar = pTotales.filter(p => p.category == 'hogar');
     res.render('products/hogar', {pHogar})  
        },
   indumentaria: (req, res) => {
     let indumentaria = fs.readFileSync(productosfilepath, 'utf8');
     let pTotales = JSON.parse (indumentaria);
-    let pIndumentaria = pTotales.filter(p => p.category == 'indumentaria')
+    let pIndumentaria = pTotales.filter(p => p.category == 'indumentaria');
     res.render('products/indumentaria', {pIndumentaria})  
        },
    
@@ -62,7 +62,7 @@ module.exports = {
   vistaCarrito: (req,res)=>{
     let usuarioSession = session.userid;
     let carritoArchivo = fs.readFileSync(carritoFilePath, "utf-8");
-    let carritoTotal =JSON.parse(carritoArchivo)
+    let carritoTotal =JSON.parse(carritoArchivo);
     let agregados= carritoTotal.filter( (carrito)=>carrito.usuario == usuarioSession );
     let total = 0;
     for(let i =0;i < agregados.length; i++){ 
