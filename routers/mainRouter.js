@@ -4,7 +4,7 @@ const mainController = require("../controllers/mainController.js");
 const productRouter = require("./productRouter");
 const userLoginRouter = require ("./userLoginRouter");
 const userRegisterRouter = require('./userRegisterRouter');
-
+const apiUsersRouter = require('./api/users')
 
 
 
@@ -31,6 +31,8 @@ router.use("/products",productRouter);
 
 router.use("/user", userLoginRouter);
 router.use("/user",userRegisterRouter);
+
+router.use('/registro',apiUsersRouter);
 
 
 

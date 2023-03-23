@@ -7,6 +7,7 @@ const router = require('./routers/mainRouter.js');
 const session = require('express-session');
 const cookieParser = require('cookie-parser');
 
+
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: true }))
 // Parse application/json

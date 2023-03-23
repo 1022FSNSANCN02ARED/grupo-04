@@ -45,11 +45,13 @@ CREATE TABLE `carrito`(
 DROP TABLE IF EXISTS `users`;
 CREATE TABLE `users` (
     `id` INT AUTO_INCREMENT ,
-    `nombre` VARCHAR (30) NOT NULL,
-    `apellido` VARCHAR(50) NOT NULL,
-    `password` VARCHAR(50) NOT NULL,
-    `telefono` INT NOT NULL,
+    `nombre` VARCHAR (50) NOT NULL,
     `email` VARCHAR (100) NOT NULL,
+    `password` VARCHAR(50) NOT NULL,
+    `direccion` VARCHAR(50) NOT NULL,
+    `pais` VARCHAR(50) NOT NULL,
+    `telefono` INT NOT NULL,
+    `tipo` VARCHAR(50) NOT NULL,
     `rol_id` INT,
     `carrito_id` INT,
     FOREIGN KEY (`rol_id`) REFERENCES `roles`(`id`),

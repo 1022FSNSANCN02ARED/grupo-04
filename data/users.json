@@ -28,5 +28,25 @@
         "pais": "Argentina",
         "telefono": "3364674260",
         "tipo": "ambos"
+    },
+    {
+        "id": 1679594574302,
+        "usuario": "Fernando Romero",
+        "email": "fer@fernando",
+        "password": "Contra123",
+        "direccion": "Calle falsa123",
+        "pais": "Argentina",
+        "telefono": "3423423",
+        "tipo": "ambos"
+    },
+    {
+        "id": 1679595253985,
+        "usuario": "Prueba",
+        "email": "prueba@prueba",
+        "password": "prueba123",
+        "direccion": "Prueba123",
+        "pais": "Argentina",
+        "telefono": "324234",
+        "tipo": "comprador"
     }
 ]
