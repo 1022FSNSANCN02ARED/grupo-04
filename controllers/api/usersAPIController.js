@@ -6,8 +6,24 @@ const moment = require('moment');
 
 
 const Users = db.User;
+const Rols = db.Rol;
 
 const usersAPIController = {
+    list: (req, res) => {
+        Users.findAll({
+            include: ['rol']
+        })
+        .then(users => {
+            let respuesta = {
+                meta: {
+                    status : 200,
+                    total: users.length,
+                },
+                data: users
+            }
+                res.json(respuesta);
+            })
+    },
     create: (req,res) => {
         Users
         .create(
@@ -19,6 +35,8 @@ const usersAPIController = {
                pais: req.body.paisRegister,
                telefono: req.body.telefonoRegister,
                tipo: req.body.tipoRegistro,
+               rol_id: req.body.tipoRegistro
+            
             }
         )
         .then(()=> {
