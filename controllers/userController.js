@@ -4,16 +4,15 @@ const { saveProduct, findById } = require("../data/user");
 const users = require("../data/user");
 const fs = require("fs");
 const userFilePath = path.resolve('data/users.json');
-
+const db=require ("../src/database/models")
+const sequelize=db.sequelize
 
 module.exports = {
     //User Login
-    login: (req,res) =>{
+    login: async (req,res) =>{
       let userEmail = req.body.usuarioLogin;
       let userPassword = req.body.passwordLogin;
-      let userFileContent = fs.readFileSync(userFilePath, "utf-8");
-      let userFile = JSON.parse(userFileContent);
-      let userConfirm = userFile.find((user)=>user.email == userEmail)
+      let userConfirm = await db.User.findOne({where:{email:userEmail}})
       let errors = validationResult(req) ;
       if(userConfirm && userConfirm.password == userPassword){
         session=req.session;
@@ -24,6 +23,7 @@ module.exports = {
       errors = errors.array();
       res.render('users/admin/login',{errors})
     }
+    
     },
     registro:(req,res)=>{
       return res.render('users/registro');

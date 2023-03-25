@@ -34,15 +34,25 @@ module.exports = (sequelize, dataTypes) => {
             type: dataTypes.STRING(50),
             allowNull: false
         },
-
-        
+       
+        rol_id: dataTypes.BIGINT(10),
     };
     let config = {
         timestamps: false,
     }
     const User = sequelize.define(alias, cols, config); 
+    
+
+    User.associate = function(models) {
+        User.belongsTo(models.Rol,  { 
+            as: "rol",
+            foreignKey: "rol_id"
+        })
+    }
+    
+    
     return User
   
-    }
+    };
 
     
