@@ -1,4 +1,4 @@
-const { FOREIGNKEYS } = require("sequelize/types/query-types");
+const { DataTypes } = require("sequelize");
 
 module.exports = (sequelize, dataTypes) => {
     let alias = 'Producto';
@@ -21,8 +21,8 @@ module.exports = (sequelize, dataTypes) => {
             allowNull: false
         },
         categoria_id: {
-            type: dataTypes.INT(50).FOREIGNKEYS,
-            allowNull: false
+            type: dataTypes.INTEGER,
+           allowNull: false
             
         },
          

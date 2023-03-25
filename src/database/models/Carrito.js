@@ -7,7 +7,7 @@ module.exports = (sequelize,DataTypes)=>{
             autoIncrement: true
         },
         cantidad: {
-            type: DataTypes.INT,
+            type: DataTypes.BIGINT(20),
             allowNull: false
         },
     
