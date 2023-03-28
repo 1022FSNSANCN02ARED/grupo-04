@@ -10,6 +10,13 @@ module.exports = (sequelize,DataTypes)=>{
             type: DataTypes.BIGINT(20),
             allowNull: false
         },
+        producto_id: {
+            type:DataTypes.INTEGER
+        },
+        user_id:{
+            type:DataTypes.INTEGER
+        }
+
     
 }
 let config = {

@@ -35,20 +35,37 @@ module.exports = (sequelize, dataTypes) => {
             allowNull: false
         },
        
-        rol_id: dataTypes.BIGINT(10),
+        rol_id: { 
+            type: dataTypes.BIGINT(10),
+            allowNull: false
+        },
+       /* carrito_id: { 
+            type: dataTypes.BIGINT(10),
+            allowNull: false
+        },*/
+        
     };
     let config = {
         timestamps: false,
     }
     const User = sequelize.define(alias, cols, config); 
     
-
+//un usuario tiene un rol
     User.associate = function(models) {
         User.hasOne(models.Rol,  { 
             as: "rol",
             foreignKey: "rol_id"
         })
     }
+    //UN USUARIO TIENE UN CARRITO
+
+
+   /* User.associate = function (models) {
+        User.hasOne(models.Carrito, { 
+            as: "carrito",
+            foreignKey: "carrito_id"
+        })
+    }*/
     
     
     return User

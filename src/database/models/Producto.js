@@ -33,7 +33,7 @@ module.exports = (sequelize, dataTypes) => {
     const Producto = sequelize.define(alias, cols, config); 
 
     Producto.associate = function (models) {
-        Producto.belongsTo(models.Categoria, { // models.Genre -> Genres es el valor de alias en genres.js
+        Producto.belongsTo(models.Categoria, {
             as: "categoria",
             foreignKey: "categoria_id"
         })
