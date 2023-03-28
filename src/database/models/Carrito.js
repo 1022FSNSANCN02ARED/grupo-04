@@ -23,5 +23,16 @@ let config = {
     timestamps: false,
 }
 const Carrito = sequelize.define(alias, cols, config); 
+
+
+// UN CARRITO PUEDE TENER MUCHOS PRODUCTOS
+Carrito.associate = function (models) {
+    Carrito.hasMany(models.Producto, { 
+        as: "producto",
+        foreignKey: "producto_id"
+    })
+}
+
+
     return Carrito
 }

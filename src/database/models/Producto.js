@@ -31,13 +31,14 @@ module.exports = (sequelize, dataTypes) => {
         timestamps: false,
     }
     const Producto = sequelize.define(alias, cols, config); 
-
+//UN PRODUCTO PERTENECE A UNA CATEGORIA
     Producto.associate = function (models) {
         Producto.belongsTo(models.Categoria, {
             as: "categoria",
             foreignKey: "categoria_id"
         })
     }
+// UN PRODUCTO CORRESPONDE A UN SOLO CARRITO? 
 
 
     return Producto
