@@ -26,7 +26,12 @@
                   </div>
                   <div class="input-registro">
                     <i class="fa-solid fa-globe icono-registro"></i>
-                    <input type="text" name="paisRegister" placeholder="País" required>
+                    <select type="text" name="paisRegister" placeholder="País" value="Seleccione un pais" required>
+                      <option value="" selected disabled>Seleccione país de residencia</option>
+                    <% countries.forEach(country => { %>
+                      <option><%= country.name.common %></option>
+                    <% }); %>
+                    </select>
                   </div>
                   <div class="input-registro">
                      <i class="fa-solid fa-mobile icono-registro"></i>

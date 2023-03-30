@@ -1,13 +1,15 @@
 const path = require ('path');
 const {validationResult} = require('express-validator');
-const { saveProduct, findById } = require("../data/user");
-const users = require("../data/user");
-const fs = require("fs");
+const { saveProduct, findById } = require('../data/user');
+const users = require('../data/user');
+const fs = require('fs');
 const userFilePath = path.resolve('data/users.json');
-const db=require ("../src/database/models")
-const sequelize=db.sequelize
+const db=require ('../src/database/models');
+const sequelize=db.sequelize;
+const axios = require('axios');
 
 module.exports = {
+    
     //User Login
     login: async (req,res) =>{
       let userEmail = req.body.usuarioLogin;
@@ -26,7 +28,18 @@ module.exports = {
     
     },
     registro:(req,res)=>{
-      return res.render('users/registro');
+      axios.get('https://restcountries.com/v3.1/all')
+    .then(response => {
+      const countries = response.data;
+      countries.sort((a, b) => a.name.common.localeCompare(b.name.common));
+      res.render('users/registro', { countries });
+    })
+    .catch(error => {
+      console.log(error);
+      res.status(500).json({message: 'Error al obtener los países'});
+    });
+
+     
     },
     
     registroUsuario:(req,res)=>{
