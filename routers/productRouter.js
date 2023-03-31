@@ -26,12 +26,10 @@ var auth = function(req, res, next) {
 
 router.get("/create",auth,productsControllers.create);
 router.get("/:id", productsControllers.detail);
-router.post("/create", upload.single("image"), productsControllers.store);
+//router.post("/create", upload.single("image"), productsControllers.store);
 router.get("/:id/edit",auth,productsControllers.edit);
 router.put("/:id", productsControllers.update);
 router.delete("/:id",auth,productsControllers.destroy);
-
-
 
 
 
