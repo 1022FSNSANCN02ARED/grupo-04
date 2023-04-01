@@ -16,7 +16,10 @@ const upload = multer({
 });
 
 
-
+/*router.get("/list",productsAPIController.list)*/
 router.post("/create", upload.single("image"), productsAPIController.create);
+router.put("/:id", productsAPIController.update);
+router.delete("/:id",productsAPIController.destroy);
+
 
 module.exports = router;

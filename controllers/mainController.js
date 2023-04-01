@@ -15,10 +15,10 @@ module.exports = {
   login:(req, res) => {
     return res.render('users/admin/login');
   },
-  tienda:(req,res)=>{
+  /*tienda:(req,res)=>{
     let estado = req.session.userid;
     return res.render('products/tienda', { products: products.findAll(),estado});
-  },
+  },*/
   nosotros:(req,res)=>{
     return res.render('users/nosotros'); 
   },
