@@ -9,23 +9,25 @@ const req = require('express/lib/request');
 
 
 const Producto = db.Producto;
-const categoria = db.Categoria;
+const Categoria = db.Categoria;
 
 const productsAPIController = {
 
-    list : (req,res) => {
+    list: (req, res) => {
         let estado = req.session.userid;
         Producto.findAll({
-           include:{
-                model:categoria,
-                as: "categoria",
-            }  
+          include: {
+            model: Categoria,
+            as: 'categoria',
+          },
+          raw: true,
         })
-        .then (productos => {
-            res.render('/tienda', {productos,estado})
-        })
-    
-    },
+          .then((productos) => {
+           res.json(productos)
+           // ('products/tienda', { productos, estado });
+          })
+          .catch((error) => console.log(error));
+      },
 
 
     create : (req,res) =>{

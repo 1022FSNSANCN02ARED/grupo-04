@@ -32,6 +32,9 @@ CREATE TABLE `productos`(
     `descripcion` VARCHAR(500) NOT NULL,
     `precio` INT NOT NULL,
     `categoria_id` INT ,
+    `imagen` VARCHAR(255) NULL,
+    `talle` VARCHAR(255) NULL,
+    `color` VARCHAR(255) NULL,
     FOREIGN KEY (`categoria_id`) REFERENCES `categorias`(`id`),
      PRIMARY KEY(`id`)
 )ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
