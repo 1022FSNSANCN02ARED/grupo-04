@@ -21,6 +21,9 @@ CREATE TABLE `categorias`(
      PRIMARY KEY(`id`)
 )ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
+INSERT INTO categorias VALUES ("","Decoración");
+INSERT INTO categorias VALUES ("","Hogar");
+INSERT INTO categorias VALUES ("","Indumentaria");
 
 DROP TABLE IF EXISTS `productos`;
 CREATE TABLE `productos`(

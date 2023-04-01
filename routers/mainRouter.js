@@ -5,6 +5,7 @@ const productRouter = require("./productRouter");
 const userLoginRouter = require ("./userLoginRouter");
 const userRegisterRouter = require('./userRegisterRouter');
 const apiUsersRouter = require('./api/users')
+const apiproductsRouter = require('./api/products')
 
 
 
@@ -32,8 +33,9 @@ router.use("/products",productRouter);
 router.use("/user", userLoginRouter);
 router.use("/user",userRegisterRouter);
 
+//Son rutas de api, que vienen de la subcarpeta en routers/api
 router.use('/registro',apiUsersRouter);
-
+router.use('/products',apiproductsRouter)
 
 
 router.post ('/list', async (req,res)=>{
