@@ -13,6 +13,19 @@ const Categoria = db.Categoria;
 
 const productsAPIController = {
 
+    detail: async (req,res) => {
+     const product = await Producto.findByPk(req.params.id);
+     let estado = req.session.userid;
+     if (product != undefined){
+        res.render("products/detail", { product,estado });  
+       }
+     else {
+
+        res.redirect ('../notFound')
+      }
+
+    },
+
     tienda: (req, res) => {
         let estado = req.session.userid;
         Producto.findAll({
@@ -62,12 +75,25 @@ const productsAPIController = {
         return res.redirect('/tienda' + req.params.id)})
         .catch(error => res.send(error));
         },
+
+
      destroy: (req,res) => {
-         
-     }
-    
-    
-    
+        Producto.destroy({
+        where:{
+        id: req.params.id,
+        }
+        })
+     },
+
+
+
+     edit: async (req, res) => {
+      const product = await Producto.findByPk(req.params.id);
+      let estado = req.session.userid;
+      res.render("users/admin/edit", { product,estado });
+      console.log(estado);
+    },
+        
     
     }
 

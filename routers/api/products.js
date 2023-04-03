@@ -16,11 +16,20 @@ const upload = multer({
     storage,
 });
 
+var auth = function(req, res, next) {
+    if (req.session.userid)
+      return next();
+    else
+      return res.send('Usted no se encuentra logeado');
+  };
+
 
 router.get("/tienda",productsAPIController.tienda);
-router.post("/create", upload.single("image"), productsAPIController.create);
+router.post("/create",auth, upload.single("image"), productsAPIController.create);
 router.put("/:id", productsAPIController.update);
-router.delete("/:id",productsAPIController.destroy);
+router.delete("/:id",auth,productsAPIController.destroy);
+router.get("/:id",productsAPIController.detail);
+router.get("/:id/edit",auth,productsAPIController.edit);
 
 
 
