@@ -13,7 +13,7 @@ const Categoria = db.Categoria;
 
 const productsAPIController = {
 
-    list: (req, res) => {
+    tienda: (req, res) => {
         let estado = req.session.userid;
         Producto.findAll({
           include: {
@@ -23,10 +23,13 @@ const productsAPIController = {
           raw: true,
         })
           .then((productos) => {
-           res.json(productos)
-           // ('products/tienda', { productos, estado });
+          // res.json(productos)
+            res.render('products/tienda', { productos, estado });
           })
-          .catch((error) => console.log(error));
+          .catch((error) => {
+            console.log(error);
+          res.status(500).send('Error interno del servidor');
+        });
       },
 
 
