@@ -49,8 +49,8 @@ module.exports = {
     let pCarrito = {
       id: Date.now(),
       usuario: session.userid,
-      name: productos.name,
-      price: productos.price,
+      name: productos.nombre,
+      price: productos.precio,
     }
     let carritoFileContent = fs.readFileSync(carritoFilePath, "utf-8");
     let carrito = JSON.parse(carritoFileContent);
