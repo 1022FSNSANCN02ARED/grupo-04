@@ -38,6 +38,7 @@ CREATE TABLE `productos`(
     FOREIGN KEY (`categoria_id`) REFERENCES `categorias`(`id`),
      PRIMARY KEY(`id`)
 )ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+ALTER TABLE productos ADD producto_id VARCHAR(255)
 
 DROP TABLE IF EXISTS `users`;
 CREATE TABLE `users` (
