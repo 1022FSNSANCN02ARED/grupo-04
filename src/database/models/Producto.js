@@ -42,8 +42,8 @@ module.exports = (sequelize, dataTypes) => {
 
     Producto.associate = function (models) {
         Producto.belongsTo(models.Categoria, {
-            as: "categoria",
-            foreignKey: "categoria_id",
+        as: "categoria",
+        foreignKey: "categoria_id",
         tableName: "categorias",
         targetKey: "id",
         onDelete: "RESTRICT",

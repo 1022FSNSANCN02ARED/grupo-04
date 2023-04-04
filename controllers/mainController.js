@@ -22,7 +22,7 @@ module.exports = {
   nosotros:(req,res)=>{
     return res.render('users/nosotros'); 
   },
-  decoracion: (req, res) => {
+ /* decoracion: (req, res) => {
     let decoracion = fs.readFileSync(productosfilepath, 'utf8');
     let pTotales = JSON.parse (decoracion);
     let pDecoracion = pTotales.filter(p => p.category == 'decoracion')
@@ -39,7 +39,7 @@ module.exports = {
     let pTotales = JSON.parse (indumentaria);
     let pIndumentaria = pTotales.filter(p => p.category == 'indumentaria');
     res.render('products/indumentaria', {pIndumentaria})  
-       },
+       },*/
    
 
   

@@ -44,9 +44,12 @@ const productsAPIController = {
           res.status(500).send('Error interno del servidor');
         });
       },
+       createProduct: (req,res)=> {
+        let estado = req.session.userid;
+        res.render ('users/admin/create');
+      },
 
-
-    create : (req,res) =>{
+       create : (req,res) =>{
        Producto.create({
          
             nombre: req.body.name,
@@ -59,20 +62,23 @@ const productsAPIController = {
 
         })
         .then(()=> {
-        return res.redirect('/tienda')})
+        return res.redirect('/products/tienda')})
         .catch(error => res.send(error));
         },
 
-    update : (req,res) => {
+    update : async(req,res) => {
 
-        Producto.update({
+       await Producto.update({
             nombre: req.body.name,
             descripcion: req.body.description,
             precio: req.body.price,
-            categoria_id: req.body.category,
+            imagen: req.file ? req.file.filename : "default-image.png",
+            color: req.body.colour,
+            talle: req.body.size,
+        
         }, {where: {id: req.params.id}})
         .then(()=> {
-        return res.redirect('/tienda' + req.params.id)})
+        return res.redirect('/products/tienda')})
         .catch(error => res.send(error));
         },
 
@@ -83,9 +89,8 @@ const productsAPIController = {
         id: req.params.id,
         }
         })
+         return res.redirect('/products/tienda' )
      },
-
-
 
      edit: async (req, res) => {
       const product = await Producto.findByPk(req.params.id);
@@ -94,7 +99,35 @@ const productsAPIController = {
       console.log(estado);
     },
         
-    
+      decoracion:async (req,res) => {
+      let pDecoracion = await Producto.findAll({
+        where:{
+        categoria_id: 1,
+        }
+        })
+        res.render('products/decoracion', {pDecoracion})  
+     },
+
+     hogar:async (req,res) => {
+      let pHogar = await Producto.findAll({
+        where:{
+        categoria_id: 2,
+        }
+        })
+        res.render('products/hogar', {pHogar})  
+     },
+
+
+     indumentaria:async (req,res) => {
+      let pIndumentaria = await Producto.findAll({
+        where:{
+        categoria_id: 3,
+        }
+        })
+        res.render('products/indumentaria', {pIndumentaria})  
+     },
+
+
     }
 
 

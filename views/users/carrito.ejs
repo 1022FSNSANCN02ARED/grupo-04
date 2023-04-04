@@ -11,8 +11,8 @@
     
     <% agregados.forEach(agregado => { %>
     <tr style="border:1px solid black">
-        <td style="width: 300px;"><%= agregado.name%></td>
-        <td style="width: 200px;"><%= agregado.price%></td>
+        <td style="width: 300px;"><%= agregado.nombre%></td>
+        <td style="width: 200px;"><%= agregado.precio%></td>
        <td> <form
         action="<%= agregado.id %>?_method=delete"
         method="POST"
@@ -24,7 +24,6 @@
             ELIMINAR
         </button>
         </form> 
-        
        </td>
     </tr>   
     <% }) %>
@@ -34,7 +33,7 @@
 
      
         
-    
+
 </main>
 
 
@@ -45,3 +44,4 @@
 </body>
 
 </html>
+
