@@ -1,13 +1,7 @@
-const { DataTypes } = require("sequelize");
 
 module.exports = (sequelize, dataTypes) => {
     let alias = 'Producto';
     let cols = {
-        id: {
-            type: dataTypes.BIGINT(10).UNSIGNED,
-            primaryKey: true,
-            autoIncrement: true
-        },
         nombre: {
             type: dataTypes.STRING(30),
             allowNull: false
@@ -21,26 +15,43 @@ module.exports = (sequelize, dataTypes) => {
             allowNull: false
         },
         categoria_id: {
-            type: dataTypes.INTEGER,
+            type: dataTypes.STRING(11),
            allowNull: false
             
+        },
+        imagen: {
+            type: dataTypes.STRING(255),
+            allowNull: false
+        },
+        talle: {
+            type: dataTypes.STRING(255),
+            allowNull: false
+        },
+        color: {
+            type: dataTypes.STRING(255),
+            allowNull: false
         },
          
     };
     let config = {
         timestamps: false,
+       
     }
     const Producto = sequelize.define(alias, cols, config); 
-//UN PRODUCTO PERTENECE A UNA CATEGORIA
+
+
     Producto.associate = function (models) {
         Producto.belongsTo(models.Categoria, {
-            as: "categoria",
-            foreignKey: "categoria_id"
+        as: "categoria",
+        foreignKey: "categoria_id",
+        tableName: "categorias",
+        targetKey: "id",
+        onDelete: "RESTRICT",
+        onUpdate: "CASCADE",
+        constraints: true,
+      
         })
     }
-// UN PRODUCTO CORRESPONDE A UN SOLO CARRITO? 
-
 
     return Producto
-  
-    }
+}

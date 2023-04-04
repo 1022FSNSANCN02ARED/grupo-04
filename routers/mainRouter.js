@@ -8,7 +8,7 @@ const apiUsersRouter = require('./api/users')
 
 
 
-/* Rutas de mainController*/
+
 
 /* Rutas de generales*/
 
@@ -17,21 +17,24 @@ router.post("/carrito/:id",mainController.carrito);
 router.delete("/:id",mainController.destroyProductosCarrito);
 router.get("/home",mainController.Home);
 router.get("/", mainController.index);
-router.get("/tienda",mainController.tienda);
 router.get("/nosotros",mainController.nosotros);
 router.get("/donaciones",mainController.donaciones);
-router.get('/decoracion', mainController.decoracion);
-router.get('/hogar', mainController.hogar);
-router.get('/indumentaria', mainController.indumentaria);
+//router.get('/decoracion', mainController.decoracion);
+//router.get('/hogar', mainController.hogar);
+//router.get('/indumentaria', mainController.indumentaria);
+const apiproductsRouter = require('./api/products');
+
+//Se traen datos de Api productos
+router.use("/products",apiproductsRouter)
 
 
-
-
+//Rutas del productRouter
 router.use("/products",productRouter);
 
 router.use("/user", userLoginRouter);
 router.use("/user",userRegisterRouter);
 
+//Son rutas de api, que vienen de la subcarpeta en routers/api
 router.use('/registro',apiUsersRouter);
 
 

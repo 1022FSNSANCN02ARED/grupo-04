@@ -21,6 +21,9 @@ CREATE TABLE `categorias`(
      PRIMARY KEY(`id`)
 )ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
+INSERT INTO categorias VALUES ("","Decoración");
+INSERT INTO categorias VALUES ("","Hogar");
+INSERT INTO categorias VALUES ("","Indumentaria");
 
 DROP TABLE IF EXISTS `productos`;
 CREATE TABLE `productos`(
@@ -29,9 +32,13 @@ CREATE TABLE `productos`(
     `descripcion` VARCHAR(500) NOT NULL,
     `precio` INT NOT NULL,
     `categoria_id` INT ,
+    `imagen` VARCHAR(255) NULL,
+    `talle` VARCHAR(255) NULL,
+    `color` VARCHAR(255) NULL,
     FOREIGN KEY (`categoria_id`) REFERENCES `categorias`(`id`),
      PRIMARY KEY(`id`)
 )ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+ALTER TABLE productos ADD producto_id VARCHAR(255)
 
 DROP TABLE IF EXISTS `users`;
 CREATE TABLE `users` (

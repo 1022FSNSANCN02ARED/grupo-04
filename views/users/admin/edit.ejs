@@ -4,7 +4,7 @@
  <title>Edicion-form</title>
     <body>
         <!-- Header -->
-        <%- include('../../partials/header',{title: 'Editando: ' + product.name}) %>
+        <%- include('../../partials/header',{title: 'Editando: ' + product.nombre}) %>
         <!-- /Header -->
  <div class="container products-wrapper product-detail">
             <div class="row">
@@ -14,13 +14,14 @@
                     </h2>
                 </div>
                  <h2 class="products-title">
-                        Estás editando: <i><%= product.name %> </i>
+                        Estás editando: <i><%= product.nombre %> </i>
                     </h2>
             </div>
             <div class="col-12 box1">
                 <form
                     action="/products/<%= product.id %>?_method=put"
                     method="POST" 
+                    enctype="multipart/form-data"
                 >
                     <div class="row product-detail">
                         
@@ -34,11 +35,8 @@
                                 name="name"
                                 placeholder="Ej: 5678"
                                 class="form-input"
-                                value="<%= product.name %>"
-                                
-                               
-                               
-                                
+                                value="<%= product.nombre %>"
+        
                             
                             />
                         </div>
@@ -72,14 +70,14 @@
                             />
                         </div>
                         <div class="col-12 col-md-6">
-                            <label for="image" class="form-label">Image:</label>
+                            <label for="imagen" class="form-label">Imagen:</label>
                             <input
                                 type="file"
-                                id="image"
-                                name="image"
+                                id="imagen"
+                                name="imagen"
                                 class="form-input"
-                                accept="image/png/jpeg"
-                                src="/images/<%= product.image %>"
+                                accept="imagen/png/jpeg"
+                                src="/images/<%= product.imagen %>"
                                
                                
                             />
@@ -94,11 +92,11 @@
                                 class="form-input"
                             >
                                 <option value="">Elegí</option>
-                                 <option value="decoracion" <%= product.category=="decoracion" ? "selected" : "" %>>Decoracion</option>
-                                <option value="hogar" <%= product.category=="hogar" ? "selected" : "" %>>
+                                 <option value="decoracion" <%= product.categoria=="decoracion" ? "selected" : "" %>>Decoracion</option>
+                                <option value="hogar" <%= product.categoria=="hogar" ? "selected" : "" %>>
                                     Hogar
                                 </option>
-                                <option value="indumentaria" <%= product.category=="indumentaria" ? "selected" : "" %>>
+                                <option value="indumentaria" <%= product.categoria=="indumentaria" ? "selected" : "" %>>
                                   Indumentaria
                                 </option>
                             </select>
@@ -114,7 +112,7 @@
                                 name="price"
                                 placeholder="Ej:1500"
                                 class="form-input"
-                                 value="<%= product.price %>"
+                                 value="<%= product.precio %>"
                           
                                
                             />
@@ -127,7 +125,7 @@
                                 name="description"
                                 id="description"
                                 class="form-input"
-                            ><%= product.description %></textarea>
+                            ><%= product.descripcion %></textarea>
                         </div>
                         <div class="col-12">
                             <button type="submit" class="edit"> <span> Guardar Producto</span>

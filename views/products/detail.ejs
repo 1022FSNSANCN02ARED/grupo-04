@@ -18,18 +18,18 @@
 
         </h3>
       
-           <p>NOMBRE DEL PRODUCTO : <%= product.name %></p>
+           <p>NOMBRE DEL PRODUCTO : <%= product.nombre %></p>
            </div> 
    
             <div class="productos-unisex">
                     <div class="container-img">
-                  <img src="/images/<%= product.image %>" alt="">
+                  <img src="/images/<%= product.imagen %>" alt="">
 
                    </div>
 
                    <div class="container-info-producto">
                  <div class="container-price">
-                      <span> $ <%= product.price %></span>
+                      <span> $ <%= product.precio %></span>
                       <i class="fa-solid fa-gift"></i>
                   
                  </div>
@@ -134,7 +134,7 @@
                        
                         <label for="medida" class="medida"> SIZE </label>
 
-                         <%= product.size %>
+                         <%= product.talle %>
 
                         <select name="medida" id="medida">
                             <option disabled selected value="">
@@ -177,7 +177,7 @@
                         <label for="medida" class="medida"> CATEGORIA: </label>
 
                         
-                                   <%= product.category %>
+                                   <%= product.categoria %>
 
                     </div>
 
@@ -219,7 +219,7 @@
 
                                 <div class="text-description">
 
-                                   <p><%= product.description %>
+                                   <p><%= product.descripcion %>
                                    </p>
 
 

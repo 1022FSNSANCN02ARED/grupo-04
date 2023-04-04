@@ -15,14 +15,14 @@ module.exports = {
   login:(req, res) => {
     return res.render('users/admin/login');
   },
-  tienda:(req,res)=>{
+  /*tienda:(req,res)=>{
     let estado = req.session.userid;
     return res.render('products/tienda', { products: products.findAll(),estado});
-  },
+  },*/
   nosotros:(req,res)=>{
     return res.render('users/nosotros'); 
   },
-  decoracion: (req, res) => {
+ /* decoracion: (req, res) => {
     let decoracion = fs.readFileSync(productosfilepath, 'utf8');
     let pTotales = JSON.parse (decoracion);
     let pDecoracion = pTotales.filter(p => p.category == 'decoracion')
@@ -39,7 +39,7 @@ module.exports = {
     let pTotales = JSON.parse (indumentaria);
     let pIndumentaria = pTotales.filter(p => p.category == 'indumentaria');
     res.render('products/indumentaria', {pIndumentaria})  
-       },
+       },*/
    
 
   
@@ -49,8 +49,8 @@ module.exports = {
     let pCarrito = {
       id: Date.now(),
       usuario: session.userid,
-      name: productos.name,
-      price: productos.price,
+      name: productos.nombre,
+      price: productos.precio,
     }
     let carritoFileContent = fs.readFileSync(carritoFilePath, "utf-8");
     let carrito = JSON.parse(carritoFileContent);
