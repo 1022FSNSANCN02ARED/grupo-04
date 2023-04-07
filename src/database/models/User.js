@@ -55,12 +55,10 @@ module.exports = (sequelize, dataTypes) => {
         User.hasOne(models.Rol,  { 
             as: "rol",
             foreignKey: "rol_id"
-        })
-    }
-    User.associate = function(models){
-    User.belongsToMany(models.Producto, { 
+        }),
+         User.belongsToMany(models.Producto, { 
         through: models.Productocarrito,
-    });
+        });
     }
     
     return User

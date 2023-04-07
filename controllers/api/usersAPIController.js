@@ -40,7 +40,7 @@ const usersAPIController = {
             }
         )
         .then(()=> {
-            return res.redirect('/tienda')})  
+            return res.redirect('/user/login')})  
         .catch(error => res.send(error))
 },
 }

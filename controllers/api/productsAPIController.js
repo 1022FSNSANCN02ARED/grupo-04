@@ -28,16 +28,16 @@ const productsAPIController = {
 
     tienda: (req, res) => {
         let estado = req.session.userid;
+        
         Producto.findAll({
-          include: {
+          include:  [{
             model: Categoria,
-            as: 'categoria',
-          },
-          raw: true,
+            as: 'categoria'
+          }],
         })
           .then((productos) => {
-          // res.json(productos)
-            res.render('products/tienda', { productos, estado });
+          //res.json(productos)
+           res.render('products/tienda', { productos, estado });
           })
           .catch((error) => {
             console.log(error);

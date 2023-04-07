@@ -16,7 +16,11 @@ module.exports = (sequelize, dataTypes) => {
         },
         categoria_id: {
             type: dataTypes.STRING(11),
-           allowNull: false
+           allowNull: false,
+           references: {
+            model: 'categorias',
+            key: 'id'
+        }
             
         },
         imagen: {
@@ -42,20 +46,13 @@ module.exports = (sequelize, dataTypes) => {
 
     Producto.associate = function (models) {
         Producto.belongsTo(models.Categoria, {
-        as: "categoria",
-        foreignKey: "categoria_id",
-        tableName: "categorias",
-        targetKey: "id",
-        onDelete: "RESTRICT",
-        onUpdate: "CASCADE",
-        constraints: true,
-      
-        })
-    }
-    Producto.associate = function(models){
-         Producto.belongsToMany(models.User, {
+            as: 'categoria',
+            foreignKey: 'categoria_id',
+            onDelete: 'CASCADE',
+          }),
+        Producto.belongsToMany(models.User, {
              through: models.Productocarrito,
-             });  
+        })
     }
 
     return Producto
