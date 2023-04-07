@@ -57,16 +57,11 @@ module.exports = (sequelize, dataTypes) => {
             foreignKey: "rol_id"
         })
     }
-    //UN USUARIO TIENE UN CARRITO
-
-
-   /* User.associate = function (models) {
-        User.hasOne(models.Carrito, { 
-            as: "carrito",
-            foreignKey: "carrito_id"
-        })
-    }*/
-    
+    User.associate = function(models){
+    User.belongsToMany(models.Producto, { 
+        through: models.Productocarrito,
+    });
+    }
     
     return User
   
