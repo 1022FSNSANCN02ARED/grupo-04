@@ -55,8 +55,8 @@ CREATE TABLE `users` (
     PRIMARY KEY(`id`)
 )ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
-DROP TABLE IF EXISTS `carrito`;
-CREATE TABLE `carrito`(
+DROP TABLE IF EXISTS `productoCarrito`;
+CREATE TABLE `productoCarrito`(
     `id` INT AUTO_INCREMENT,
     `cantidad` INT ,
     `productos_id` INT ,

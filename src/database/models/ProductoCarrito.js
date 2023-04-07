@@ -1,5 +1,5 @@
 module.exports = (sequelize,DataTypes)=>{
-    let alias = "Carrito"
+    let alias = "ProductoCarrito"
     let cols = {
         id: {
             type: DataTypes.BIGINT(10).UNSIGNED,
@@ -27,7 +27,7 @@ const Carrito = sequelize.define(alias, cols, config);
 
 // UN CARRITO PUEDE TENER MUCHOS PRODUCTOS
 Carrito.associate = function (models) {
-    Carrito.hasMany(models.Producto, { 
+    Carrito.belongsToMany(models.Producto, { 
         as: "producto",
         foreignKey: "producto_id"
     })
