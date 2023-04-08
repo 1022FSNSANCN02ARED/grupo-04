@@ -323,6 +323,11 @@ input:valid ~ .label-login{
 }
 .body-register{
   background: linear-gradient(#f3f5f6,rgb(199, 186, 186));
+  background-image: url(../images/fondoazul2.jpg);
+  background-position: center center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+
 }
 .container-register{
   display:flex;
