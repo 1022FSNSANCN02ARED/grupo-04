@@ -7,6 +7,7 @@ const userFilePath = path.resolve('data/users.json');
 const db=require ('../src/database/models');
 const sequelize=db.sequelize;
 const axios = require('axios');
+const bcrypt = require('bcryptjs');
 
 
 module.exports = {
@@ -16,8 +17,10 @@ module.exports = {
       let userEmail = req.body.usuarioLogin;
       let userPassword = req.body.passwordLogin;
       let userConfirm = await db.User.findOne({where:{email:userEmail}})
+      let passwordHashLogin = bcrypt.hashSync(userPassword, 10);
       let errors = validationResult(req) ;
-      if(userConfirm && userConfirm.password == userPassword){
+      if(userConfirm && bcrypt.compareSync(userPassword, passwordHashLogin)){
+        
         session=req.session;
         session.userid= userEmail;
         res.render('index');
@@ -25,6 +28,7 @@ module.exports = {
     else{
       errors = errors.array();
       res.render('users/admin/login',{errors})
+      
     }
     
     },

@@ -3,6 +3,7 @@ const db = require('../../src/database/models');
 const sequelize = db.sequelize;
 const { Op } = require("sequelize");
 const moment = require('moment');
+const bcrypt = require('bcryptjs');
 
 
 const Users = db.User;
@@ -30,7 +31,8 @@ const usersAPIController = {
             {
                nombre: req.body.nameRegister,
                email: req.body.emailRegister,
-               password: req.body.passwordRegister,
+               //password: req.body.passwordRegister,
+               password: bcrypt.hashSync(req.body.passwordRegister, 10),
                direccion: req.body.direccionRegister,
                pais: req.body.paisRegister,
                telefono: req.body.telefonoRegister,
