@@ -58,6 +58,8 @@ module.exports = (sequelize, dataTypes) => {
         }),
          User.belongsToMany(models.Producto, { 
         through: models.Productocarrito,
+        foreignKey: 'user_id', // clave foránea de User en la tabla Productocarrito
+        otherKey: 'productos_id', // clave foránea de Producto en la tabla Productocarrito
         });
     }
     

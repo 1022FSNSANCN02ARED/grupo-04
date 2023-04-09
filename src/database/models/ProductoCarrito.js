@@ -12,11 +12,21 @@ module.exports = (sequelize,DataTypes)=>{
             type: DataTypes.BIGINT(20),
             allowNull: false
         },
-        producto_id: {
-            type:DataTypes.INTEGER
+        productos_id: {
+            type:DataTypes.INTEGER,
+            allowNull: false,
+            references: {
+                model: 'Productos',
+                key: 'id',
+              },
         },
         user_id:{
-            type:DataTypes.INTEGER
+            type:DataTypes.INTEGER,
+            allowNull: false,
+            references: {
+              model: 'User',
+              key: 'id',
+            },
         }
 
     
@@ -29,8 +39,12 @@ const Productocarrito = sequelize.define(alias, cols, config);
 
 // UN CARRITO PUEDE TENER MUCHOS PRODUCTOS
 Productocarrito.associate = function (models) {
-    Productocarrito.belongsTo(models.User);
-    Productocarrito.belongsTo(models.Producto);
+    Productocarrito.belongsTo(models.User,{ 
+        foreignKey: 'user_id'
+     });
+    Productocarrito.belongsTo(models.Producto,{
+         foreignKey: 'productos_id' 
+        });
 }
 
 

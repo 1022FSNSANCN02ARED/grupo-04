@@ -5,14 +5,14 @@ const productRouter = require("./productRouter");
 const userLoginRouter = require ("./userLoginRouter");
 const userRegisterRouter = require('./userRegisterRouter');
 const apiUsersRouter = require('./api/users')
-
+const apicartRouter = require('./api/cart')
 
 
 
 
 /* Rutas de generales*/
 
-router.get("/carrito",mainController.vistaCarrito);
+//router.get("/carrito",mainController.vistaCarrito);
 router.post("/carrito/:id",mainController.carrito);
 router.delete("/:id",mainController.destroyProductosCarrito);
 router.get("/home",mainController.Home);
@@ -26,6 +26,10 @@ const apiproductsRouter = require('./api/products');
 
 //Se traen datos de Api productos
 router.use("/products",apiproductsRouter)
+//Se traen datos de Api users
+router.use('/registro',apiUsersRouter);
+//Se traen datos de API carrito
+router.use('/',apicartRouter)
 
 
 //Rutas del productRouter
@@ -34,8 +38,8 @@ router.use("/products",productRouter);
 router.use("/user", userLoginRouter);
 router.use("/user",userRegisterRouter);
 
-//Son rutas de api, que vienen de la subcarpeta en routers/api
-router.use('/registro',apiUsersRouter);
+
+
 
 
 

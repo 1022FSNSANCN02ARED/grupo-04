@@ -126,7 +126,7 @@ margin-top: -8px;
   min-height: 100vh;
   width:100%;
   background: linear-gradient(#f3f5f6,rgb(199, 186, 186));
- /* background-image:url(../images/fondo-login.jpg);*/
+  background-image:url(../images/fondoLogin.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -136,8 +136,7 @@ margin-top: -8px;
   position:relative;
   width:400px;
   height:450px;
-  background: rgb(145, 134, 134);
-  border: 2px solid rgba(255,255,255,0.5);
+  border: 2px solid #000;/*rgba(255,255,255,0.5)*/
   border-radius:20px;
   backdrop-filter: blur(15px);
   display: flex;
@@ -147,21 +146,21 @@ margin-top: -8px;
 
 .h2-login{
   font-size: 2em;
-  color: #fff;
+  color: #000;
   text-align: center;
 }
 .inputbox{
   position: relative;
   margin: 30px 0;
   width: 310px;
-  border-bottom:2px solid #fff;
+  border-bottom:2px solid #000;
 }
 .label-login{
   position:absolute; 
   top:50%;
   left: 5px;
   transform: translateY(-50%);
-  color: #fff;
+  color: #000;
   font-size: 1em;
   pointer-events: none;
   transition: .5s;
@@ -178,13 +177,13 @@ input:valid ~ .label-login{
   outline: none;
   font-size: 1em;
   padding: 35px o 5 px;
-  color: #fff;
+  color: #000;
   
 }
 .icono-login{
   position:absolute;
   right:8px;
-  color: #fff;
+  color: #000;
   font-size:1.2em;
   top:20px;
 
@@ -193,7 +192,7 @@ input:valid ~ .label-login{
 .forget{
   margin: -15px 0 15px;
   font-size: .9em;
-  color: #fff;
+  color: #000;
   display: flex;
   justify-content: center;
 }
@@ -203,7 +202,7 @@ input:valid ~ .label-login{
 
 }
 .forget label a{
-  color: #fff;
+  color: #000;
   text-decoration: none;
 }
 .forget label a:hover{
@@ -223,14 +222,14 @@ input:valid ~ .label-login{
 }
 .registro{
   font-size: .9em;
-  color: #fff;
+  color: #000;
   text-align: center;
   margin: 25px 0 10px;
 }
 
 .registro p a{
     text-decoration: none;
-    color: #fff;
+    color: #000;
     font-weight: 600;
 }
 
@@ -323,7 +322,7 @@ input:valid ~ .label-login{
 }
 .body-register{
   background: linear-gradient(#f3f5f6,rgb(199, 186, 186));
-  background-image: url(../images/fondoazul2.jpg);
+  background-image: url(../images/fondo10.jpg);
   background-position: center center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -337,7 +336,6 @@ input:valid ~ .label-login{
 }
 
 .form-box-register{
-  background:  rgb(145, 134, 134);
   position: relative;
   width: 400px;
   height: 750px;
