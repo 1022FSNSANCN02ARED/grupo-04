@@ -15,34 +15,9 @@ module.exports = {
   login:(req, res) => {
     return res.render('users/admin/login');
   },
-  /*tienda:(req,res)=>{
-    let estado = req.session.userid;
-    return res.render('products/tienda', { products: products.findAll(),estado});
-  },*/
   nosotros:(req,res)=>{
     return res.render('users/nosotros'); 
   },
- /* decoracion: (req, res) => {
-    let decoracion = fs.readFileSync(productosfilepath, 'utf8');
-    let pTotales = JSON.parse (decoracion);
-    let pDecoracion = pTotales.filter(p => p.category == 'decoracion')
-    res.render('products/decoracion', {pDecoracion})  
-       },
-  hogar: (req, res) => {
-    let hogar = fs.readFileSync(productosfilepath, 'utf8');
-    let pTotales = JSON.parse (hogar);
-    let pHogar = pTotales.filter(p => p.category == 'hogar');
-    res.render('products/hogar', {pHogar})  
-       },
-  indumentaria: (req, res) => {
-    let indumentaria = fs.readFileSync(productosfilepath, 'utf8');
-    let pTotales = JSON.parse (indumentaria);
-    let pIndumentaria = pTotales.filter(p => p.category == 'indumentaria');
-    res.render('products/indumentaria', {pIndumentaria})  
-       },*/
-   
-
-  
   carrito:(req,res)=>{
     let id = req.params.id;
     let productos = products.findById(id);

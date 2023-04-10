@@ -186,10 +186,11 @@
                     <button class="btn-clean"> Limpiar </button>
                     
 
-                </div>  
+                </div> 
+                     <form action="/carrito/<%= product.id %>" method="POST">
                      <div class="container-add-card">
                         <div class="container-quantity">
-                            <input type="number" placeholder="1" value="1" min="1" class="input-quantity">
+                            <input type="number" placeholder="1" value="1" min="1" class="input-quantity" name="cantidad">
                         </div>
 
                          <div class="btn-increment-decrement">
@@ -199,7 +200,7 @@
                          </div>
                         <div>
 
-                       <form action="/carrito/<%= product.id %>" method="POST">
+                       
                        <button  type="submit" class="btn-add-too-cart">
                          Añade al carrito
                         </button> 
@@ -403,7 +404,7 @@
     
       
  
-   <script src="/productos.js"></script>
+   <script src="/js/productos.js"></script>
                   
       
    

@@ -13,8 +13,8 @@ const apicartRouter = require('./api/cart')
 /* Rutas de generales*/
 
 //router.get("/carrito",mainController.vistaCarrito);
-router.post("/carrito/:id",mainController.carrito);
-router.delete("/:id",mainController.destroyProductosCarrito);
+//router.post("/carrito/:id",mainController.carrito);
+//router.delete("/:id",mainController.destroyProductosCarrito);
 router.get("/home",mainController.Home);
 router.get("/", mainController.index);
 router.get("/nosotros",mainController.nosotros);

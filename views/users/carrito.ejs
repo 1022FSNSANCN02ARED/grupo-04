@@ -6,20 +6,25 @@
 <table style="border:1px solid black">
     <tr style="border:1px solid black">
         <td  style="width: 300px;">Nombre</td>
-        <td  style="width: 200px;">Precio</td>
+        <td  style="width: 300px;">Cantidad</td>
+        <td  style="width: 200px;">Precio Unitario</td>
+        <td  style="width: 200px;">Precio Total</td>
     </tr>
     
-    <% productosAgregados.forEach(agregado => { %>
+    <% productosAgregados.forEach(producto => { %>
     <tr style="border:1px solid black">
-        <td style="width: 300px;"><%= productosAgregados.nombre%></td>
-        <td style="width: 200px;"><%= productosAgregados.precio%></td>
-       <td> <form
-        action="<%= agregado.id %>?_method=delete"
+        <td style="width: 300px;"><%= producto.Producto.nombre %></td>
+        <td style="width: 300px;"><%= producto.cantidad %></td>
+        <td style="width: 200px;"> $<%= producto.Producto.precio %></td>
+        <td style="width: 200px;"> $<%= producto.Producto.precio * producto.cantidad%></td>
+        <td> 
+        <form
+        action="<%= producto.productos_id %>?_method=delete"
         method="POST"
         style="display: inline-flex"
-    >
+        >
         <button
-            type="submit"
+         type="submit"
         >
             ELIMINAR
         </button>
@@ -29,7 +34,8 @@
     <% }) %>
 </table>
 
-    <p>Total de su compra: $<%= total %></p>
+<% let total = productosAgregados.reduce((suma, producto) => suma + (producto.Producto.precio * producto.cantidad), 0) %>
+<p>Total de su compra: $<%= total.toFixed(2) %></p>
 
      
         
