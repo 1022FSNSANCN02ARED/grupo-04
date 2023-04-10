@@ -15,11 +15,17 @@
                         FORMULARIO CREACION DE PRODUCTO
                     </h2>
                 </div>
+            
             </div>
+
+            <div class="errores"><ul></ul></div>
             <div class="col-12">
                 <form
                     method="post"
-                    enctype="multipart/form-data"   
+                    enctype="multipart/form-data"  
+                    class="formCreate"
+                   
+                     
                 >
                     <div class="row product-detail">
                         
@@ -33,10 +39,7 @@
                                 name="name"
                                 placeholder="Ej: 5678"
                                 class="form-input"
-                               
-                               
-                                
-                            
+                                                      
                             />
                         </div>
                   
@@ -117,7 +120,7 @@
                             <textarea
                                 name="description"
                                 id="description"
-                                class="form-input"
+                                class="form-input description"
                                 name="price"
                             ></textarea>
                         </div>
@@ -133,7 +136,9 @@
         </div>
 
    
-
+   <script src="../../js/popup.js ">
+     </script>
+       
         
               <!-- footer -->
         <%- include('../../partials/footer') %>

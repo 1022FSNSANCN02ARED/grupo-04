@@ -47,6 +47,7 @@ const productsAPIController = {
        createProduct: (req,res)=> {
         let estado = req.session.userid;
         res.render ('users/admin/create');
+        
       },
 
        create : (req,res) =>{
@@ -64,6 +65,8 @@ const productsAPIController = {
         .then(()=> {
         return res.redirect('/products/tienda')})
         .catch(error => res.send(error));
+
+        
         },
 
     update : async(req,res) => {

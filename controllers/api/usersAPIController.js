@@ -43,6 +43,10 @@ const usersAPIController = {
             return res.redirect('/tienda')})  
         .catch(error => res.send(error))
 },
+
+
 }
+
+
 
 module.exports =  usersAPIController;
