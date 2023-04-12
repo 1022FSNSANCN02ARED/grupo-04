@@ -55,18 +55,13 @@ module.exports = (sequelize, dataTypes) => {
         User.hasOne(models.Rol,  { 
             as: "rol",
             foreignKey: "rol_id"
-        })
+        }),
+         User.belongsToMany(models.Producto, { 
+        through: models.Productocarrito,
+        foreignKey: 'user_id', // clave foránea de User en la tabla Productocarrito
+        otherKey: 'productos_id', // clave foránea de Producto en la tabla Productocarrito
+        });
     }
-    //UN USUARIO TIENE UN CARRITO
-
-
-   /* User.associate = function (models) {
-        User.hasOne(models.Carrito, { 
-            as: "carrito",
-            foreignKey: "carrito_id"
-        })
-    }*/
-    
     
     return User
   

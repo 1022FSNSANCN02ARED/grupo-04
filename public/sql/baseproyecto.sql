@@ -38,7 +38,7 @@ CREATE TABLE `productos`(
     FOREIGN KEY (`categoria_id`) REFERENCES `categorias`(`id`),
      PRIMARY KEY(`id`)
 )ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
-ALTER TABLE productos ADD producto_id VARCHAR(255)
+ALTER TABLE productos ADD producto_id VARCHAR(255);
 
 DROP TABLE IF EXISTS `users`;
 CREATE TABLE `users` (
@@ -55,8 +55,8 @@ CREATE TABLE `users` (
     PRIMARY KEY(`id`)
 )ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
-DROP TABLE IF EXISTS `carrito`;
-CREATE TABLE `carrito`(
+DROP TABLE IF EXISTS `productocarritos`;
+CREATE TABLE `productoCarrito`(
     `id` INT AUTO_INCREMENT,
     `cantidad` INT ,
     `productos_id` INT ,

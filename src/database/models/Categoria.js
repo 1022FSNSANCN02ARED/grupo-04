@@ -23,7 +23,8 @@ const Categoria = sequelize.define(alias, cols, config);
 Categoria.associate = function(models) {
     Categoria.hasMany(models.Producto, { 
         as: "productos",        
-        foreignKey: "categoria_id"
+        foreignKey: "categoria_id",
+        onDelete: 'CASCADE',
     })
 }
 
