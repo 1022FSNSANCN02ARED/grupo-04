@@ -5,6 +5,8 @@ const { Op, where } = require("sequelize");
 const moment = require('moment');
 const { update } = require('../productsController');
 const req = require('express/lib/request');
+const { check, validationResult } = require('express-validator');
+
 
 
 
@@ -50,9 +52,11 @@ const productsAPIController = {
         
       },
 
-       create : (req,res) =>{
+       create : (req,res) =>{ 
+
+  
        Producto.create({
-         
+                     
             nombre: req.body.name,
             descripcion: req.body.description,
             precio: req.body.price,
@@ -60,12 +64,13 @@ const productsAPIController = {
             color: req.body.colour,
             talle: req.body.size,
             categoria_id: req.body.category,
+            
 
-        })
+        } )
         .then(()=> {
         return res.redirect('/products/tienda')})
         .catch(error => res.send(error));
-
+   
         
         },
 

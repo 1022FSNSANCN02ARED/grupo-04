@@ -6,6 +6,7 @@ const products = require("../data/products");
 const productsFilePath =path.resolve("data/productsDatos.json")
 
 
+
 module.exports= {
       detail: (req, res) => {
        const product = products.findById(req.params.id);
