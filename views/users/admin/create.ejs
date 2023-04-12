@@ -5,7 +5,7 @@
         <!-- Header -->
         <%- include('../../partials/header') %>
         <!-- /Header -->
-        
+      
  </body>
 </html>
 
@@ -26,7 +26,7 @@
                     enctype="multipart/form-data"  
                     class="formCreate"
                     id="form"
-                   
+                    
                      
                 >
                     <div class="row product-detail">
@@ -48,7 +48,10 @@
                               <div class="col-12 col-md-6">
                             <label for="size" class="form-label"
                                 >Size:</label
+                            
                             >
+
+                          
                             <input
                                 type="text"
                                 id="size"
@@ -79,7 +82,7 @@
                                 type="file"
                                 id="imagen"
                                 name="imagen"
-                                class="form-input"
+                                class="form-input imagenForm"
                                 accept="imagen/png,imagen/jpeg"
                                
                                
@@ -92,7 +95,7 @@
                             <select
                                 name="category"
                                 id="category"
-                                class="form-input"
+                                class="form-input category"
                             >
                                 <option value="">Elegí</option>
                                 <option value="1">decoracion</option>
@@ -110,7 +113,7 @@
                                 id="price"
                                 name="price"
                                 placeholder="Ej:1500"
-                                class="form-input"
+                                class="form-input priceForm"
                           
                                
                             />
@@ -127,7 +130,7 @@
                             ></textarea>
                         </div>
                         <div class="col-12">
-                            <button type="submit" class="edit">
+                            <button type="submit" class="edit submitButon">
                                <span> Guardar Producto</span>
                             </button>
                             

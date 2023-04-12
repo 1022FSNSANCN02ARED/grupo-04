@@ -18,17 +18,16 @@ function CloseSlide(){
  let formulario = document.querySelector('form.formCreate');
 
  formulario.addEventListener('submit',function(e) {
-      const validationsResult = []; 
+    
       e.preventDefault();
     let nombre = document.querySelector('input.form-input');
     if (nombre.value.length < 5) {
         alert('colocar nombre')
-        validationsResult.push(result);
+    
     }
     let description = document.querySelector('.description');
     if (description.value.length < 20) {
-        alert('colocar description')
-validationsResult.push(result);
+        alert('colocar description');
     } 
  });
 
