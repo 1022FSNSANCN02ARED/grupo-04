@@ -143,6 +143,16 @@ margin-top: -8px;
   justify-content: center;
   align-items: center;
 }
+.formCreate{
+  
+  width: 100%;
+ 
+ 
+  
+ 
+ 
+}
+
 
 .h2-login{
   font-size: 2em;
@@ -1570,6 +1580,9 @@ color: grey;
     font-size: 2.8em;
     
 }
+.products-title{
+  text-align: center;
+}
 
 .product-detail-description {
     padding: 15px;
@@ -2097,6 +2110,9 @@ textarea.form-input {
   flex-direction: row;
   margin-bottom:  25px;
   
+}
+.formCreate{
+  margin-left: 170px;
 }
  
 
