@@ -1533,6 +1533,8 @@ color: grey;
 .product-detail {
     background-color:white;
     border-radius: 8px;
+    border: 2px solid black;
+   backdrop-filter: blur(15px);
     overflow: hidden;
     width: 75%;
     margin: 20px;
@@ -1540,6 +1542,13 @@ color: grey;
    
  
 }
+.products-title{
+  text-align: center;
+  font-family: inherit;
+  margin: 15px;
+}
+
+
 
 .product-detail-img {
     width: 70%;
@@ -1589,12 +1598,13 @@ color: grey;
     width: 80%;
     height: 40px;
     margin-bottom: 15px;
-    font-size: 1.5em;
+    font-family: inherit;
     border-radius: 8px;
     border: none;
-    border: solid 1px var(--gray);
+    outline: none;
+    border-bottom: 2px solid black;
     padding: 0 15px;
-    background-color: rgb(231, 215, 215);
+    background-color: transparent;
    
 }
 
@@ -1603,7 +1613,7 @@ textarea.form-input {
     width: 91%;
     resize: vertical;
     padding: 15px;
-   background-color: rgb(231, 215, 215);
+   background-color: transparent;
 
   
 }
@@ -1625,8 +1635,9 @@ textarea.form-input {
  font-size: 17px;
  border-radius: 500px;
  overflow: hidden;
- background: rgb(107, 107, 237);
+ background: black;
  color: ghostwhite;
+ margin-bottom: 10px;
 }
 
 .edit span {

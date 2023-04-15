@@ -7,7 +7,16 @@
         <%- include('../../partials/header',{title: 'Editando: ' + product.nombre}) %>
         <!-- /Header -->
  <div class="container products-wrapper product-detail">
-            <div class="row">
+       
+            <div class="col-12 box1">
+                <form
+                    action="/products/<%= product.id %>?_method=put"
+                    method="POST" 
+                    enctype="multipart/form-data"
+                >
+                    <div class="row product-detail">
+                        
+                           <div class="row">
                 <div class="col-12">
                     <h2 class="products-title">
                         FORMULARIO EDICION DE PRODUCTO
@@ -17,14 +26,6 @@
                         Estás editando: <i><%= product.nombre %> </i>
                     </h2>
             </div>
-            <div class="col-12 box1">
-                <form
-                    action="/products/<%= product.id %>?_method=put"
-                    method="POST" 
-                    enctype="multipart/form-data"
-                >
-                    <div class="row product-detail">
-                        
                         <div class="col-12 col-md-6">
                             <label for="price" class="form-label"
                                 >Nombre:</label
