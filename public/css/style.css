@@ -1534,7 +1534,7 @@ color: grey;
     background-color:white;
     border-radius: 8px;
     border: 2px solid black;
-   backdrop-filter: blur(15px);
+   backdrop-filter: blur(40px);
     overflow: hidden;
     width: 75%;
     margin: 20px;
