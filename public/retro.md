@@ -96,3 +96,18 @@ Volcamos las ideas de trabajo y nos pusimos de acuerdo de acuerdo a la tematica 
 * Dividir tareas desde un comienzo.
 * Compartir avances y dificultades.
 * NOTA DE INTERES: Descubrimos que nos resulta de utilidad administrar las dailys/weeklys vía WhatsApp en formato de texto.
+
+*** CONCLUSION DEL SEXTO SPRINT:
+
+1) Qué deberían empezar a hacer? 
+
+* Unificar los criterios estéticos en lo que respecta a imágenes, colores, formas y ubicación de los diferentes elementos.
+
+2) Qué deberían hacer mas?
+
+* Avanzar más sobre el desarrollo de las formas de la vista.
+
+3) Qué deberían continuar haciendo?
+
+* Compartir avances y dificultades.
+* Mantener llevando a cabo las dailys/weeklys vía WhatsApp en formato de texto.
