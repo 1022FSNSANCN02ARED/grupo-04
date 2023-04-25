@@ -1546,12 +1546,11 @@ color: grey;
     border: 2px solid black;
    backdrop-filter: blur(40px);
     overflow: hidden;
-    width: 75%;
-    margin: 20px;
-    
-   
+    width: 70%;
+    margin: 20px;  
  
 }
+
 .products-title{
   text-align: center;
   font-family: inherit;
