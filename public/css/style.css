@@ -147,12 +147,12 @@ margin-top: -8px;
  
  width: 100%;
 
-
- 
-
-
 }
 
+.fondoCreate{
+ background-image:url(../images/fondoLogin.jpg);
+background-size: cover;
+}
 
 .h2-login{
  font-size: 2em;
@@ -1541,17 +1541,16 @@ transform: scale(.98);
 /*edit form*/
 
 .product-detail {
-   background-color:white;
-   border-radius: 8px;
-   border: 2px solid black;
-  backdrop-filter: blur(40px);
-   overflow: hidden;
-   width: 75%;
-   margin: 20px;
-   
-  
-
+    background-color:white;
+    border-radius: 8px;
+    border: 2px solid black;
+   backdrop-filter: blur(40px);
+    overflow: hidden;
+    width: 70%;
+    margin: 20px;  
+ 
 }
+
 .products-title{
  text-align: center;
  font-family: inherit;
