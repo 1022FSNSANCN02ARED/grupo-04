@@ -78,9 +78,26 @@ font-weight: 400 ;
 font-size: 20px;
 
 }
+.seccion-carrito{
+  background-color: gainsboro;
+ 
+}
+.contenedor-boton-eliminar{
+ 
+  padding: 10px;
+}
+.boton-eliminar-carrito{
+  border-radius: 5px;
+  padding: 8px;
+ 
+}
+.td1{
+  margin-left: 10px;
+}
 
 #contador-productos{
  font-size: 10px;
+ 
 }
 
 .precio-producto-carrito{
