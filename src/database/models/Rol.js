@@ -20,8 +20,9 @@ module.exports = (sequelize,dataTypes)=>{
     const Rol = sequelize.define(alias, cols, config); 
     
     Rol.associate = function(models) {
-        Rol.belongsTo(models.User,{ 
-            
+        Rol.belongsTo(models.User,{
+            foreignKey: "id", // utiliza el campo id de User como clave foránea
+            as: 'user', // establece un alias para la relación
         })
     }
     return Rol
