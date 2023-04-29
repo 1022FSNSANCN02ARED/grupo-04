@@ -500,6 +500,105 @@ color: #fff;
  visibility: visible;
 }
 /*-------------------------------------------------------------*/
+/*Donaciones*/
+.body-donaciones{
+ background-image: url(../images/fondo-donaciones.jpg);
+ background-size: cover;
+}
+.background1-left-column{
+	background: linear-gradient(180deg,#21c8f6,#637bff);
+}
+
+.container-donaciones{
+	display: flex;
+	justify-content: center;
+	height: 100vh;
+    align-items: center;
+}
+.card-donaciones {
+	background-color:#fff;
+	border-radius: 1rem;
+	box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+	display: flex;	
+	margin: 1.5rem;
+	overflow: hidden;
+	width: 30rem;
+	height: 19rem;
+}
+.card-donaciones h6 {
+	opacity: 0.6;	
+	letter-spacing: .1rem;
+	text-transform: uppercase;
+}
+
+.card-donaciones  h2 {
+	letter-spacing: .1rem;
+	margin: 1rem 0;
+	color: rgb(68, 66, 66);
+}
+
+.left-column {	
+	color: #fff;
+	padding: 2rem;
+	max-width: 10rem;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left-column h2{
+	color: #fff;
+}
+
+.left-column i {
+	font-size: 5rem
+}
+
+.right-column {
+	padding: 30px;
+	width: 100%;
+	display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+	
+}
+
+.right-column p{	
+	font-size: .9rem;
+	color: rgb(68, 66, 66);
+}
+
+.button-donaciones {
+	border-radius: 3rem;
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+	color: #fff;
+	font-size: 1.2rem;
+	padding: .8rem 1.5rem;
+	letter-spacing: .1rem;
+	align-self: flex-end;
+}
+
+.container-descripcion-donaciones{
+  display:block;
+  margin: 0 auto;
+  text-align:center;
+  letter-spacing: .1rem;
+  width: 50vw;
+  border: 1px solid #000;
+  border-radius: 1rem 1rem;
+  backdrop-filter: blur(15px);
+  justify-content: center;
+  align-items: center;
+}
+
+.h2-descripcion-donaciones{
+  border-radius: 1rem;
+  background-color: #fff;
+}
+
+
 /*Tienda*/
 .div-boton-tienda{
  width: 100vw;
@@ -2272,3 +2371,12 @@ transform: translate3d(100%, 0, 0);
 
 }
 
+/*donaciones*/
+@media (max-width: 1030px) {
+	.container-donaciones{
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height:auto;
+	}
+  }
