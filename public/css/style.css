@@ -78,9 +78,26 @@ font-weight: 400 ;
 font-size: 20px;
 
 }
+.seccion-carrito{
+  background-color: gainsboro;
+ 
+}
+.contenedor-boton-eliminar{
+ 
+  padding: 10px;
+}
+.boton-eliminar-carrito{
+  border-radius: 5px;
+  padding: 8px;
+ 
+}
+.td1{
+  margin-left: 10px;
+}
 
 #contador-productos{
  font-size: 10px;
+ 
 }
 
 .precio-producto-carrito{
@@ -147,12 +164,12 @@ margin-top: -8px;
  
  width: 100%;
 
-
- 
-
-
 }
 
+.fondoCreate{
+ background-image:url(../images/fondoLogin.jpg);
+background-size: cover;
+}
 
 .h2-login{
  font-size: 2em;
@@ -768,10 +785,7 @@ color: #fff;
    
 
   }
-  .footer-container{
-   
 
-  }
   .foot-column1{
    max-width: 400px;
 
@@ -834,11 +848,8 @@ color: #fff;
     width: 30px;
    height: 30px;
   }
-  .foot-contactos label{
-   
-  
 
-  }
+
   .footer-container1{
    width: 96%;
    background: #456789;
@@ -1064,34 +1075,6 @@ background-color: rgb(206, 201, 201);
  text-decoration: none;
  color: #b7a9a9;
 }
-
-/*formulario create
-
-.container-form-create{
-
- display:flex;
- justify-content: center;
- align-items: center;
- min-height: 100vh;
-
-}
-.form-box-create{
- background:  rgb(145, 134, 134);
- position: relative;
- display:flex;
- justify-content: center;
- align-items: center;
- width: 400px;
- height: 750px;
- border: 2px solid rgba(255,255,255,0.5);
- border-radius: 20px;
- backdrop-filter: blur(15px);
-
-}*/
-
-
-
-
 
 
 @keyframes pulse512 {
@@ -1541,17 +1524,35 @@ transform: scale(.98);
 /*edit form*/
 
 .product-detail {
-   background-color:white;
-   border-radius: 8px;
-   border: 2px solid black;
-  backdrop-filter: blur(40px);
-   overflow: hidden;
-   width: 75%;
-   margin: 20px;
-   
-  
-
+    background-color:white;
+    border-radius: 8px;
+    border: 2px solid black;
+    backdrop-filter: blur(40px);
+    overflow: hidden;
+    width: 70%;
+    margin: 20px; 
+    margin-left: 45px; 
+ 
 }
+
+.edit-detail {
+    position:relative; 
+    background-color:white;
+    border-radius: 8px;
+    border: 2px solid black;
+    backdrop-filter: blur(40px);
+    overflow: hidden;
+    width: 70%;
+    margin: 20px;  
+    background-image:url(../images/fondoLogin.jpg);
+    background-size: cover;
+    margin-left: 60px;
+
+     
+    
+ 
+}
+
 .products-title{
  text-align: center;
  font-family: inherit;
@@ -1897,6 +1898,7 @@ transform: translate3d(100%, 0, 0);
    padding-left: 22px;
 
   }
+ 
 
    /*Home Responsive*/
  .articulo-caracteristica{
@@ -1972,6 +1974,7 @@ transform: translate3d(100%, 0, 0);
 
  
  }
+
 
 }
 
@@ -2158,6 +2161,12 @@ transform: translate3d(100%, 0, 0);
    
  
  }
+.edit-detail{
+  margin-left: 35vh;
+}
+
+
+
 }
 @media (min-width:1281px){
   /*escritorio*/
@@ -2230,7 +2239,6 @@ transform: translate3d(100%, 0, 0);
   flex-wrap: wrap;
   justify-content: space-around;
  }
-
 
 
 

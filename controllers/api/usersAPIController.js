@@ -12,7 +12,11 @@ const Rols = db.Rol;
 const usersAPIController = {
     list: (req, res) => {
         Users.findAll({
-            include: ['rol']
+            include: [{
+                model: Rols,
+                as: 'rol',
+                attributes: ['id', 'rol']
+              }]
         })
         .then(users => {
             let respuesta = {

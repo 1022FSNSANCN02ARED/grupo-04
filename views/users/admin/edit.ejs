@@ -6,7 +6,7 @@
         <!-- Header -->
         <%- include('../../partials/header',{title: 'Editando: ' + product.nombre}) %>
         <!-- /Header -->
- <div class="container products-wrapper product-detail">
+ <div class="container products-wrapper edit-detail">
        
             <div class="col-12 box1">
                 <form
@@ -14,14 +14,14 @@
                     method="POST" 
                     enctype="multipart/form-data"
                 >
-                    <div class="row product-detail">
+                    <div class="row">
                         
                            <div class="row">
-                <div class="col-12">
+                
                     <h2 class="products-title">
                         FORMULARIO EDICION DE PRODUCTO
                     </h2>
-                </div>
+               
                  <h2 class="products-title">
                         Estás editando: <i><%= product.nombre %> </i>
                     </h2>
@@ -50,7 +50,7 @@
                                 type="text"
                                 id="size"
                                 name="size"
-                                placeholder="L"
+                                placeholder="Especifique un talle si es necesario"
                                 class="form-input"
                              
                              

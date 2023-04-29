@@ -6,6 +6,7 @@ const methodOverride = require("method-override");
 const router = require('./routers/mainRouter.js');
 const session = require('express-session');
 const cookieParser = require('cookie-parser');
+const cors = require("cors");
 
 
 // parse application/x-www-form-urlencoded
@@ -13,6 +14,9 @@ app.use(bodyParser.urlencoded({ extended: true }))
 // Parse application/json
 app.use(bodyParser.json())
 app.use(methodOverride("_method")); 
+
+//Para utilizar cors
+app.use(cors());
 
 app.use(cookieParser());
 /*Trabajar con session*/
