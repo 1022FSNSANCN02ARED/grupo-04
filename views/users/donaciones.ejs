@@ -1,75 +1,66 @@
 <%- include('../partials/head') %>
- <title>detail</title>
+ <title>Colaboracion</title>
     <body class="body-donaciones">
         <!-- Header -->
         <%- include('../partials/header') %>
         <!-- /Header -->
-       <section  class="donaciones">
-       
-            <div class="box1-donaciones">
-                <h1> COLABORA CON NOSOTROS, PARA ELLOS</h1>
-                <p> Tu aporte nos ayuda a seguir cumpliendo nuestro objetivo. Rescatamos animales en situación de riesgo, le brindamos atención veterinaria, higiene, alimentación adecuada y tránsito. Lo hacemos con mucho amor, pero necesitamos tu ayuda. </p>
-                <p> Podes contactarte con nosotros para ver como trabajamos, tu contribucion tiene destino seguro</p>
-                <p> Ellos te lo agradecen!!</p>
-            </div>
-            <div class="logo-en-donaciones">
-                <img src="/images/logoPATITAsinfondo.png" alt="logo">
-                
-            </div>
-       </section>
-       <section>
-        <h2 class="h2-donaciones"> Hacé tu donación</h2>
-            <div class="donacion-monetaria">
-                
-                <div class="info-banco"> 
-                    <h2> Por transferencia </h2>
-                    <h4> BANCO PEPITO</h4>
-                    <p> Cuenta Cte N° 123456789111</p>
-                    <p>Sucursal n° 111</p>
-                    <p>CBU 2222222222222222222222</p>
-                    <p>Alias: Asoc.areani</p>
-                    <p>Titular de la cuenta: "Juanita Gonzalez"</p>
-                    <p>CUIT: 30151515152</p>
-                    <br>
-                    <p>Te pedimos que una vez hecha la donación nos avises a cualquiera de nuestros datos de contacto para que podamos corroborar y dejar registrada la misma.</p>
-                </div>
-                <div class="donacion-mercado-pago">
-                    <h2> A través de Mercado Pago</h2>
-                    <p>No necesitas tener una cuenta abierta, atraves de este link podes donar el importe
-                        que quieras ingresando los datos de tu tarjeta. 
-                        Tu aporte es voluntario, por lo que respetamos lo que decidas donar.
-                    </p>
-                    <p> Cualquier duda escribinos y te ayudamos</p>
-                    <div class="box-boton-donar">
-                        <a href="https://mpago.la/2gPshic">
-                            <button class="boton-donar-mat" >COLABORAR</button>
-                        </a>
-                    </div>
-                </div>
-                <div class="otras-donaciones">
-                    <h2> Otro tipo de donaciones</h2>
-                    <p> Contactate con nosotros, hay muchas formas de colaborar!! </p>
-                    <p> Armamos las cuchitas para darles tránsito mientras los tenemos, por lo que son bienvenidos
-                        cualquier tipo de material que sirva para la confeccion de las mismas(maderas, pinturas,chapas); 
-                        como así también alimentos, insumos veterinarios, mantas y todo lo que se te ocurra que puedan necesitar.
-                        Hay muchas cosas de las que ocuparse, y tu aporte es fundamental.
-                    </p>
-                    <p>Recordá que entre todos es más fácil</p>
-                    <p>Esperamos tu mensaje!!</p>
-                </div>
-
-
+        <div class="container-descripcion-donaciones">
+            <h2 class="h2-descripcion-donaciones"> COLABORA CON NOSOTROS, PARA ELLOS</h2>
+            <p> Tu aporte nos ayuda a seguir cumpliendo nuestro objetivo. Rescatamos animales en situación de riesgo, le brindamos atención veterinaria, higiene, alimentación adecuada y tránsito. Lo hacemos con mucho amor, pero necesitamos tu ayuda.
+            Podes contactarte con nosotros para ver como trabajamos, tu contribucion tiene destino seguro
+            Ellos te lo agradecen!!</p>
         </div>
-        <div class="whatsapp"> Escribinos <a href="https://api.whatsapp.com/send/?phone=5493364197789">
-            <i class="fa-brands fa-whatsapp" style="color:green ;"></i>
-          </a></div>
-       </section>
-         
-    </body>  
+    <div class="container-donaciones">
+        <div class="card-donaciones" >
+        <div class="left-column background1-left-column">
+            <h6>Transferencia Bancaria</h6>
+            <h2>BANCO PEPITO</h2>
+            <i class="fa-solid fa-building-columns"></i>
+        </div>
+            <div class="right-column">
+               <div>
+                <h4>Banco Pepito</h4>
+                <h6>Transferencia</h6>
+               </div>
+
+               <h2>Alias: Asoc.areani</h2>
+               <p>
+                  
+                  Cuenta Cte N° 123456789111 /
+                  Sucursal n° 111 /
+                  CBU 2222222222222222222222 /
+                  Titular de la cuenta: "Juanita Gonzalez" /
+                  CUIT: 30151515152
+                   
+               </p>
+               
+            </div>
         
+       </div>
+       <div class="card-donaciones" >
+        <div class="left-column background1-left-column">
+            <h6>Billetera Virtual</h6>
+            <h2>Mercado Pago</h2>
+            <i class="fa-solid fa-handshake-simple"></i>
+        </div>
+            <div class="right-column">
+               <div>
+                <h4>Mercado Pago</h4>
+               </div>
+               <h2>Información:</h2>
+               <p>
+                A través de este link podes donar el importe
+                que quieras ingresando los datos de tu tarjeta. 
+                El monto es voluntario.
+               </p>
+               <a href="https://mpago.la/2gPshic"> <button class="button-donaciones background1-left-column">Donar</button> </a>
+            </div>
         
-        
-        
+       </div>
+       
+    </div>
+   
+    </body>   
         <footer>
         <%- include('../partials/footer') %>  
         </footer>
