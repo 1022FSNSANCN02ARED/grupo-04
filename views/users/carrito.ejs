@@ -3,23 +3,25 @@
     <%- include('../partials/header') %>
     
 <main id="contenedor-productos">
+    
 <section class="seccion-carrito">
-    <table style="border:1px solid black">
+    <table  class="tabla"  tyle="border:1px solid black">
         <tr style="border:1px solid black">
-            <td  style="width: 300px; font-weight: bold;">Nombre</td>
-            <td  style="width: 300px; font-weight: bold;">Cantidad</td>
-            <td  style="width: 200px; font-weight: bold; ">Precio Unitario</td>
-            <td  style="width: 200px; font-weight: bold;">Precio Total</td>
+            <td  style="margin-left: 20px;  width: 00px; font-weight: bold;">Nombre</td>
+            <td  style="width: 00px; font-weight: bold;">Cantidad</td>
+            <td  style="width: 00px; font-weight: bold; ">Precio Unitario</td>
+            <td  style="width: 00px; font-weight: bold;">Precio Total</td>
             <td> <i class="fas fa-trash-alt" style="color:rgb(56, 7, 155)"></i> </td>
         </tr>
     
         <% productosAgregados.forEach(producto => { %>
         <tr style="border:1px solid black; color: green">
-            <td style="width: 300px; color: red; margin-left: 10px;"><%= producto.Producto.nombre %></td>
-            <td style="width: 300px;"><%= producto.cantidad %></td>
-            <td style="width: 200px;"> $<%= producto.Producto.precio %></td>
-            <td style="width: 200px;"> $<%= producto.Producto.precio * producto.cantidad%></td>
+            <td style="width: 100px; color: red; margin-left: 10px;"><%= producto.Producto.nombre %></td>
+            <td style="width: 100px;"><%= producto.cantidad %></td>
+            <td style="width: 100px;"> $<%= producto.Producto.precio %></td>
+            <td style="width: 100px;"> $<%= producto.Producto.precio * producto.cantidad%></td>
             <td>
+              
             <article class="contenedor-boton-eliminar" >
                 <form 
                 action="<%= producto.productos_id %>?_method=delete"
@@ -39,19 +41,15 @@
         </tr>
         <% }) %>
     </table>
+    
 
 
 <% let total = productosAgregados.reduce((suma, producto) => suma + (producto.Producto.precio * producto.cantidad), 0) %>
 <p>Total de su compra: $<%= total.toFixed(2) %></p>
 </section>
-     
-        
 
 </main>
 
-
-  
-   
 
 <%- include ('../partials/footer') %>
 </body>

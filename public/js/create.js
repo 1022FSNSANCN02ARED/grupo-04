@@ -24,7 +24,7 @@ submitButton.addEventListener('submit', function(e) {
 
  
     if (description.value.length < 20) {
-        alert('Colocar descripción');
+        alert('Colocar descripción de alc menos 20 caracteres');
         return;
     } 
 
