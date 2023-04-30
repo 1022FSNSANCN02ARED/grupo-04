@@ -17,10 +17,10 @@ const upload = multer({
 });
 
 var auth = function(req, res, next) {
-    if (req.session.userid)
+    if (req.session.userid){
       return next();
-    else
-      return res.send('Usted no se encuentra logeado');
+     } else{
+      return res.send('Usted no se encuentra logeado');}
   };
 
 

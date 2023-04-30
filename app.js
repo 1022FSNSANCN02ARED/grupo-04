@@ -20,7 +20,7 @@ app.use(cors());
 
 app.use(cookieParser());
 /*Trabajar con session*/
-// creating 24 hours from milliseconds
+// Session que dura 24hs
 const oneDay = 1000 * 60 * 60 * 24;
 app.use(session({
     secret:'Ayuda a los animales ',
@@ -30,6 +30,11 @@ app.use(session({
 
 }))
 
+//Middleware global para utilizar el id de session en todo el servidor
+app.use((req, res, next) => {
+    res.locals.userid = req.session.userid;
+    next();
+  });
 
 
 /*Carpeta public*/

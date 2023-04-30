@@ -41,6 +41,14 @@ const carritoAPIController = {
                 email: usuarioSession,
             }
         });
+
+        let productoYaAgregado= await ProductosCarrito.findOne({
+            where:{
+                user_id: user_id.id,
+                productos_id:product_id,
+            }
+        })
+        if(!productoYaAgregado){
         await ProductosCarrito
         .create(
             {
@@ -50,6 +58,20 @@ const carritoAPIController = {
             }
         )
         res.redirect("/products/tienda")
+        }else{
+            await ProductosCarrito.update({
+                cantidad: Number(productoYaAgregado.cantidad) + Number(cantidad) ,
+            }, 
+            {where: 
+            {
+                user_id: user_id.id,
+                productos_id:product_id,  
+            }})
+            .then(()=> {
+            return res.redirect("/products/tienda")})
+            .catch(error => res.send(error));
+            
+        }
     },
     eliminarProducto:async(req,res)=>{
         let usuarioSession = session.userid;

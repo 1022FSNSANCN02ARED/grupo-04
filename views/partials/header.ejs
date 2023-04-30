@@ -36,10 +36,12 @@
                 <li><a href="/nosotros">Nosotros </a></li>   
             </ul>
         </div>
-      
+        
+        <% if (userid) { %>
+        <div class="div-session"><p>¡Bienvenido <%= userid %>!</p></div>
+        <% } %>  
         <div class="menu2">
             <ul class="nav-menu2">
-                
                  <li class="container-icon"><a href="/carrito"> <i class="fa-solid fa-cart-shopping"></i>
                   <div class="count-products">  <span id="contador-productos">0</span></div> 
                     
