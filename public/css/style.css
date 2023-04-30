@@ -2116,11 +2116,10 @@ transform: translate3d(100%, 0, 0);
  
 }
  .main-nosotros{
-   width: 100%;
- display: flex;
+  width: 100%;
+  display: flex;
   margin: auto;
-
- 
+  
  }
 
  /*carrito*/
