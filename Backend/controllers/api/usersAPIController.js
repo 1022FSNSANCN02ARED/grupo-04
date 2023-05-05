@@ -10,7 +10,7 @@ const Users = db.User;
 const Rols = db.Rol;
 
 const usersAPIController = {
-    list: (req, res) => {
+    user: (req, res) => {
         Users.findAll({
             include: [{
                 model: Rols,
@@ -28,6 +28,11 @@ const usersAPIController = {
             }
                 res.json(respuesta);
             })
+    },
+    userId: async (req,res)=>{
+            let id = req.params.id;
+            const usuarioId = await Users.findByPk(id);
+             res.json(usuarioId);
     },
     create: (req,res) => {
         Users

@@ -4,8 +4,9 @@ const mainController = require("../controllers/mainController.js");
 const productRouter = require("./productRouter");
 const userLoginRouter = require ("./userLoginRouter");
 const userRegisterRouter = require('./userRegisterRouter');
-const apiUsersRouter = require('./api/users')
-const apicartRouter = require('./api/cart')
+const apiUsersRouter = require('./api/users');
+const apicartRouter = require('./api/cart');
+const apiUserReactRouter = require('./api/apiUsers.js');
 
 
 
@@ -26,10 +27,12 @@ const apiproductsRouter = require('./api/products');
 
 //Se traen datos de Api productos
 router.use("/products",apiproductsRouter)
-//Se traen datos de Api users
+//Se traen datos de Api users----Solo ruta para crear usuario
 router.use('/registro',apiUsersRouter);
 //Se traen datos de API carrito
 router.use('/',apicartRouter)
+//Se traen datos de API apiUsers---Rutas para trabajar con react
+router.use('/api',apiUserReactRouter);
 
 
 //Rutas del productRouter
