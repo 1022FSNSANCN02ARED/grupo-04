@@ -95,6 +95,10 @@ font-size: 20px;
   padding: 8px;
  
 }
+.total-compra{
+  margin-top: 20px;
+  margin-left: 20px;
+}
 .td1{
   margin-left: 10px;
 }
@@ -148,7 +152,7 @@ margin-top: -8px;
 .div-session{
   position: absolute;
   padding-top: 5px;
-  left: 60%;
+  left: 56.1%;
  
 }
 
@@ -627,7 +631,7 @@ color: #fff;
  }
 .boton-tienda{
  border: 2px solid #074a60;
- background-color: #63c3f302;
+ background-color: #08395102;
  border-radius: 0.9em;
  padding: 0.8em 1.2em 0.8em 1em;
  top: -3.6rem;
@@ -2112,11 +2116,10 @@ transform: translate3d(100%, 0, 0);
  
 }
  .main-nosotros{
-   width: 100%;
- display: flex;
+  width: 100%;
+  display: flex;
   margin: auto;
-
- 
+  
  }
 
  /*carrito*/

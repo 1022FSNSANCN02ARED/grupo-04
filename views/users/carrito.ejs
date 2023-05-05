@@ -40,14 +40,23 @@
                 </form>
             </article>
            </td>
+           
         </tr>
         <% }) %>
     </table>
     
 
 
-<% let total = productosAgregados.reduce((suma, producto) => suma + (producto.Producto.precio * producto.cantidad), 0) %>
-<p>Total de su compra: $<%= total.toFixed(2) %></p>
+<div class=" total-compra">
+    <% let total = productosAgregados.reduce((suma, producto) => suma + (producto.Producto.precio * producto.cantidad), 0) %>
+    <p>Total de su compra: $<%= total.toFixed(2) %></p>
+</div>
+
+
+<p> Envio 
+    <i class="fas fa-truck" style="color:green" ></i>
+   
+</p>
 </section>
 
 </main>
