@@ -37,9 +37,13 @@
             </ul>
         </div>
         
+      
         <% if (userid) { %>
-        <div class="div-session"><p>¡Bienvenido <%= userid %>!</p></div>
+       <div class="div-session">
+      <p>¡Bienvenido <%= userid %>! <a href="/logout"><i class="fa-sharp fa-solid fa-door-open"></i>Salir</a></p>
+      </div>
         <% } %>  
+       
         <div class="menu2">
             <ul class="nav-menu2">
                  <li class="container-icon"><a href="/carrito"> <i class="fa-solid fa-cart-shopping"></i>

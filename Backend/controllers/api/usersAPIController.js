@@ -53,10 +53,20 @@ const usersAPIController = {
         .then(()=> {
             return res.redirect('/user/login')})  
         .catch(error => res.send(error))
-},
+    },
+    logout:(req,res,next)=>{
+        if (req.session) {
+            req.session.destroy(function (err) {
+              if (err) {
+                return next(err);
+              } else {
+                return res.redirect('/');
+              }
+            });
+          }
+     },
+ }
 
-
-}
 
 
 

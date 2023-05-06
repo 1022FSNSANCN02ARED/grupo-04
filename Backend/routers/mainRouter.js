@@ -4,6 +4,7 @@ const mainController = require("../controllers/mainController.js");
 const productRouter = require("./productRouter");
 const userLoginRouter = require ("./userLoginRouter");
 const userRegisterRouter = require('./userRegisterRouter');
+const userApiCont = require("../controllers/api/usersAPIController.js")
 const apiUsersRouter = require('./api/users');
 const apicartRouter = require('./api/cart');
 const apiUserReactRouter = require('./api/apiUsers.js');
@@ -20,6 +21,8 @@ router.get("/home",mainController.Home);
 router.get("/", mainController.index);
 router.get("/nosotros",mainController.nosotros);
 router.get("/donaciones",mainController.donaciones);
+//LogOut
+router.get('/logout',userApiCont.logout);
 //router.get('/decoracion', mainController.decoracion);
 //router.get('/hogar', mainController.hogar);
 //router.get('/indumentaria', mainController.indumentaria);
