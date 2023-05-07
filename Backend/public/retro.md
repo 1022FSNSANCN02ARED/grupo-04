@@ -111,3 +111,43 @@ Volcamos las ideas de trabajo y nos pusimos de acuerdo de acuerdo a la tematica 
 
 * Compartir avances y dificultades.
 * Mantener llevando a cabo las dailys/weeklys vía WhatsApp en formato de texto.
+
+*** CONCLUSION DEL SEPTIMO SPRINT:
+
+1) Qué deberían empezar a hacer? 
+
+* Trabajar en las tablas secundarias (categorías, marcas, colores, talles).
+
+2) Qué deberían hacer mas?
+
+* Unificar los criterios estéticos en lo que respecta a imágenes, colores, formas y ubicación de los diferentes elementos.
+* Avanzar más sobre el desarrollo de las formas de la vista, sobre todo en carrito y tablas secundarias.
+
+3) Qué deberían continuar haciendo?
+
+* Compartir avances y dificultades.
+* Mantener llevando a cabo las dailys/weeklys vía WhatsApp en formato de texto.
+
+*** CONCLUSION DEL OCTAVO SPRINT:
+
+1) Qué deberían empezar a hacer? 
+
+* Relajar; ya casi terminamos.
+
+2) Qué deberían hacer mas?
+
+* Trabajar sin descanso en el Dashboard del sitio hecho en React:
+
+○ 3 a 6 paneles simples con totales.
+
+○ Panel de detalle de último producto o usuario creado.
+
+○ Panel de categorías con el total de productos de cada una.
+
+○ Panel con el listado de productos.
+
+3) Qué deberían continuar haciendo?
+
+* Acompañarnos y colaborar unos con otros, siempre, a pesar de cualquier adversidad surgida.
+
+*** FINAL DE UNA ETAPA INCREIBLE!
