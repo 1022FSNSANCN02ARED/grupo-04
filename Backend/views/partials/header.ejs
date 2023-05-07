@@ -38,8 +38,11 @@
       
         <% if (userid) { %>
        <div class="div-session">
-      <p>¡Bienvenido <%= userid %>! <a href="/logout"><i class="fa-sharp fa-solid fa-door-open"></i>Salir</a></p>
+      <p>¡Bienvenido <%= userid %>!</p>
       </div>
+      <div class="div-session-salir">
+        <a href="/logout"><i class="fa-sharp fa-solid fa-door-open"></i> Salir</a>
+        </div>
         <% } %>  
        
         <div class="menu2">
