@@ -15,6 +15,10 @@
 
 
 }
+.color-red a{
+  color: red;
+  text-decoration: none;
+}
 .container-icon{
 
  position: relative;
