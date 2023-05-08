@@ -11,7 +11,7 @@ var auth = function(req, res, next) {
   };
 
 router.get("/carrito",auth,carritoAPIController.vistaCarrito);
-router.post("/carrito/:id",carritoAPIController.agregarCarrito);
+router.post("/carrito/:id",auth,carritoAPIController.agregarCarrito);
 router.delete("/:id",carritoAPIController.eliminarProducto);
 
 module.exports = router;

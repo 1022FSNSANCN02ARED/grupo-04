@@ -104,7 +104,7 @@ const productsAPIController = {
       const product = await Producto.findByPk(req.params.id);
       let estado = req.session.userid;
       res.render("users/admin/edit", { product,estado });
-      console.log(estado);
+      console.log(product);
     },
         
       decoracion:async (req,res) => {
