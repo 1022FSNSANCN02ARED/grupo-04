@@ -47,6 +47,18 @@ const carritoAPIController = {
                 user_id: user_id.id,
                 productos_id:product_id,
             }
+
+
+
+
+
+
+
+
+
+
+
+            
         })
         if(!productoYaAgregado){
         await ProductosCarrito
