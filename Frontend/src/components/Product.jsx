@@ -18,6 +18,12 @@ function Product(){
         .then((res) => res.json())
         .then((productLength) => setProductLengthState(productLength.meta));
     }, []);
+
+    const productsFilterCategoryDecoracion = products.filter(product => product.categoria_id == 1)
+    const productsFilterCategoryHogar = products.filter(product => product.categoria_id == 2)
+    const productsFilterCategoryIndumentaria = products.filter(product => product.categoria_id == 3)
+  
+
     return ( <Router>
         <div className="">
           <table border="1">
@@ -47,7 +53,10 @@ function Product(){
               })}
             </tbody>
           </table>
-          <h3>La cantidad de productos es: {productLength.total}</h3>
+          <h3>La cantidad de productos es: {productLength.Total_productos}</h3>
+          <h3>La cantidad de productos en Decoracion es: {productsFilterCategoryDecoracion.length}</h3>
+          <h3>La cantidad de productos en Hogar es: {productsFilterCategoryHogar.length}</h3>
+          <h3>La cantidad de productos en Indumentaria es: {productsFilterCategoryIndumentaria.length}</h3>
          
         </div>
         </Router>)

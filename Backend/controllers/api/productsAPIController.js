@@ -17,6 +17,7 @@ const Categoria = db.Categoria;
 const productsAPIController = {
 
     productApi: async(req, res)=>{
+      const categoriasTotal = await Categoria.findAll()
       const productosApi = await Producto.findAll({
         include: [{
             model: Categoria,
@@ -28,7 +29,9 @@ const productsAPIController = {
         let respuesta = {
             meta: {
                 status : 200,
-                total: productosApi.length,
+                Total_productos: productosApi.length,
+                Total_categorias: categoriasTotal.length,
+
             },
             data: productosApi
         }
