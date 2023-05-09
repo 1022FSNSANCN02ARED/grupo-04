@@ -26,6 +26,7 @@ module.exports = {
       usuario: session.userid,
       name: productos.nombre,
       price: productos.precio,
+     
     }
     let carritoFileContent = fs.readFileSync(carritoFilePath, "utf-8");
     let carrito = JSON.parse(carritoFileContent);

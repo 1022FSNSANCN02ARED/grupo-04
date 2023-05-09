@@ -155,8 +155,9 @@ margin-top: -8px;
 
 .div-session{
   position: absolute;
-  padding-top: 5px;
   left: 56.1%;
+  text-align: center;
+  
  
 }
 
@@ -297,6 +298,9 @@ top: -5px;
 .registro p a:hover{
  text-decoration: underline;
 }
+
+
+
 /*----------------------------------------------------------*/
 .errores{
  color:white;
