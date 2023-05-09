@@ -6,6 +6,7 @@ const moment = require('moment');
 const { update } = require('../productsController');
 const req = require('express/lib/request');
 const { check, validationResult } = require('express-validator');
+const products = require('../../data/products');
 
 
 
@@ -14,6 +15,28 @@ const Producto = db.Producto;
 const Categoria = db.Categoria;
 
 const productsAPIController = {
+
+    productApi: async(req, res)=>{
+      const productosApi = await Producto.findAll({
+        include: [{
+            model: Categoria,
+            as: 'categoria',
+           
+          }]
+    })
+    .then(productosApi => {
+        let respuesta = {
+            meta: {
+                status : 200,
+                total: productosApi.length,
+            },
+            data: productosApi
+        }
+            res.json(respuesta);
+        });
+     
+
+    },
 
     detail: async (req,res) => {
      const product = await Producto.findByPk(req.params.id);

@@ -8,7 +8,7 @@ const userApiCont = require("../controllers/api/usersAPIController.js")
 const apiUsersRouter = require('./api/users');
 const apicartRouter = require('./api/cart');
 const apiUserReactRouter = require('./api/apiUsers.js');
-
+const apiProductsReactRouter = require('./api/apiProducts.js');
 
 
 
@@ -36,8 +36,8 @@ router.use('/registro',apiUsersRouter);
 router.use('/',apicartRouter)
 //Se traen datos de API apiUsers---Rutas para trabajar con react
 router.use('/api',apiUserReactRouter);
-
-
+//Se traen datos de API apiProduct---Rutas para trabajar con react
+router.use('/api',apiProductsReactRouter)
 //Rutas del productRouter
 router.use("/products",productRouter);
 
