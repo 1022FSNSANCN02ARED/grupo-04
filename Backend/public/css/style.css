@@ -83,13 +83,34 @@ font-size: 20px;
 
 }
 .seccion-carrito{
-  background-color: gainsboro;
+ 
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+  
+.seccion-carrito table{
+   margin: 0 auto;
+   margin-top: 20px;
+   
+}
+
+
+.tabla th,
+.tabla td {
+  padding: 10px;
+  border: 1px solid black;
+  text-align: center;
+  border: inset rgb(180, 180, 216);
+}
+
+.tabla th {
+  font-weight: bold;
  
 }
-.tabla{
-  margin: 0 auto;
 
-}
 .contenedor-boton-eliminar{
  
   padding: 10px;
@@ -100,8 +121,12 @@ font-size: 20px;
  
 }
 .total-compra{
-  margin-top: 20px;
-  margin-left: 20px;
+  margin: 20px;
+  background-color: #1259c3;
+  border-radius: 5px;
+  font-weight: bold;
+  width: 40%;
+
 }
 .td1{
   margin-left: 10px;
