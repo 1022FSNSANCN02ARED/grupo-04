@@ -23,6 +23,7 @@ module.exports = {
         
         session=req.session;
         session.userid= userEmail;
+        session.password = userPassword;
         res.render('index');
     }
     else{

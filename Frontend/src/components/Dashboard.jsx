@@ -4,6 +4,7 @@ import { faUser } from '@fortawesome/free-solid-svg-icons';
 import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
 import { faTags } from '@fortawesome/free-solid-svg-icons';
 import Panel from './Panel';
+import LastProduct from './LastProduct';
 
 
 function Dashboard(){
@@ -25,13 +26,18 @@ function Dashboard(){
           .then((productLength) => setProductLengthState(productLength.meta));
       }, []);
 
-
     return(
+
+      
        <div className='dashboard'>
-        <Panel name={"usuarios"} total={userLength.total} icon={faUser} color={'red'} />
-        <Panel name={"productos"} total={productLength.Total_productos} icon={faCartShopping} color={'green'}/>
-        <Panel name={"categorias"} total ={productLength.Total_categorias} icon={faTags} color={'blue'}/>
+
+        <Panel  name={"usuarios"} total={userLength.total} icon={faUser} color={'red'} />
+        <Panel  name={"productos"} total={productLength.Total_productos} icon={faCartShopping} color={'green'}/>
+        <Panel  name={"categorias"} total ={productLength.Total_categorias} icon={faTags} color={'blue'}/>
+        <LastProduct/>
         </div>
+        
+
     )
 }
 
