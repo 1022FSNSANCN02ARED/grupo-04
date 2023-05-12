@@ -30,6 +30,9 @@ const carritoAPIController = {
               attributes: ['id', 'nombre', 'precio']
             }
             })
+         let productosAgregadosTotal = productosAgregados.length;
+         req.session.productosAgregadosTotal = productosAgregadosTotal;
+         
         res.render('users/carrito',{productosAgregados});
        },
     agregarCarrito:async(req,res)=>{
@@ -48,16 +51,6 @@ const carritoAPIController = {
                 productos_id:product_id,
             }
 
-
-
-
-
-
-
-
-
-
-
             
         })
         if(!productoYaAgregado){
@@ -69,7 +62,7 @@ const carritoAPIController = {
                user_id: user_id.id,
             }
         )
-        res.redirect("/products/tienda")
+        res.redirect("/carrito")
         }else{
             await ProductosCarrito.update({
                 cantidad: Number(productoYaAgregado.cantidad) + Number(cantidad) ,
