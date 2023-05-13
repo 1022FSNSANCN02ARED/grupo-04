@@ -8,16 +8,18 @@ const db=require ('../src/database/models');
 const sequelize=db.sequelize;
 const axios = require('axios');
 const bcrypt = require('bcryptjs');
+const bodyParse = require('body-parser');
 
 
 module.exports = {
     
     //User Login
     login: async (req,res) =>{
+      
       let userEmail = req.body.usuarioLogin;
       let userPassword = req.body.passwordLogin;
       let userConfirm = await db.User.findOne({where:{email:userEmail}})
-      let passwordHashLogin = bcrypt.hashSync(userPassword, 10);
+      let passwordHashLogin = userConfirm.password;
       let errors = validationResult(req) ;
       if(userConfirm && bcrypt.compareSync(userPassword, passwordHashLogin)){
         
@@ -29,8 +31,8 @@ module.exports = {
     else{
       errors = errors.array();
       res.render('users/admin/login',{errors})
-      
     }
+      
     
     },
     registro:(req,res)=>{
