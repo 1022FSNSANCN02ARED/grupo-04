@@ -101,12 +101,16 @@ const productsAPIController = {
         },
 
     update : async(req,res) => {
-
+      const product = await Producto.findByPk(req.params.id);
+      if (req.file) {
+        const imageName = req.file.filename;
+        await product.update({ imagen: imageName });
+      }
+    
        await Producto.update({
             nombre: req.body.name,
             descripcion: req.body.description,
             precio: req.body.price,
-            imagen: req.file ? req.file.filename : "default-image.png",
             color: req.body.colour,
             talle: req.body.size,
         
@@ -127,9 +131,10 @@ const productsAPIController = {
      },
 
      edit: async (req, res) => {
+      const imageUrl = '/images/';
       const product = await Producto.findByPk(req.params.id);
       let estado = req.session.userid;
-      res.render("users/admin/edit", { product,estado });
+      res.render("users/admin/edit", { product,estado,imageUrl });
       console.log(product);
     },
         
