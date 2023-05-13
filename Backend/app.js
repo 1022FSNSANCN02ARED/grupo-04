@@ -35,8 +35,11 @@ app.use((req, res, next) => {
     res.locals.userid = req.session.userid;
     next();
   });
-
-
+//Middleware global de cantidad de productos
+app.use((req, res, next) => {
+  res.locals.productosAgregadosTotal = req.session.productosAgregadosTotal || 0;
+  next();
+});
 /*Carpeta public*/
 app.use(express.static(path.join(__dirname,'public')));
 

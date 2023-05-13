@@ -39,7 +39,7 @@
         </li>
 
         <li><a href="/nosotros">Nosotros </a></li>
-        <li><% if (userid) { %>
+        <li><% if (userid == "admin@administrador") { %>
         
           <a href="/products/create">Crear producto</a>
         
@@ -58,21 +58,8 @@
               <span id="contador-productos">0</span>
               
             </div>
-
             <div class="container-cart-products hidden-cart">
-              <div class="cart-product">
-                <div class="info-cart-product">
-                  <span class="cantidad-producto-carrito">1</span>
-                  <p class="titulo-producto-carrito">cuadros</p>
-                  <span class="precio-producto-carrito"> 100</span>
-                </div>
-                <i class="fa-sharp fa-regular fa-xmark"></i>
-              </div>
-
-              <div class="cart-total">
-                <h3>TOTAL:</h3>
-                <span class="total-pagar"> $300</span>
-              </div>
+             
             </div>
           </a>
         </li>

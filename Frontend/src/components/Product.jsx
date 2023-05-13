@@ -24,7 +24,7 @@ function Product(){
     const productsFilterCategoryIndumentaria = products.filter(product => product.categoria_id == 3)
   
 
-    return ( <Router>
+    return ( 
         <div className="">
           <table border="1">
             <thead>
@@ -59,7 +59,7 @@ function Product(){
           <h3>La cantidad de productos en Indumentaria es: {productsFilterCategoryIndumentaria.length}</h3>
          
         </div>
-        </Router>)
+        )
 }
 
 export default Product;

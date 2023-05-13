@@ -11,6 +11,7 @@ const products = require('../../data/products');
 
 
 
+const Productocarrito = db.Productocarrito;
 const Producto = db.Producto;
 const Categoria = db.Categoria;
 
@@ -101,23 +102,34 @@ const productsAPIController = {
         },
 
     update : async(req,res) => {
-
+      const product = await Producto.findByPk(req.params.id);
+      if (req.file) {
+        const imageName = req.file.filename;
+        await product.update({ imagen: imageName });
+      }
+    
        await Producto.update({
             nombre: req.body.name,
             descripcion: req.body.description,
             precio: req.body.price,
-            imagen: req.file ? req.file.filename : "default-image.png",
             color: req.body.colour,
             talle: req.body.size,
+          
         
         }, {where: {id: req.params.id}})
         .then(()=> {
         return res.redirect('/products/tienda')})
         .catch(error => res.send(error));
         },
+  
 
+     destroy: async (req,res) => {
 
-     destroy: (req,res) => {
+        await Productocarrito.destroy({
+        where: {
+        productos_id: req.params.id,
+        },
+        })
         Producto.destroy({
         where:{
         id: req.params.id,
@@ -127,10 +139,11 @@ const productsAPIController = {
      },
 
      edit: async (req, res) => {
+      const imageUrl = '/images/';
       const product = await Producto.findByPk(req.params.id);
       let estado = req.session.userid;
-      res.render("users/admin/edit", { product,estado });
-      console.log(product);
+      res.render("users/admin/edit", { product,estado,imageUrl });
+      
     },
         
       decoracion:async (req,res) => {

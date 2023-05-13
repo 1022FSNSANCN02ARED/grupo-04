@@ -657,6 +657,12 @@ color: #fff;
   backdrop-filter: blur(15px);
   justify-content: center;
   align-items: center;
+  margin-top: 40px;
+  
+ 
+}
+.color-acento{
+  color: chocolate;
 }
 
 .h2-descripcion-donaciones{
@@ -1350,6 +1356,7 @@ img {
 
  display: flex;
  flex-direction: column;
+ max-width: 100%;
  }
 .container-price{
  padding-bottom: 10px;
@@ -1366,6 +1373,7 @@ img {
 }
 .container-detail-product{
  padding: 30px 0;
+ width: 150%;
 }
 .form-group{
 display: flex;
@@ -1374,11 +1382,13 @@ gap: 20px;
 margin-bottom: 20px;
 
 
+
 }
 .form-group label{
  width: 100px;
    font-weight: 500;
  color: #666;
+ 
 
 }
 .form-group select{
@@ -1708,7 +1718,10 @@ transform: scale(.98);
 }
 
 /*edit form*/
-
+.img-edit{
+  width: 50px;
+  height: 50px;
+}
 .product-detail {
     background-color:white;
     border-radius: 8px;
@@ -2304,6 +2317,7 @@ margin-left:150px;
 }
 .container-info-producto{
  margin-left: 30px;
+ width: 100%;
 }
 
 

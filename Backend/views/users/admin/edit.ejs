@@ -52,7 +52,7 @@
                                 name="size"
                                 placeholder="Especifique un talle si es necesario"
                                 class="form-input"
-                                value="<%= product.size %>"
+                                value="<%= product.talle %>"
                              
                             />
                         </div>
@@ -71,17 +71,19 @@
                             />
                         </div>
                         <div class="col-12 col-md-6">
-                            <label for="imagen" class="form-label">Imagen:</label>
-                            <input
-                                type="file"
-                                id="imagen"
-                                name="imagen"
-                                class="form-input"
-                                accept="imagen/png/jpeg"
-                                src="../images/<%=product.imagen %>"
-                                
-                               
-                            />
+                            <div class="form-group">
+                                <label for="imagen">Imagen actual:</label>
+                                <% if (product.imagen) { %>
+                                  <img class="img-edit" src="<%= imageUrl + product.imagen %>" alt="<%= product.nombre %>">
+                                <% } else { %>
+                                  <p>No hay imagen disponible</p>
+                                <% } %>
+                            </div>
+                              
+                              <div class="form-group">
+                                <label for="imagen">Cargar nueva imagen:</label>
+                                <input type="file" id="imagen" name="imagen" class="form-input" accept="imagen/png/jpeg">
+                              </div>
                         </div>
                         <div class="col-12 col-md-6">
                             <label for="category" class="form-label "

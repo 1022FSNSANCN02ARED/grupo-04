@@ -18,7 +18,7 @@ function User(){
         .then((res) => res.json())
         .then((userLength) => setUserLengthState(userLength.meta));
     }, []);
-    return ( <Router>
+    return ( 
         <div className="">
           <table border="1">
             <thead>
@@ -52,7 +52,8 @@ function User(){
             <Route path="/api/user/:id" element={<UserDetails />} exact />
           </Routes>
         </div>
-        </Router>)
+    
+        )
 }
 
 export default User;
