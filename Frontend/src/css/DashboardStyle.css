@@ -1,4 +1,8 @@
 .dashboard{
     display:flex;
 }
+.navbar-react{
+    display: flex;
+    background-color: cadetblue;
+}
 

@@ -4,8 +4,9 @@ import {NavLink} from 'react-router-dom';
 function Navbar(){
     return(
        <div>
-         <ul>
-             <li>
+         <ul >
+            
+             <li >
                  <NavLink to='/'>Dashboard </NavLink>
              </li>
              <li>
