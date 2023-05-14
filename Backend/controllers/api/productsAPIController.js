@@ -11,6 +11,7 @@ const products = require('../../data/products');
 
 
 
+const Productocarrito = db.Productocarrito;
 const Producto = db.Producto;
 const Categoria = db.Categoria;
 
@@ -113,15 +114,22 @@ const productsAPIController = {
             precio: req.body.price,
             color: req.body.colour,
             talle: req.body.size,
+          
         
         }, {where: {id: req.params.id}})
         .then(()=> {
         return res.redirect('/products/tienda')})
         .catch(error => res.send(error));
         },
+  
 
+     destroy: async (req,res) => {
 
-     destroy: (req,res) => {
+        await Productocarrito.destroy({
+        where: {
+        productos_id: req.params.id,
+        },
+        })
         Producto.destroy({
         where:{
         id: req.params.id,
@@ -135,7 +143,7 @@ const productsAPIController = {
       const product = await Producto.findByPk(req.params.id);
       let estado = req.session.userid;
       res.render("users/admin/edit", { product,estado,imageUrl });
-      console.log(product);
+      
     },
         
       decoracion:async (req,res) => {

@@ -36,152 +36,31 @@
 
                     <div class="form-group">
                        
-                        <label for="colour"> NOMBRE </label>
+                        <label for="colour" style="display: inline-block;"> NOMBRE:</label>
                             
-                     
-
-                        <select name="colour" id="colour">
-                          <option disabled selected value="">
-
-                             Escoge una opcion 
-                          </option>
-
-                          <option value="rojo">
- 
-                                Adopta no compres
-                          </option>
-
-                          <option value="blanco">
-
-                               Remera Cat Black
-
-                          </option>
-
-                          <option value="beige">
-
-                               Musculosa Mujer
-
-                          </option>
-
-                          <option value="beige">
-
-                              Cat bad
-
-                          </option>
-
-                           <option value="beige">
-
-                              Dog bad
-
-                          </option>
-
-
-                        </select>
-
-
+                     <%= product.nombre %>
 
                     </div>
 
                       <div class="form-group">
                        
-                        <label for="colour"> DETALLE</label>
-
-                        <select name="colour" id="colour">
-                          <option disabled selected value="">
-
-                             Escoge una opcion 
-                          </option>
-
-                            <option value="rojo">
- 
-                               Jugadores de Pool
-                          </option>
-
-
-                          <option value="rojo">
- 
-                              BullDog
-                          </option>
-
-                          <option value="blanco">
-
-                               BullDog Gafas
-
-                          </option>
-
-                          <option value="beige">
-
-                               Perros Multicolor
-
-                          </option>
-
-                          <option value="beige">
-
-                              Perro blanco y negro 
-
-                          </option>
-
-
-                        </select>
-
-
-
+                        <label for="colour" style="display: inline-block;"> COLOR:</label>
+                           <%= product.color %>
+                     
                     </div>
 
                     <div class="form-group">
                        
-                        <label for="medida" class="medida"> SIZE </label>
+                        <label for="medida" class="medida"> SIZE: </label>
 
                          <%= product.talle %>
 
-                        <select name="medida" id="medida">
-                            <option disabled selected value="">
-
-                                Escoge una opcion 
-                            </option>
-
-                            <option value="12x15x62">
- 
-                               Talle XL
-                             </option>
-
-                            <option value="5x10x22">
-
-                             Talle L
-
-                            </option>
-
-                            <option value="2.5x5x3">
-
-                                Talle M
-
-                            </option>
-
-                             <option value="2.5x5x3">
-
-                                Talle S
-
-                            </option>
-
-
-                        </select>
 
 
 
                     </div>
 
-                    <div class="form-group">
-                       
-                        <label for="medida" class="medida"> CATEGORIA: </label>
-
-                        
-                                   <%= product.categoria %>
-
-                    </div>
-
-                    
-
-                    <button class="btn-clean"> Limpiar </button>
+                                     
                     
 
                 </div> 
