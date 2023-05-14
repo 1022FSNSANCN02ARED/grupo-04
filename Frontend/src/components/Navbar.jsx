@@ -3,16 +3,16 @@ import {NavLink} from 'react-router-dom';
 
 function Navbar(){
     return(
-       <div>
-         <ul>
-             <li>
-                 <NavLink to='/'>Dashboard </NavLink>
+       <div style={{ backgroundColor: '#4A8DB7', padding: '10px' }}>
+         <ul style={{ listStyleType: 'none', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+             <li style={{ marginRight: '10px'}}>
+                 <NavLink to='/' style={{ textDecoration: 'bold', color: '#FFFFFF', padding: '5px' }}>DASHBOARD</NavLink>
              </li>
-             <li>
-                 <NavLink to='/usuarios'>Usuarios </NavLink>
+             <li style={{ marginRight: '10px' }}>
+                 <NavLink to='/usuarios' style={{ textDecoration: 'bold', color: '#FFFFFF', padding: '5px' }}>USUARIOS</NavLink>
              </li>
-             <li>
-                 <NavLink to='/productos'>Productos </NavLink>
+             <li style={{ marginRight: '10px' }}>
+                 <NavLink to='/productos' style={{ textDecoration: 'bold', color: '#FFFFFF', padding: '5px' }}>PRODUCTOS</NavLink>
              </li>
          </ul>
        </div>
