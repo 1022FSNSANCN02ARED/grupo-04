@@ -34,9 +34,15 @@ const usersAPIController = {
             const usuarioId = await Users.findByPk(id);
              res.json(usuarioId);
     },
-    create: (req,res) => {
-        Users
-        .create(
+    create: async (req,res) => {
+     try{
+      const comprobarUsuario = await Users.findOne({
+        where:{
+            email: req.body.emailRegister,
+        }
+      })
+       if(!comprobarUsuario){
+       await Users.create(
             {
                nombre: req.body.nameRegister,
                email: req.body.emailRegister,
@@ -50,9 +56,13 @@ const usersAPIController = {
             
             }
         )
-        .then(()=> {
-            return res.redirect('/user/login')})  
-        .catch(error => res.send(error))
+        }
+    
+        res.redirect('/user/login')
+    } catch (error) {
+        console.error(error);
+        res.send(error);
+      }
     },
     logout:(req,res,next)=>{
         if (req.session) {
