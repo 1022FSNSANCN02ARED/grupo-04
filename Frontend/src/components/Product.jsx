@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
-//import UserDetails from './Products';
+import ProductDetail from './ProductDetail';
+
 
 
 function Product(){
@@ -57,6 +58,9 @@ function Product(){
           <h3>La cantidad de productos en Decoracion es: {productsFilterCategoryDecoracion.length}</h3>
           <h3>La cantidad de productos en Hogar es: {productsFilterCategoryHogar.length}</h3>
           <h3>La cantidad de productos en Indumentaria es: {productsFilterCategoryIndumentaria.length}</h3>
+          <Routes>
+            <Route path="/api/productos/:id" element={< ProductDetail />} exact />
+          </Routes>
          
         </div>
         )

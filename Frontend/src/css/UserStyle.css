@@ -1,0 +1,9 @@
+.user-tab{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-tab table{
+    backdrop-filter: blur(15px);
+}

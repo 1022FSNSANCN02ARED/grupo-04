@@ -3,7 +3,7 @@ import {NavLink} from 'react-router-dom';
 
 function Navbar(){
     return(
-       <div style={{ backgroundColor: '#4A8CB6', padding: '10px' }}>
+       <div style={{ width:'90vw',backgroundColor: '#4A8CB6', padding: '10px' }}>
          <ul style={{ listStyleType: 'none', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
              <li style={{ marginRight: '10px'}}>
                  <NavLink to='/' style={{ textDecoration: 'bold', color: '#FFFFFF', padding: '5px' }}>DASHBOARD</NavLink>

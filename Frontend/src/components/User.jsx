@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import UserDetails from './UserDetails';
+import '../css/UserStyle.css'
 
 
 function User(){
@@ -19,7 +20,7 @@ function User(){
         .then((userLength) => setUserLengthState(userLength.meta));
     }, []);
     return ( 
-        <div className="">
+        <div className="user-tab">
           <table border="1">
             <thead>
               <tr>

@@ -4,6 +4,8 @@
   box-sizing: border-box;
 }
 .App{
-  margin:auto;
+  margin: 0 auto;
   width: 90vw;
+  height:100vh;
+  background-image: url('./images/animal-print.jpg');
 }

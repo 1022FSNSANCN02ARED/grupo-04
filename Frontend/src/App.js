@@ -4,6 +4,7 @@ import User from './components/User';
 import Product from './components/Product'
 import Dashboard from './components/Dashboard';
 import UserDetails from './components/UserDetails';
+import ProductosDetail from './components/ProductDetail';
 import Navbar from './components/Navbar';
 import NotFound from './components/NotFound';
 import './App.css';
@@ -23,6 +24,7 @@ function App() {
     <Route path='/usuarios' element={<User/>} />
     <Route path='/productos' element={<Product/>} />
     <Route path='/api/user/:id' element={<UserDetails/>} />
+    <Route path='/api/productos/:id' element={<ProductosDetail/>} />
     <Route path= '*' element={<NotFound/>} />
     </Routes>
     </BrowserRouter>
