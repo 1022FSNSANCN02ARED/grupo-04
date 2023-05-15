@@ -18,9 +18,11 @@
                         <input type="password" name="passwordLogin" id="passwordLogin"class="input-login" required>
                         <label for="" class="label-login">Contraseña</label>
                      </div>
-                     <% if(typeof errors != 'undefined') { %>
-                        <p class="errores">Atención: Usuario/Contraseña incorrecto/s</p>
-                        <% } %>
+                        <% if(typeof errors != 'undefined') { %>
+                           <div class="alert-login">
+                                <p><i class="fa-solid fa-triangle-exclamation"></i>Usuario/Contraseña incorrecto/s</p>
+                           </div>
+                             <% } %>
                      <div class="forget">
                       <label for=""><input type="checkbox">Recordarme <a href="#">Olvidé mi contraseña</a></label>
                      </div>

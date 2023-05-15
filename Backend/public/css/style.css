@@ -198,6 +198,20 @@ margin-top: -8px;
 }
 
 /*login*/
+.alert-login{
+  margin: 0 auto;
+  display: flex;
+  border:1px solid red;
+  border-radius: 1rem;
+  font-weight: bold;
+  width: 300px;
+  height: 30px;
+  background-color: rgb(221, 154, 165);
+}
+
+.alert-login i{
+  color:red;
+}
 
 .section-login{
  display:flex;
@@ -280,7 +294,7 @@ top: -5px;
 }
 
 .forget{
- margin: -15px 0 15px;
+ margin:  0 15px;
  font-size: .9em;
  color: #000;
  display: flex;
@@ -345,8 +359,12 @@ top: -5px;
  width: 40px;
  height: 40px;
  box-sizing: border-box;
- margin-left:48vw;
+ margin-left: 30vw;
 }
+.responsive-user{
+  max-width: 100px;
+}
+
 .logo-tienda-responsive{
    display: flex;
    position: relative;
@@ -357,14 +375,14 @@ top: -5px;
 }
 
 .respmenu-link {
-   color: inherit;
+   color: black;
    text-decoration: none;
    display: block;
    padding: 10px 20px;
    border-bottom: 2px solid #456789;
    max-width: 100vw;
    font-variant: small-caps;
-   background-color: green; /*fondo del menu*/
+   background-color: #dfd8dae2; /*fondo del menu*/
    text-shadow: 1px 1px black;
  }
  .respmenu input[type="checkbox"], .respmenu .fa-bars, .respmenu .fa-times {
@@ -410,6 +428,22 @@ top: -5px;
    display: none;
  }
 /*Register Form*/
+.alert-registro{
+  margin: 0 auto;
+  display: flex;
+  border:1px solid red;
+  border-radius: 1rem;
+  font-weight: bold;
+  width: 320px;
+  height: 30px;
+  background-color: rgb(221, 154, 165);
+}
+
+.alert-registro i{
+  color:red;
+}
+
+
 .label-registro{
  color:white;
 }

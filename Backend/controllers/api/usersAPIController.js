@@ -4,6 +4,7 @@ const sequelize = db.sequelize;
 const { Op } = require("sequelize");
 const moment = require('moment');
 const bcrypt = require('bcryptjs');
+const axios = require('axios');
 
 
 const Users = db.User;
@@ -35,13 +36,24 @@ const usersAPIController = {
              res.json(usuarioId);
     },
     create: async (req,res) => {
+      let mensaje = "Este correo ya se encuentra registrado"
+    
      try{
       const comprobarUsuario = await Users.findOne({
         where:{
             email: req.body.emailRegister,
         }
       })
-       if(!comprobarUsuario){
+       
+       if(comprobarUsuario){
+        axios.get('https://restcountries.com/v3.1/all')
+        .then(response => {
+          const countries = response.data;
+          countries.sort((a, b) => a.name.common.localeCompare(b.name.common));
+          res.render("users/registro",{mensaje,countries})
+        })
+        
+       }else{
        await Users.create(
             {
                nombre: req.body.nameRegister,
@@ -56,9 +68,9 @@ const usersAPIController = {
             
             }
         )
-        }
-    
         res.redirect('/user/login')
+        }
+      
     } catch (error) {
         console.error(error);
         res.send(error);

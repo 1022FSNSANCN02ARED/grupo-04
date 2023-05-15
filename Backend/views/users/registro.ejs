@@ -4,10 +4,17 @@
   <!-- Header -->
   <%- include('../partials/header') %>
   <!-- /Header -->
-
+ 
   <div class="container-register">
     <div class="form-box-register">
+     
       <form method="POST" action="/registro/create" name="Formfill">
+        <% if(typeof mensaje != 'undefined') { %>
+          <div class="alert-registro">
+            
+               <p><i class="fa-solid fa-triangle-exclamation"></i><%= mensaje %></p>
+          </div>
+            <% } %>
         <h2>Registro</h2>
         <div class="input-registro">
           <i class="fa-solid fa-user icono-registro"></i>
