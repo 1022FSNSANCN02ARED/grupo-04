@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-
+import '../css/UserDetailStyle.css';
 
 function UserDetails (){
   const { id } = useParams();
@@ -23,14 +23,15 @@ function UserDetails (){
   }
 
   return (
-    <>
-     <p>Id:{userFiltrado.id}</p>
+    <div className="user-data">
+     <p>ID:{userFiltrado.id}</p>
      <p>Nombre:{userFiltrado.nombre}</p>
      <p>Email:{userFiltrado.email}</p>
      <p>País:{userFiltrado.pais}</p>
      <p>Telefono:{userFiltrado.telefono}</p>
      
-    </>
+    </div>
+    
   );
 }
 

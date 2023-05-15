@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import ProductDetail from './ProductDetail';
+import '../css/ProductStyle.css'
 
 
 
@@ -26,7 +27,7 @@ function Product(){
   
 
     return ( 
-        <div className="">
+        <div className="product-tab">
           <table border="1">
             <thead>
               <tr>
@@ -54,10 +55,18 @@ function Product(){
               })}
             </tbody>
           </table>
+          <div className='cantidadProductos'>
           <h3>La cantidad de productos es: {productLength.Total_productos}</h3>
+          </div>
+          <div className='cantidadProductosDeco'> 
           <h3>La cantidad de productos en Decoracion es: {productsFilterCategoryDecoracion.length}</h3>
+          </div>
+          <div className='cantidadProductosHogar'> 
           <h3>La cantidad de productos en Hogar es: {productsFilterCategoryHogar.length}</h3>
+          </div>
+          <div className='cantidadProductosIndu'> 
           <h3>La cantidad de productos en Indumentaria es: {productsFilterCategoryIndumentaria.length}</h3>
+          </div>
           <Routes>
             <Route path="/api/productos/:id" element={< ProductDetail />} exact />
           </Routes>
