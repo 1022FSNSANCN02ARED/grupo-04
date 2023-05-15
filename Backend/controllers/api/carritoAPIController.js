@@ -92,6 +92,28 @@ const carritoAPIController = {
             }
             })
              res.redirect("/carrito" )
+    },
+    modificarProducto:async(req,res)=>{
+        let usuario = session.userid;
+        let productoModificar= req.params.id;
+        let cantidadModificada= req.body.cantidad;
+        let userid = await User.findOne({
+            where:{
+                email: usuario,
+            }
+        });
+        
+        let productoEnCarrito= await ProductosCarrito.findOne({
+            where:{
+               user_id: userid.id,
+               id: productoModificar,
+            }
+        })
+        await productoEnCarrito.update({
+              cantidad: cantidadModificada,
+        })
+
+        return res.redirect('/carrito')
     }
 
 }

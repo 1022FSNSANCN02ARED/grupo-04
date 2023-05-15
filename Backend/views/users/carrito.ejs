@@ -12,7 +12,8 @@
             <th  style="width: 00px; font-weight: bold;">Cantidad</th>
             <th  style="width: 00px; font-weight: bold; ">Precio Unitario</th>
             <th  style="width: 00px; font-weight: bold;">Precio Total</th>
-          
+            <th  style="width: 00px; font-weight: bold;">Modificar Cantidad</th>
+            <th  style="width: 00px; font-weight: bold;">Eliminar</th>
         </tr>
     
         <% productosAgregados.forEach(producto => { %>
@@ -21,8 +22,23 @@
             <td style="width: 100px;"><%= producto.cantidad %></td>
             <td style="width: 100px;"> $<%= producto.Producto.precio %></td>
             <td style="width: 100px;"> $<%= producto.Producto.precio * producto.cantidad%></td>
-            
-            <td>
+           
+           <td>
+              
+            <article class="contenedor-boton-eliminar" >
+                <form 
+                action="/carrito/<%= producto.id %>?_method=put"
+                method="POST"
+                style="display: inline-flex"   
+                >
+                <input type="number" id="cantidad" name="cantidad" value="<%=producto.cantidad %>" min="0">
+                <button type="submit" class="boton-eliminar-carrito boton-registro" >
+                Modificar
+                </button>
+                </form>
+            </article>
+           </td>
+           <td>
               
             <article class="contenedor-boton-eliminar" >
                 <form 
@@ -42,6 +58,7 @@
                 </form>
             </article>
            </td>
+           
            
         </tr>
         <% }) %>
