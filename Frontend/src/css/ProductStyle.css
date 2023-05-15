@@ -31,3 +31,9 @@
     height: 100px;
     background-color: lightskyblue;
 }
+
+@media (max-width:700px){
+    .product-tab{
+       display:block;
+    }
+   }
